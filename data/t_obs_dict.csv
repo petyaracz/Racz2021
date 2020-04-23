@@ -1,0 +1,1292 @@
+soc_id,glottocode,society,lat,lon,family,region
+Aa1,juho1239,!Kung,-20,21,Kxa,Southern Africa
+Ab1,here1253,Herero,-21,16,Atlantic-Congo,Southern Africa
+Ad31,duru1249,Duruma,-4,39,Atlantic-Congo,East Tropical Africa
+Ad32,giry1241,Giriama,-3,40,Atlantic-Congo,East Tropical Africa
+Ad33,poko1261,Pokomo,-1,40,Atlantic-Congo,East Tropical Africa
+Na3,copp1244,Copper Inuit,69,-110,Eskimo-Aleut,Subarctic America
+Na22,west2618,Iglulik Inuit,70,-82,Eskimo-Aleut,Subarctic America
+Na1,uppe1437,Nabesna,63,-141,Athabaskan-Eyak-Tlingit,Subarctic America
+Na10,chug1254,Chugach,60.72,-146.49,Eskimo-Aleut,Subarctic America
+Na11,cent2128,Sivokakmeit,63.34,-170.3,Eskimo-Aleut,Subarctic America
+Na12,nort2944,Nunamiut,68,-152,Eskimo-Aleut,Subarctic America
+Ad34,kamb1297,Kamba,-2,38,Atlantic-Congo,East Tropical Africa
+Na13,baff1240,Baffin Island Inuit,65.24,-64.63,Eskimo-Aleut,Subarctic America
+Na14,pola1254,Inughuit (Northern Greenland),78,-70,Eskimo-Aleut,Subarctic America
+Na15,dogr1252,Tlicho,63,-117,Athabaskan-Eyak-Tlingit,Subarctic America
+Na16,nort2942,Délįne,65,-119,Athabaskan-Eyak-Tlingit,Subarctic America
+Na17,sout2959,DeneTha,61,-120,Athabaskan-Eyak-Tlingit,Subarctic America
+Na19,carr1249,Dakelh,54,-124,Athabaskan-Eyak-Tlingit,Western Canada
+Na2,nort2944,Tareumiut,71,-157,Eskimo-Aleut,Subarctic America
+Na20,gwic1235,Kutchin,66,-135,Athabaskan-Eyak-Tlingit,Subarctic America
+Na21,cari1277,Caribou Inuit,63,-96,Eskimo-Aleut,Subarctic America
+Na23,labr1244,Labrador Inuit,58,-65,Eskimo-Aleut,Eastern Canada
+Ad35,meru1245,Meru,0,35,Atlantic-Congo,East Tropical Africa
+Na24,tunu1234,Tasiilaq,66,-37,Eskimo-Aleut,Subarctic America
+Na25,kala1399,Kalaallit (West Greenland),68.66,-51.22,Eskimo-Aleut,Subarctic America
+Na26,tana1289,Dena'ina,62,-144,Athabaskan-Eyak-Tlingit,Subarctic America
+Na27,tahl1239,Tahltan,58,-131,Athabaskan-Eyak-Tlingit,Western Canada
+Na28,seka1250,Sekani,56,-123,Athabaskan-Eyak-Tlingit,Western Canada
+Na29,beav1236,Beaver,58,-117,Athabaskan-Eyak-Tlingit,Western Canada
+Na30,chip1261,Dene,60,-105,Athabaskan-Eyak-Tlingit,Subarctic America
+Na31,sout2978,Eastern Cree,51,-85,Algic,Eastern Canada
+Na32,mont1268,Montagnais,48,-72,Algic,Eastern Canada
+Na33,alba1270,Northern Saulteaux,52,-98,Algic,Western Canada
+Ad36,asut1235,Pare,-4,38,Atlantic-Congo,East Tropical Africa
+Na34,lacs1238,Pekangekum,52,-94,Algic,Eastern Canada
+Na35,cent2136,Nipigon,50,-88,Algic,Eastern Canada
+Na36,redl1238,Minnesota Ojibwa,49,-96,Algic,Western Canada
+Na37,rain1239,Rainy River Ojibwe,49,-92,Algic,Eastern Canada
+Na38,uppe1274,Katikitegon,46,-92,Algic,North-Central U.S.A.
+Na39,east2542,Eastern Ojibwa,46,-85,Algic,Northeastern U.S.A.
+Na4,kask1239,Kaska,59,-128,Athabaskan-Eyak-Tlingit,Western Canada
+Na40,otta1242,Ottawa,46,-82,Algic,Eastern Canada
+Na41,mikm1235,Mi'kmaq,47,-65,Algic,Eastern Canada
+Na42,pota1247,Potawatomi,44,-85,Algic,Northeastern U.S.A.
+Ad37,tait1250,Teita,-4,39,Atlantic-Congo,East Tropical Africa
+Na43,nets1241,Netsilik,69,-96,Eskimo-Aleut,Subarctic America
+Na44,queb1248,Taqagmiut,62,-76,Eskimo-Aleut,Eastern Canada
+Na45,sout2978,Mistissini Cree,51.75,-72.66,Algic,Middle Asia
+Na5,nask1242,Naskapi,58,-70,Algic,Eastern Canada
+Na6,kusk1241,Nunivak,60,-166,Eskimo-Aleut,Subarctic America
+Na7,swam1239,Attawapiskat Cree,53,-83,Algic,Eastern Canada
+Na8,dege1248,Deg Xit'an,62,-160,Athabaskan-Eyak-Tlingit,Subarctic America
+Na9,east2533,Aleut,53.86,-166.79,Eskimo-Aleut,Subarctic America
+Nb1,nort2938,Haida,54,-132,Haida,Western Canada
+Nb10,sout2958,Alkatcho,53,-126,Athabaskan-Eyak-Tlingit,Western Canada
+Ad38,kara1481,Kara,-2,33,Atlantic-Congo,East Tropical Africa
+Nb11,nuuc1236,Nuu chah nulth,49.16,-125.85,Wakashan,Western Canada
+Nb12,slia1241,Klahoose,51,-125,Salishan,Western Canada
+Nb13,squa1248,Squamish,50,-123,Salishan,Western Canada
+Nb14,isla1276,Comox,49.72,-124.97,Salishan,Western Canada
+Nb15,lumm1243,Lummi,48.84,-123.27,Salishan,Western Canada
+Nb16,clal1241,Klallam,48,-123,Salishan,Northwestern U.S.A.
+Nb17,sout2965,Puyallup,47,-122,Salishan,Northwestern U.S.A.
+Nb18,quil1240,Quileute,47.91,-124.59,Chimakuan,Northwestern U.S.A.
+Nb19,chin1286,Lower Chinook,45.99,-123.77,Chinookan,Northwestern U.S.A.
+Nb2,twan1247,Twana,48,-123,Salishan,Northwestern U.S.A.
+Ad39,temi1247,Sonjo,-3,36,Atlantic-Congo,East Tropical Africa
+Nb20,till1254,Tillamook,44.75,-123.72,Salishan,Northwestern U.S.A.
+Nb21,coos1249,Coos,43,-124,Coosan,Northwestern U.S.A.
+Nb22,tlin1245,Tlingit,58.12,-133.92,Athabaskan-Eyak-Tlingit,Subarctic America
+Nb23,bell1263,Heiltsuk,52,-128,Wakashan,Western Canada
+Nb24,maka1318,Makah,48.33,-124.62,Wakashan,Northwestern U.S.A.
+Nb25,quin1251,Quinault,47.42,-124.16,Salishan,Northwestern U.S.A.
+Nb26,cowi1241,Cowichan,49.01,-122.73,Salishan,Western Canada
+Nb27,chil1281,Stó:lō,49,-122,Salishan,Western Canada
+Nb28,alse1251,Alsea,44,-124,NA,Northwestern U.S.A.
+Nb29,sius1254,Siuslaw,44,-124,NA,Northwestern U.S.A.
+Ad4,kiku1240,Kikuyu,-1,37,Atlantic-Congo,East Tropical Africa
+Nb3,kwak1269,Kwakwaka'wakw,51,-127.49,Wakashan,Western Canada
+Nb30,take1257,Takelma,42,-123,NA,Northwestern U.S.A.
+Nb31,tutu1242,Tututni,42,-124,Athabaskan-Eyak-Tlingit,Northwestern U.S.A.
+Nb32,shas1239,Shasta,41,-122,Shastan,Southwestern U.S.A.
+Nb33,chim1301,Chimariko,41,-123,NA,Southwestern U.S.A.
+Nb34,karo1304,Karuk,42,-123,NA,Northwestern U.S.A.
+Nb35,hupa1239,Hupa,41,-123,Athabaskan-Eyak-Tlingit,Southwestern U.S.A.
+Nb36,wiyo1248,Wiyot,39.81,-123.55,Algic,Southwestern U.S.A.
+Nb37,wail1244,Lassik,40,-123,Athabaskan-Eyak-Tlingit,Southwestern U.S.A.
+Nb38,matt1238,Mattole-Bear River,40.35,-123.47,Athabaskan-Eyak-Tlingit,Southwestern U.S.A.
+Ab10,mpon1252,Pondo,-31,30,Atlantic-Congo,Southern Africa
+Ad40,idak1243,Tiriki,0,35,Atlantic-Congo,East Tropical Africa
+Nb39,wail1244,Sinkyone,39.73,-123.6,Athabaskan-Eyak-Tlingit,Southwestern U.S.A.
+Nb4,yuro1248,Yurok,41,-124,Algic,Southwestern U.S.A.
+Nb5,eyak1241,Eyak,60.34,-144.85,Athabaskan-Eyak-Tlingit,Subarctic America
+Nb6,tolo1259,Tolowa,42,-124,Athabaskan-Eyak-Tlingit,Northwestern U.S.A.
+Nb7,nucl1649,Tsimshian,54.64,-130.25,Tsimshian,Western Canada
+Nb8,hais1244,Haisla,54,-129,Wakashan,Western Canada
+Nb9,bell1243,Nuxalk,52,-127,Salishan,Western Canada
+Nc1,noml1242,Nomlaki,39,-122,Wintuan,Southwestern U.S.A.
+Nc10,achu1247,Achumawi,41,-121,Palaihnihan,Southwestern U.S.A.
+Nc11,yana1271,Yana,41,-122,NA,Southwestern U.S.A.
+Ad41,buku1249,Vugusu,1,35,Atlantic-Congo,East Tropical Africa
+Nc12,nort2952,Maidu,40,-121,Maiduan,Southwestern U.S.A.
+Nc13,nise1244,Nisenan,39,-121,Maiduan,Southwestern U.S.A.
+Nc14,nucl1651,Wintu,41,-122,Wintuan,Southwestern U.S.A.
+Nc15,yuki1243,Coast Yuki,39.34,-123.77,Yuki-Wappo,Southwestern U.S.A.
+Nc16,yuki1243,Huchnom,39,-123,Yuki-Wappo,Southwestern U.S.A.
+Nc17,nort2966,Northern Pomo,39,-123,Pomoan,Southwestern U.S.A.
+Nc18,east2545,Eastern Pomo,39,-123,Pomoan,Southwestern U.S.A.
+Nc19,sout2984,Southern Pomo,38.55,-122.94,Pomoan,Southwestern U.S.A.
+Nc2,tuba1278,Tübalulabal,39,-118,Uto-Aztecan,Southwestern U.S.A.
+Nc20,wapp1239,Wappo,38.22,-122.56,Yuki-Wappo,Southwestern U.S.A.
+Ad42,haya1250,Haya,-1,32,Atlantic-Congo,East Tropical Africa
+Nc21,lake1258,Lake Miwok,38.75,-123.2,Miwok-Costanoan,Southwestern U.S.A.
+Nc22,patw1250,Patwin,39,-122,Wintuan,Southwestern U.S.A.
+Nc23,mono1275,Western Mono,37,-119,Uto-Aztecan,Southwestern U.S.A.
+Nc24,vall1251,Southern Valley Yokuts,36,-120,Yokutsan,Southwestern U.S.A.
+Nc25,tule1245,Wukchumni,36,-119,Yokutsan,Southwestern U.S.A.
+Nc26,sali1253,Salinan,36,-121,NA,Southwestern U.S.A.
+Nc27,kawa1283,Kawaiisu,35,-118,Uto-Aztecan,Southwestern U.S.A.
+Nc28,cruz1243,Chumash,34.44,-119.71,Chumashan,Southwestern U.S.A.
+Nc29,tong1329,Tongva,34,-118,Uto-Aztecan,Southwestern U.S.A.
+Nc3,nort2937,Northern Foothill Yokuts,36,-120,Yokutsan,Southwestern U.S.A.
+Ad43,kere1283,Kerewe,-3,33,Atlantic-Congo,East Tropical Africa
+Nc30,serr1255,Serrano,34,-117,Uto-Aztecan,Southwestern U.S.A.
+Nc31,cahu1264,Cahuilla (Desert),33,-116,Uto-Aztecan,Southwestern U.S.A.
+Nc32,cupe1243,Cupeño,33,-117,Uto-Aztecan,Southwestern U.S.A.
+Nc33,luis1253,Luiseño,33,-117,Uto-Aztecan,Southwestern U.S.A.
+Nc34,kili1268,Kiliwa,31,-115,Cochimi-Yuman,Mexico
+Nc4,atsu1245,Atsugewi,41,-121,Palaihnihan,Southwestern U.S.A.
+Nc5,cent2140,Central Sierra Miwok,38,-120,Miwok-Costanoan,Southwestern U.S.A.
+Nc6,kumi1248,Kumeyaay,32,-116,Cochimi-Yuman,Mexico
+Nc7,yuki1243,Yuki,40,-123,Yuki-Wappo,Southwestern U.S.A.
+Nc8,klam1254,Klamath,43,-122,NA,Northwestern U.S.A.
+Ad44,konz1239,Konjo,-1,30,Atlantic-Congo,East Tropical Africa
+Nc9,klam1254,Modoc,42,-122,NA,Northwestern U.S.A.
+Nd1,teni1238,Tenino,45,-121,Sahaptian,Northwestern U.S.A.
+Nd10,thom1243,Nlaka'pamux,50,-122,Salishan,Western Canada
+Nd11,shus1248,Shuswap,51,-120,Salishan,Western Canada
+Nd12,kali1309,Bitterroot Salish,46,-113,Salishan,Northwestern U.S.A.
+Nd13,kali1309,Kalispel,49,-117,Salishan,Western Canada
+Nd14,coeu1236,Coeur d’Alene,48,-117,Salishan,Northwestern U.S.A.
+Nd15,sout2963,Sinkaitk,49,-120,Salishan,Western Canada
+Nd16,wena1241,Wenatchi,48,-121,Salishan,Northwestern U.S.A.
+Nd17,nucl1237,Klikitat,46,-122,Sahaptian,Northwestern U.S.A.
+Ad45,nyan1307,Nyankole,0,31,Atlantic-Congo,East Tropical Africa
+Nd18,wasc1239,Wishram,46,-121,Chinookan,Northwestern U.S.A.
+Nd19,umat1237,Umatilla,46,-119,Sahaptian,Northwestern U.S.A.
+Nd2,utee1244,Southern Ute,38,-109,Uto-Aztecan,Northwestern U.S.A.
+Nd20,nezp1238,Nez Perce,45,-115,Sahaptian,Northwestern U.S.A.
+Nd21,nort1551,Tagotoka,43,-117,Uto-Aztecan,Northwestern U.S.A.
+Nd22,nort1551,Wadadokado,43,-119,Uto-Aztecan,Northwestern U.S.A.
+Nd23,nort1551,Atsakudokwa,42,-118,Uto-Aztecan,Northwestern U.S.A.
+Nd24,nort1551,Kidutokado,42,-120,Uto-Aztecan,Northwestern U.S.A.
+Nd25,nort1551,Sawakudokwa,41,-118,Uto-Aztecan,Southwestern U.S.A.
+Ad46,soga1242,Soga,1,33,Atlantic-Congo,East Tropical Africa
+Nd27,sout2967,Kuyuidokado,40,-119,Uto-Aztecan,Southwestern U.S.A.
+Nd28,sout2967,Toedokado,40,-118,Uto-Aztecan,Southwestern U.S.A.
+Nd29,mono1275,Tunava (Deep Springs and Fish Lake),37,-118,Uto-Aztecan,Southwestern U.S.A.
+Nd3,hava1249,Havasupai,36,-112,Cochimi-Yuman,Southwestern U.S.A.
+Nd30,mono1275,Eastern Mono,37,-118,Uto-Aztecan,Southwestern U.S.A.
+Nd31,pana1305,Koso,36,-118,Uto-Aztecan,Southwestern U.S.A.
+Nd32,pana1305,Tümpisa Shoshone (Saline and Panamint),36,-117,Uto-Aztecan,Southwestern U.S.A.
+Nd33,pana1305,Beatty,37,-116,Uto-Aztecan,Southwestern U.S.A.
+Nd34,west2622,Lida Shoshoni,37,-117,Uto-Aztecan,Southwestern U.S.A.
+Nd35,west2622,Mahaguaduka,39,-117,Uto-Aztecan,Southwestern U.S.A.
+Ad47,sumb1240,Sumbwa,-4,32,Atlantic-Congo,East Tropical Africa
+Nd36,west2622,Wiyambituka,39,-117,Uto-Aztecan,Southwestern U.S.A.
+Nd37,west2622,Railroad Valley Shoshoni,39,-116,Uto-Aztecan,Southwestern U.S.A.
+Nd38,west2622,Ely Shoshoni,39,-115,Uto-Aztecan,Southwestern U.S.A.
+Nd4,sanp1257,Sanpoil,48,-119,Salishan,Northwestern U.S.A.
+Nd40,west2622,Tubaduka,40,-113,Uto-Aztecan,Southwestern U.S.A.
+Nd41,west2622,Wadaduka,41,-116,Uto-Aztecan,Southwestern U.S.A.
+Nd42,west2622,Elko Shoshoni,41,-116,Uto-Aztecan,Southwestern U.S.A.
+Nd43,west2622,White Knife Shoshoni,41,-117,Uto-Aztecan,Southwestern U.S.A.
+Nd44,west2622,Yahanduka,42,-115,Uto-Aztecan,Northwestern U.S.A.
+Ad48,toor1238,Toro,1,31,Atlantic-Congo,East Tropical Africa
+Nd45,nort2955,Bohogue,43,-112,Uto-Aztecan,Northwestern U.S.A.
+Nd47,nort2955,Tukudika,44,-111,Uto-Aztecan,Northwestern U.S.A.
+Nd46,nort2955,Agaiduka,44,-112,Uto-Aztecan,Northwestern U.S.A.
+Nd48,gosi1242,Gosiute,40,-114,Uto-Aztecan,Southwestern U.S.A.
+Nd49,utee1244,Antarianunts,37,-110,Uto-Aztecan,Southwestern U.S.A.
+Nd5,nort2955,Hukundika,42,-112,Uto-Aztecan,Northwestern U.S.A.
+Nd50,utee1244,Panguitch,38,-112,Uto-Aztecan,Southwestern U.S.A.
+Nd51,sout2969,Moapa,36,-115,Uto-Aztecan,Southwestern U.S.A.
+Nd52,sout2969,Shivwits,36,-117,Uto-Aztecan,Southwestern U.S.A.
+Nd53,sout2969,Southern Paiute (Kaibab),36,-113,Uto-Aztecan,Southwestern U.S.A.
+Nd55,sout2969,Southern Paiute (Las Vegas),36,-115,Uto-Aztecan,Southwestern U.S.A.
+Ad49,zinz1238,Zinza,-3,31,Atlantic-Congo,East Tropical Africa
+Nd54,chem1251,Chemehuevi,35,-115,Uto-Aztecan,Southwestern U.S.A.
+Nd56,sout2969,San Juan,36,-111,Uto-Aztecan,Southwestern U.S.A.
+Nd57,utee1244,Pahvant,39,-113,Uto-Aztecan,Southwestern U.S.A.
+Nd58,utee1244,Uintah Ute,40,-112,Uto-Aztecan,Southwestern U.S.A.
+Nd59,utee1244,Moanunts,39,-112,Uto-Aztecan,Southwestern U.S.A.
+Nd6,wash1253,Washo,39,-120,NA,Southwestern U.S.A.
+Nd60,utee1244,Moache,37,-105,Uto-Aztecan,Northwestern U.S.A.
+Nd61,utee1244,Taviwatsiu,40,-105,Uto-Aztecan,Northwestern U.S.A.
+Nd62,utee1244,Uncompahgre Ute,39,-107,Uto-Aztecan,Northwestern U.S.A.
+Ab11,xesi1238,Xhosa,-32.89,27.91,Atlantic-Congo,Southern Africa
+Ad5,mbug1242,Mbugwe,-4,36,Atlantic-Congo,East Tropical Africa
+Nd63,bann1248,Bannock,43,-112,Uto-Aztecan,Northwestern U.S.A.
+Nd64,nort2955,Wind River Eastern Shoshone,43,-109,Uto-Aztecan,Northwestern U.S.A.
+Nd65,wala1270,Hualapai,36,-114,Cochimi-Yuman,Southwestern U.S.A.
+Nd66,yava1252,Yavapai,35,-112,Cochimi-Yuman,Southwestern U.S.A.
+Nd67,yava1252,Tolkepaya,34,-114,Cochimi-Yuman,Southwestern U.S.A.
+Nd7,kute1249,Kutenai,50,-117,NA,Western Canada
+Nd8,chil1280,Chilcotin,52,-122,Athabaskan-Eyak-Tlingit,Western Canada
+Nd9,lill1248,Lillooet,50.02,-124.78,Salishan,Western Canada
+Ne1,gros1243,Gros Ventre,48.78,-108.98,Algic,Northwestern U.S.A.
+Ne10,arik1262,Arikara,46,-101,Caddoan,North-Central U.S.A.
+Ad50,kagu1239,Kaguru,-6,37,Atlantic-Congo,East Tropical Africa
+Ne11,assi1247,Assiniboine,48,-106,Siouan,Northwestern U.S.A.
+Ne12,pieg1239,Blackfoot,51,-112,Algic,Western Canada
+Ne13,bloo1239,Kainai,51,-115,Algic,Western Canada
+Ne14,west1510,Bungi,51,-100,Algic,Western Canada
+Ne15,hida1246,Hidatsa,47,-101,Siouan,North-Central U.S.A.
+Ne16,kara1289,Karankawa,29,-96,NA,South-Central U.S.A.
+Ne17,kiow1266,Kiowa,36,-99,Kiowa-Tanoan,North-Central U.S.A.
+Ne18,pieg1239,Piegan,49,-115,Algic,Western Canada
+Ne19,plai1258,Plains Cree,45,-94,Algic,North-Central U.S.A.
+Ne2,kiow1264,Kiowa Apache,36,-99,Athabaskan-Eyak-Tlingit,North-Central U.S.A.
+Ad51,ngul1246,Ngulu,-6,38,Atlantic-Congo,East Tropical Africa
+Ne20,dako1258,Santee,45,-94,Siouan,North-Central U.S.A.
+Ne21,coah1252,Coahuilteco,29,-99,NA,South-Central U.S.A.
+Ne3,coma1245,Comanche,33,-100,Uto-Aztecan,South-Central U.S.A.
+Ne4,crow1244,Crow,45,-108,Siouan,Northwestern U.S.A.
+Ne5,chey1247,Cheyenne,39,-104,Algic,Northwestern U.S.A.
+Ne6,mand1446,Mandan,47,-101,Siouan,North-Central U.S.A.
+Ne7,sars1236,Sarcee,54,-110,Athabaskan-Eyak-Tlingit,Western Canada
+Ne8,lako1247,Teton,43,-103,Siouan,North-Central U.S.A.
+Ne9,arap1274,Arapaho,40,-103,Algic,Northwestern U.S.A.
+Ad6,nyak1261,Nyakyusa,-9,34,Atlantic-Congo,East Tropical Africa
+Nf10,iowa1246,Iowa,41,-95,Siouan,North-Central U.S.A.
+Nf11,otoo1241,Otoe,40,-95,Siouan,North-Central U.S.A.
+Nf12,ponc1241,Ponca,43,-99,Siouan,North-Central U.S.A.
+Nf13,shaw1249,Shawnee,37,-85,Algic,Southeastern U.S.A.
+Nf14,cadd1256,Caddo,33,-93,Caddoan,Southeastern U.S.A.
+Nf15,kick1244,Kickapoo,43,-90,Algic,North-Central U.S.A.
+Nf2,hoch1243,Ho Chunk,44,-88,Siouan,North-Central U.S.A.
+Nf3,omah1248,Omaha,41,-96,Siouan,North-Central U.S.A.
+Nf4,miam1252,Myaamia,40,-86,Algic,Northeastern U.S.A.
+Nf5,wich1260,Wichita,34,-98,Caddoan,South-Central U.S.A.
+Ad7,gand1255,Ganda,1,32,Atlantic-Congo,East Tropical Africa
+Nf6,pawn1254,Pawnee,42,-100,Caddoan,North-Central U.S.A.
+Nf7,mesk1242,Fox,45,-95,Algic,North-Central U.S.A.
+Nf8,cadd1256,Hasinai,31,-95,Caddoan,South-Central U.S.A.
+Nf9,meno1252,Menominee,46,-88,Algic,Northeastern U.S.A.
+Ng1,wyan1247,Huron,44,-78,Iroquoian,Eastern Canada
+Ng10,sene1264,Seneca,43,-77,Iroquoian,Northeastern U.S.A.
+Ng11,yuch1247,Yuchi,35,-86,NA,Southeastern U.S.A.
+Ng12,choc1276,Choctaw,33,-88,Muskogean,Southeastern U.S.A.
+Ng13,peno1243,Abenaki,46,-70,Algic,Northeastern U.S.A.
+Ng14,chic1270,Chickasaw,35,-85,Muskogean,Southeastern U.S.A.
+Ad8,hehe1240,Hehe,-8,35,Atlantic-Congo,East Tropical Africa
+Ng15,chit1248,Chitimacha,30,-90,NA,Southeastern U.S.A.
+Ng2,mika1239,Seminole,27,-81,Muskogean,Southeastern U.S.A.
+Ng3,cree1270,Muscogee,33,-84,Muskogean,Southeastern U.S.A.
+Ng4,peno1243,Penobscot,45,-68,Algic,Northeastern U.S.A.
+Ng5,cher1273,Cherokee,36,-83,Iroquoian,Southeastern U.S.A.
+Ng6,unam1242,Delaware,41,-75,Algic,Northeastern U.S.A.
+Ng7,natc1249,Natchez,32,-91,NA,Southeastern U.S.A.
+Ng8,timu1245,Timucua,27,-82,NA,Southeastern U.S.A.
+Ng9,cata1286,Catawba,35,-80,Siouan,Southeastern U.S.A.
+Nh1,mesc1238,Chiricahua,31,-108,Athabaskan-Eyak-Tlingit,Mexico
+Ad9,masa1299,Gisu,1,34,Atlantic-Congo,East Tropical Africa
+Nh10,sout2961,Isleta,35,-107,Kiowa-Tanoan,South-Central U.S.A.
+Nh11,sani1273,San Ildefonso,36,-106,Kiowa-Tanoan,South-Central U.S.A.
+Nh12,sant1426,Santa Ana,35,-107,Keresan,South-Central U.S.A.
+Nh13,acom1246,Acoma,35,-108,Keresan,South-Central U.S.A.
+Nh14,acom1246,Laguna,35,-107,Keresan,South-Central U.S.A.
+Nh15,mesc1238,Mescalero,33,-103,Athabaskan-Eyak-Tlingit,South-Central U.S.A.
+Nh16,jica1244,Jicarilla,36,-104,Athabaskan-Eyak-Tlingit,South-Central U.S.A.
+Nh17,west2615,Western Apache,34,-110,Athabaskan-Eyak-Tlingit,Southwestern U.S.A.
+Nh18,hopi1249,Hopi,36,-111,Uto-Aztecan,Southwestern U.S.A.
+Nh19,coco1261,Cocopa,32,-115,Cochimi-Yuman,Mexico
+Ae1,amba1263,Amba,1,30,Atlantic-Congo,West-Central Tropical Africa
+Nh2,ariz1237,Hano,36,-111,Kiowa-Tanoan,Southwestern U.S.A.
+Nh20,kumi1248,Kamia,33,-115,Cochimi-Yuman,Southwestern U.S.A.
+Nh21,moha1256,Mojave,35,-114,Cochimi-Yuman,Southwestern U.S.A.
+Nh22,quec1382,Quechan,33,-114,Cochimi-Yuman,Southwestern U.S.A.
+Nh23,yava1252,Kewyipaya,34,-111,Cochimi-Yuman,Southwestern U.S.A.
+Nh24,lipa1241,Lipan Apache,30,-100,Athabaskan-Eyak-Tlingit,South-Central U.S.A.
+Nh25,ziaa1251,Sia,36,-107,Keresan,South-Central U.S.A.
+Nh26,sant1421,Santa Clara,36,-106,Kiowa-Tanoan,South-Central U.S.A.
+Nh27,sant1425,Kewa,36,-105,Keresan,South-Central U.S.A.
+Nh3,nava1243,Navajo,37,-110,Athabaskan-Eyak-Tlingit,Southwestern U.S.A.
+Ae10,kiny1244,Banyaruanda,-2,30,Atlantic-Congo,West-Central Tropical Africa
+Nh4,zuni1245,Zuni,35,-109,NA,South-Central U.S.A.
+Nh5,mari1440,Maricopa,33,-113,Cochimi-Yuman,Southwestern U.S.A.
+Nh6,taos1236,Taos,37,-106,Kiowa-Tanoan,Northwestern U.S.A.
+Nh7,coch1273,Cochiti,36,-106,Keresan,South-Central U.S.A.
+Nh8,jeme1245,Jemez,36,-107,Kiowa-Tanoan,South-Central U.S.A.
+Nh9,picu1248,Picuris,36,-106,Kiowa-Tanoan,South-Central U.S.A.
+Ni1,cent2131,Tarahumara,28,-107,Uto-Aztecan,Mexico
+Ni2,toho1246,Tohono O'odham,31,-112,Uto-Aztecan,Mexico
+Ni3,huic1243,Huichol,23,-104,Uto-Aztecan,Mexico
+Ni4,seri1257,Seri,29,-112,NA,Mexico
+Ae11,song1300,Songola,-4,26,Atlantic-Congo,West-Central Tropical Africa
+Ni5,chic1272,Chichimeca,22,-100,Otomanguean,Mexico
+Ni6,akim1239,Pima,31,-111,Uto-Aztecan,Mexico
+Ni7,yaqu1251,Yaqui,28,-110,Uto-Aztecan,Mexico
+Ni8,opat1246,Opata,30,-110,Uto-Aztecan,Mexico
+Ni9,nort2959,Tepehuán,27,-107,Uto-Aztecan,Mexico
+Nj1,ojit1237,Chinantec,18,-96,Otomanguean,Mexico
+Nj10,yala1267,Zapotec,17,-96,Otomanguean,Mexico
+Nj11,huas1242,Huastec,22,-99,Mayan,Mexico
+Nj12,juxt1235,Mixtec,18,-98,Otomanguean,Mexico
+Nj13,mezq1235,Otomí,20,-99,Otomanguean,Mexico
+Ab12,zulu1248,Zulu,-29,31,Atlantic-Congo,Southern Africa
+Ae12,dual1243,Duala,4,10,Atlantic-Congo,West-Central Tropical Africa
+Nj14,high1242,Tequistlatec,16,-96,Tequistlatecan,Mexico
+Nj2,clas1250,Aztec,19,-99,Uto-Aztecan,Mexico
+Nj3,high1276,Sierra Popoluca,18,-95,Mixe-Zoque,Mexico
+Nj4,papa1238,Totonac,20,-97,Totonacan,Mexico
+Nj5,huau1238,Mazateco,18,-97,Otomanguean,Mexico
+Nj6,sanm1287,Huave,16.22,-95.02,Huavean,Mexico
+Nj7,isth1238,Mixe,17,-95,Mixe-Zoque,Mexico
+Nj8,pure1242,Tarasco,19,-101,Tarascan,Mexico
+Nj9,cent2132,Tlaxcalans,19,-98,Uto-Aztecan,Mexico
+Sa1,bord1248,Guna,9,-78,Chibchan,Central America
+Ae13,shii1238,Bashi,-2,29,Atlantic-Congo,West-Central Tropical Africa
+Sa10,laca1243,Lacandon,17,-92,Mayan,Mexico
+Sa11,kaqc1270,Kaqchikel,14,-91,Mayan,Central America
+Sa12,lenc1242,Lenca,14,-88,Lencan,Central America
+Sa13,kich1262,K'iche',15,-91,Mayan,Central America
+Sa14,ngab1239,Ngäbe,8,-81,Chibchan,Central America
+Sa15,popt1235,Jakaltek,14,-90,Mayan,Central America
+Sa16,toll1241,Tolupan,15,-87,Jicaquean,Central America
+Sa17,poqo1253,Poqomam,15,-91,Mayan,Central America
+Sa2,tzel1254,Tzeltal,17,-92,Mayan,Mexico
+Sa3,chor1273,Ch'orti',14,-89,Mayan,Central America
+Ae14,haaa1252,Ha,-5,30,Atlantic-Congo,East Tropical Africa
+Sa4,nort2972,Emberá,8,-78,Chocoan,Central America
+Sa5,brib1243,Bribri,9,-83,Chibchan,Central America
+Sa6,yuca1254,Yucatec Maya,18,-90,Mayan,Mexico
+Sa7,gari1256,Garifuna,16,-89,Arawakan,Central America
+Sa8,mamm1241,Mam,15,-92,Mayan,Central America
+Sa9,misk1235,Miskito,13,-85,Misumalpan,Central America
+Sb1,isla1278,Callinago,15.41,-61.27,Arawakan,Caribbean
+Sb2,cogu1240,Cágaba,11,-74,Chibchan,Western South America
+Sb3,yukp1241,Barí (Motilon),9,-72,Cariban,Northern South America
+Sb4,taba1267,Cariña,9,-64,Cariban,Northern South America
+Ae15,hund1239,Hunde,-2,28,Atlantic-Congo,West-Central Tropical Africa
+Sb5,para1316,Paraujano,11,-72,Arawakan,Northern South America
+Sb6,wayu1243,Wayuu,12,-72,Arawakan,Western South America
+Sb7,yukp1241,Yupa,9,-72,Cariban,Northern South America
+Sb8,tain1254,Taíno,19.94,-75.37,Arawakan,Caribbean
+Sb9,hait1244,Haitians,18.41,-72.17,Indo-European,Caribbean
+Sc1,wara1303,Warao,9,-62,NA,Northern South America
+Sc10,araw1276,Lokono,5.95,-56.98,Arawakan,Northern South America
+Sc11,cama1252,Camaracoto,6,-63,Cariban,Northern South America
+Sc12,macu1259,Macushi,4,-59,Cariban,Northern South America
+Sc13,enap1235,Panare,6,-66,Cariban,Northern South America
+Ae16,luba1249,Lulua,-6,23,Atlantic-Congo,West-Central Tropical Africa
+Sc14,waya1269,Rucuyen,3,-55,Cariban,Northern South America
+Sc15,taul1252,Taulípang,4,-62,Cariban,Brazil
+Sc16,maqu1238,Ye'kuana,3,-65,Cariban,Northern South America
+Sc17,piap1246,Piapoco,6,-68,Arawakan,Western South America
+Sc18,ndyu1242,Ndyuka,5,-54,Indo-European,Northern South America
+Sc2,pume1238,Pumé,7,-68,NA,Northern South America
+Sc3,mura1272,Barama River Carib,5,-59,Cariban,Northern South America
+Sc4,guah1255,Guahibo,5,-69,Guahiboan,Western South America
+Sc5,wapi1253,Wapishana,3,-60,Arawakan,Brazil
+Sc6,sara1340,Saramaccan,4,-56,Indo-European,Northern South America
+Ae17,lega1249,Rega,-3,28,Atlantic-Congo,West-Central Tropical Africa
+Sc7,yaba1248,Yabarana,5,-66,Cariban,Northern South America
+Sc8,piar1243,Piaroa,5,-67,Jodi-Saliban,Northern South America
+Sc9,curr1243,Curripaco,5,-67,Arawakan,Northern South America
+Sd1,mund1330,Munduruku,-6,-58,Tupian,Brazil
+Sd2,tapi1254,Tapirapé,-11,-52,Tupian,Brazil
+Sd3,pali1279,Palikur,3,-52,Arawakan,Brazil
+Sd4,yano1262,Guaica,2,-65,Yanomamic,Northern South America
+Sd5,sate1243,Sateré Mawé,-4,-57,Tupian,Brazil
+Sd6,nina1238,Shiriana,4,-63,Yanomamic,Northern South America
+Sd7,waiw1244,Wai-wai,1,-59,Cariban,Brazil
+Ae18,song1303,Songye,-6,25,Atlantic-Congo,West-Central Tropical Africa
+Sd8,sanu1240,Sanema,4,-66,Yanomamic,Northern South America
+Sd9,yano1261,Yanomami,2,-65,Yanomamic,Northern South America
+Se1,siri1273,Sirionó,-16,-64,Tupian,Western South America
+Se10,coca1259,Cocama,1,-79,Tupian,Western South America
+Se11,chac1251,Chácobo,-12,-67,Pano-Tacanan,Western South America
+Se12,tuca1252,Tucano,0,-70,Tucanoan,Brazil
+Se2,ticu1245,Ticuna,-3,-70,Ticuna-Yuri,Western South America
+Se3,shua1257,Shuar,-3,-78,Chicham,Western South America
+Se4,yagu1244,Yagua,-3,-72,Peba-Yagua,Western South America
+Se5,cube1242,Cubeo,1,-71,Tucanoan,Western South America
+Ae19,sang1331,Garanganze,-11,28,Atlantic-Congo,West-Central Tropical Africa
+Se6,muru1274,Witoto,-1,-74,Huitotoan,Western South America
+Se7,chiq1248,Camba,-18,-63,NA,Western South America
+Se8,amah1246,Amahuaca,-10,-72,Pano-Tacanan,Brazil
+Se9,ship1254,Shipibo-Conibo,-9,-74,Pano-Tacanan,Western South America
+Sf1,cusc1236,Inca,-13,-72,Quechuan,Western South America
+Sf2,cent2142,Aymara,-16,-69,Aymaran,Western South America
+Sf3,chac1249,Chachi,1,-79,Barbacoan,Western South America
+Sf4,cent2150,U'wa,7,-72,Chibchan,Western South America
+Sf5,paez1247,Páez,3,-76,NA,Western South America
+Sf6,chib1270,Muisca,5,-72,Chibchan,Western South America
+Ae2,mokp1239,Kpe,4.22,9.27,Atlantic-Congo,West-Central Tropical Africa
+Sf7,ajyi1238,Asháninka,-8,-75,Arawakan,Western South America
+Sf8,yine1238,Piro,-12,-73,Arawakan,Western South America
+Sf9,uruu1244,Uru,-16,-69,Uru-Chipaya,Western South America
+Sg1,yama1264,Yahgan,-55.02,-68.98,NA,Southern South America
+Sg2,mapu1245,Mapuche,-39,-68,Araucanian,Southern South America
+Sg3,onaa1245,Ona,-54,-69,Chonan,Southern South America
+Sg4,tehu1242,Tehuelche,-46,-70,Chonan,Southern South America
+Sg5,qawa1238,Alacaluf,-52,-74,Kawesqar,Southern South America
+Sh1,wich1264,Wichí,-24,-63,Matacoan,Southern South America
+Sh2,tere1279,Terena,-21,-58,Arawakan,Southern South America
+Ae20,ekon1238,Ekonda,-2,18,Atlantic-Congo,West-Central Tropical Africa
+Sh3,abip1241,Abipón,-29,-61,Guaicuruan,Southern South America
+Sh4,kadi1248,Kadiwéu,-22,-57,Guaicuruan,Brazil
+Sh5,iyow1239,Choroti,-22,-62,Matacoan,Southern South America
+Sh6,cham1315,Chamacoco,-20,-59,Zamucoan,Southern South America
+Sh7,east2555,Guaraní,-20,-63,Tupian,Western South America
+Sh8,toba1269,Toba,-25,-60,Guaicuruan,Southern South America
+Sh9,leng1262,Lengua,-23,-59,Lengua-Mascoy,Southern South America
+Si1,boro1282,Bororo,-16,-55,Bororoan,Brazil
+Si10,kuik1246,Kuikuru,-13,-54,Cariban,Brazil
+Si2,trum1247,Trumai,-12,-53,NA,Brazil
+Ab13,tswa1253,Tswana,-24,27,Atlantic-Congo,Southern Africa
+Ae21,yela1238,Kela,-3,23,Atlantic-Congo,West-Central Tropical Africa
+Si3,baka1277,Bacairi,-14,-55,Cariban,Brazil
+Si4,sout2994,Nambikwara,-12,-59,Nambiquaran,Brazil
+Si5,kama1373,Kamayurá,-12,-54,Tupian,Brazil
+Si6,guat1253,Guató,-19,-58,NA,Western South America
+Si7,pare1272,Paresi,-15,-58,Arawakan,Brazil
+Si8,umot1240,Umotina,-15,-57,Bororoan,Brazil
+Si9,awet1244,Aweti,-12,-54,Tupian,Brazil
+Sj1,kara1500,Carajá,-12,-50,Nuclear-Macro-Je,Brazil
+Sj10,mbya1239,Cayua,-26,-54,Tupian,Southern South America
+Sj11,xava1240,Shavante,-14,-52,Nuclear-Macro-Je,Brazil
+Ae22,kusu1252,Kutsu,-4,22,Atlantic-Congo,West-Central Tropical Africa
+Sj2,xere1240,Sherente,-9,-48,Nuclear-Macro-Je,Brazil
+Sj3,xokl1240,Aweikoma,-28,-50,Nuclear-Macro-Je,Brazil
+Sj4,cane1242,Canela,-7,-45,Nuclear-Macro-Je,Brazil
+Sj5,kren1239,Aimoré,-18,-42,Nuclear-Macro-Je,Brazil
+Sj6,temb1276,Tenetehara,-3,-46,Tupian,Brazil
+Sj7,apin1244,Apinaye,-6,-49,Nuclear-Macro-Je,Brazil
+Sj8,tupi1273,Tupinambá,-8,-35,Tupian,Brazil
+Sj9,kaya1330,Kayapo,-8,-52,Nuclear-Macro-Je,Brazil
+Ae23,ngan1302,Lalia,-1,23,Atlantic-Congo,West-Central Tropical Africa
+Ae24,long1393,Mongo,1,22,Atlantic-Congo,West-Central Tropical Africa
+Ae25,tete1250,Tetela,-4,25,Atlantic-Congo,West-Central Tropical Africa
+Ae26,poke1238,Topoke,0,24,Atlantic-Congo,West-Central Tropical Africa
+Ae27,kele1255,Lokele,1,25,Atlantic-Congo,West-Central Tropical Africa
+Ae28,ling1263,Ngala,1,18,Atlantic-Congo,West-Central Tropical Africa
+Ae29,luse1252,Poto,2,22,Atlantic-Congo,West-Central Tropical Africa
+Ae3,fang1246,Fang,1,11,Atlantic-Congo,West-Central Tropical Africa
+Ab14,lobe1242,Lovedu,-24,31,Atlantic-Congo,Southern Africa
+Ae30,bila1255,Bira,1,29,Atlantic-Congo,West-Central Tropical Africa
+Ae31,budu1250,Budu,2,28,Atlantic-Congo,West-Central Tropical Africa
+Ae32,komo1260,Kumu,-1,27,Atlantic-Congo,West-Central Tropical Africa
+Ae33,bali1274,Ndaka Babali,1,27,Atlantic-Congo,West-Central Tropical Africa
+Ae34,bera1259,Plains Bira,1,30,Atlantic-Congo,West-Central Tropical Africa
+Ae35,lomb1254,Rumbi,0,28,Central Sudanic,West-Central Tropical Africa
+Ae36,mbes1238,Bombesa,1,23,Atlantic-Congo,West-Central Tropical Africa
+Ae37,budz1238,Budja,3,23,Atlantic-Congo,West-Central Tropical Africa
+Ae38,doko1244,Ndoko,2,21,Atlantic-Congo,West-Central Tropical Africa
+Ae39,binj1250,Ngombe,2,20,Atlantic-Congo,West-Central Tropical Africa
+Ab15,tswe1238,Pedi,-25,30,Atlantic-Congo,Southern Africa
+Ae4,nkun1238,Nkundo,0,20,Atlantic-Congo,West-Central Tropical Africa
+Ae40,njye1238,Dzem,3,14,Atlantic-Congo,West-Central Tropical Africa
+Ae41,ndas1238,Kota,1,14,Atlantic-Congo,West-Central Tropical Africa
+Ae42,kwas1243,Ngumba,3,11,Atlantic-Congo,West-Central Tropical Africa
+Ae43,bomw1238,Sanga,2,16,Atlantic-Congo,West-Central Tropical Africa
+Ae44,bube1242,Bubi,3.54,8.72,Atlantic-Congo,West-Central Tropical Africa
+Ae45,orok1266,Kundu,10,9,Atlantic-Congo,West Tropical Africa
+Ae46,myen1241,Mpongwe,-2,10,Atlantic-Congo,West-Central Tropical Africa
+Ae47,bata1285,Puku,2,10,Atlantic-Congo,West-Central Tropical Africa
+Ae48,bafi1243,Bafia,5,11,Atlantic-Congo,West-Central Tropical Africa
+Ab16,leng1257,Lenge,-25,34,Atlantic-Congo,South Tropical Africa
+Ae49,mung1266,Bali Nyonga,6,10,Atlantic-Congo,West-Central Tropical Africa
+Ae5,fefe1239,Bamileke,5,10,Atlantic-Congo,West-Central Tropical Africa
+Ae50,bamu1253,Bamum,6,11,Atlantic-Congo,West-Central Tropical Africa
+Ae51,tune1261,Banen,5,11,Atlantic-Congo,West-Central Tropical Africa
+Ae52,mmen1238,Fungom,7,10,Atlantic-Congo,West Tropical Africa
+Ae53,bako1249,Koko,4,11,Atlantic-Congo,West-Central Tropical Africa
+Ae54,komc1235,Kom,6,10,Atlantic-Congo,West-Central Tropical Africa
+Ae55,band1349,Ndob,6,10,Atlantic-Congo,West-Central Tropical Africa
+Ae56,lamn1239,Nsaw,6,11,Atlantic-Congo,West-Central Tropical Africa
+Ae57,limb1268,Nsungli,6,11,Atlantic-Congo,West-Central Tropical Africa
+Ab17,ndau1241,Ndau,-20,34,Atlantic-Congo,South Tropical Africa
+Ae58,tige1238,Tikar,6,12,Atlantic-Congo,West-Central Tropical Africa
+Ae59,meta1238,Widikum,6,10,Atlantic-Congo,West-Central Tropical Africa
+Ae6,luba1250,Luba,-8,26,Atlantic-Congo,West-Central Tropical Africa
+Ae7,bwaa1238,Baboa,3,25,Atlantic-Congo,West-Central Tropical Africa
+Ae8,rund1242,Rundi,-3,30,Atlantic-Congo,West-Central Tropical Africa
+Ae9,bafu1246,Fut,6,10,Atlantic-Congo,West-Central Tropical Africa
+Af1,fonn1241,Fon,7,2,Atlantic-Congo,West Tropical Africa
+Af10,nucl1417,Igbo,6,7,Atlantic-Congo,West Tropical Africa
+Af11,toma1245,Toma,11,-9,Mande,West Tropical Africa
+Af12,akye1239,Akyem,7,-1,Atlantic-Congo,West Tropical Africa
+Ab18,shon1251,Shona,-19,31,Atlantic-Congo,South Tropical Africa
+Af13,ebir1243,Ebira,8,7,Atlantic-Congo,West Tropical Africa
+Af14,sher1258,Sherbro,7.52,-12.69,Atlantic-Congo,West Tropical Africa
+Af15,libe1247,Kpelle,7,-9,Mande,West Tropical Africa
+Af16,keny1279,Banyang,6,9,Atlantic-Congo,West Tropical Africa
+Af17,boky1238,Boki,6,9,Atlantic-Congo,West Tropical Africa
+Af18,ejag1239,Ekoi,6,8,Atlantic-Congo,West Tropical Africa
+Af19,efik1245,Efik,5,8,Atlantic-Congo,West Tropical Africa
+Af2,nort2765,Kissi,9,-10,Atlantic-Congo,West Tropical Africa
+Af20,ibib1240,Ibibio,5,8,Atlantic-Congo,West Tropical Africa
+Af21,kala1381,Ijaw,4.37,6.58,Ijoid,West Tropical Africa
+Aa2,okie1245,Dorobo,0,36,Nilotic,East Tropical Africa
+Ab19,ndon1254,Ambo,-17,16,Atlantic-Congo,South Tropical Africa
+Af22,isek1239,Itsekiri,6,5,Atlantic-Congo,West Tropical Africa
+Af23,afik1238,Afikpo,6,8,Atlantic-Congo,West Tropical Africa
+Af24,bini1246,Edo,6,6,Atlantic-Congo,West Tropical Africa
+Af25,isok1239,Isoko,5,6,Atlantic-Congo,West Tropical Africa
+Af26,yekh1238,Kukuruku,7,6,Atlantic-Congo,West Tropical Africa
+Af27,eloy1241,Eloyi,8,8,Atlantic-Congo,West Tropical Africa
+Af28,gbar1246,Gbagyi,10,10,Atlantic-Congo,West Tropical Africa
+Af29,idom1241,Idoma,7,8,Atlantic-Congo,West Tropical Africa
+Af3,asan1239,Ashanti,7,-2,Atlantic-Congo,West Tropical Africa
+Af30,igal1242,Igala,7,7,Atlantic-Congo,West Tropical Africa
+Ab2,swat1243,Swazi,-27,32,Atlantic-Congo,Southern Africa
+Af31,ashe1269,Koro,18,8,Atlantic-Congo,West Tropical Africa
+Af32,egba1238,Egba,7,3,Atlantic-Congo,West Tropical Africa
+Af33,ekit1244,Ekiti,8,5,Atlantic-Congo,West Tropical Africa
+Af34,ifee1241,Ife,7,5,Atlantic-Congo,West Tropical Africa
+Af35,adan1247,Adangme,6,0,Atlantic-Congo,West Tropical Africa
+Af36,aguu1242,Ewe,7,1,Atlantic-Congo,West Tropical Africa
+Af37,siwu1238,Buem,7.22,0.46,Atlantic-Congo,West Tropical Africa
+Af38,abro1238,Abron,7.53,-2.15,Atlantic-Congo,West Tropical Africa
+Af39,anyi1245,Anyi,7,-4,Atlantic-Congo,West Tropical Africa
+Af4,loka1252,Yako,6,8,Atlantic-Congo,West Tropical Africa
+Ab20,nkhu1238,Ngumbi,-15,15,Atlantic-Congo,South Tropical Africa
+Af40,abur1243,Assini,5.27,-3.58,Atlantic-Congo,West Tropical Africa
+Af41,atti1239,Attie,6,-4,Atlantic-Congo,West Tropical Africa
+Af42,fant1241,Fante,6,-1,Atlantic-Congo,West Tropical Africa
+Af43,gaaa1244,Ga,6,0,Atlantic-Congo,West Tropical Africa
+Af44,alla1248,Alagya,5.22,-4.42,Atlantic-Congo,West Tropical Africa
+Af45,avik1243,Avikam,5.15,-5.25,Atlantic-Congo,West Tropical Africa
+Af46,bakw1243,Bakwe,5,-7,Atlantic-Congo,West Tropical Africa
+Af47,west2488,Krahn,6,-8,Atlantic-Congo,West Tropical Africa
+Af48,klao1243,Kru,5,-9,Atlantic-Congo,West Tropical Africa
+Af49,sapo1251,Sapo,6,-9,Atlantic-Congo,West Tropical Africa
+Ab21a,sama1300,Kisama,-10,14,Atlantic-Congo,South Tropical Africa
+Af5,mend1266,Mende,8,-11,Mande,West Tropical Africa
+Af50,gwee1242,Dan,8,8,Mande,West Tropical Africa
+Af51,gagu1242,Gagu,7,-6,Mande,West Tropical Africa
+Af52,guro1248,Guro,7,-6,Mande,West Tropical Africa
+Af53,tour1242,Tura,8,-7,Mande,West Tropical Africa
+Af54,band1352,Gbande,8,-10,Mande,West Tropical Africa
+Af55,gola1255,Gola,7,-11,Atlantic-Congo,West Tropical Africa
+Af56,dann1241,Ngere,7,-8,Mande,West Tropical Africa
+Af57,timn1235,Temne,8.46,-12.64,Atlantic-Congo,West Tropical Africa
+Af58,vaii1241,Vai,6.89,-11.2,Mande,West Tropical Africa
+Ab21b,bomv1238,Bomvana,-32,28,Atlantic-Congo,Southern Africa
+Af6,ilaa1245,Oyo Yoruba,8,4,Atlantic-Congo,West Tropical Africa
+Af7,dalo1238,Bete,6,-7,Atlantic-Congo,West Tropical Africa
+Af8,nupe1254,Nupe,9,6,Atlantic-Congo,West Tropical Africa
+Af9,baou1238,Baule,8,-5,Atlantic-Congo,West Tropical Africa
+Ag1,bamb1269,Bambara,13,-7,Mande,West Tropical Africa
+Ag10,konk1269,Konkomba,10,0,Atlantic-Congo,West Tropical Africa
+Ag11,lobi1245,Lobi,10,-4,Atlantic-Congo,West Tropical Africa
+Ag12,nank1249,Nankanse,10,-1,Atlantic-Congo,West Tropical Africa
+Ag13,kase1253,Kasena,11,-1,Atlantic-Congo,West Tropical Africa
+Ag14,mbul1258,Baga,10,-14,Atlantic-Congo,West Tropical Africa
+Ab22,copi1238,Chopi,-24.76,34.47,Atlantic-Congo,South Tropical Africa
+Ag15,bala1301,Balanta,12,-16,Atlantic-Congo,West Tropical Africa
+Ag16,bain1259,Banyun,12,-16,Atlantic-Congo,West Tropical Africa
+Ag17,biaf1240,Biafada,12,-15,Atlantic-Congo,West Tropical Africa
+Ag18,bidy1244,Bijogo,11.1,-16.15,Atlantic-Congo,West Tropical Africa
+Ag19,ejam1238,Diola,12.88,-16.19,Atlantic-Congo,West Tropical Africa
+Ag2,moss1236,Mossi (Yatenga),13,-2,Atlantic-Congo,West Tropical Africa
+Ag20,pape1239,Papel,12,-16,Atlantic-Congo,West Tropical Africa
+Ag21,bass1258,Bassari,12,-13,Atlantic-Congo,West Tropical Africa
+Ag22,sere1260,Serer,14,-12,Atlantic-Congo,West Tropical Africa
+Ag23,xaas1235,Kasonke,13,-11,Mande,West Tropical Africa
+Ab3,lozi1239,Lozi,-15,23,Atlantic-Congo,South Tropical Africa
+Ag24,kura1250,Koranko,9,-11,Mande,West Tropical Africa
+Ag25,soni1259,Soninke,15,10,Mande,West Tropical Africa
+Ag26,susu1250,Susu,15,-13,Mande,West Tropical Africa
+Ag27,dyul1238,Diula,9,-4,Mande,West Tropical Africa
+Ag28,jena1242,Nononke,14,-4,Mande,West Tropical Africa
+Ag29,sout2844,Samo,13,-3,Mande,West Tropical Africa
+Ag3,bank1259,Dogon,15,-3,Dogon,West Tropical Africa
+Ag30,nort2819,Bobo,13,-4,Mande,West Tropical Africa
+Ag31,mama1271,Minianka,12,-6,Atlantic-Congo,West Tropical Africa
+Ag32,ceba1235,Senufo,10,-6,Atlantic-Congo,West Tropical Africa
+Ab4,tson1249,Tsonga,-24,32,Atlantic-Congo,South Tropical Africa
+Ag33,dyan1251,Dyan,11,-3,Atlantic-Congo,West Tropical Africa
+Ag34,dogo1295,Dorosie,11,-4,Atlantic-Congo,West Tropical Africa
+Ag35,boun1243,Kulango,7,-3,Atlantic-Congo,West Tropical Africa
+Ag36,sout2790,Lowiili,11,-3,Atlantic-Congo,West Tropical Africa
+Ag37,awun1244,Awuna,11,-2,Atlantic-Congo,West Tropical Africa
+Ag38,buli1254,Builsa,11,-2,Atlantic-Congo,West Tropical Africa
+Ag39,sout2789,Dagara,11,-3,Atlantic-Congo,West Tropical Africa
+Ag4,taln1239,Tallensi,11,-1,Atlantic-Congo,West Tropical Africa
+Ag40,tumu1242,Isala,10,-2,Atlantic-Congo,West Tropical Africa
+Ag41,kusa1250,Kusasi,11,0,Atlantic-Congo,West Tropical Africa
+Ab5,umbu1257,Mbundu,-12,16,Atlantic-Congo,South Tropical Africa
+Ag42,sout2795,Nunuma,12,-3,Atlantic-Congo,West Tropical Africa
+Ag43,vagl1239,Vagala,8,-2,Atlantic-Congo,West Tropical Africa
+Ag44,dagb1246,Dagomba,9,0,Atlantic-Congo,West Tropical Africa
+Ag45,gour1243,Gurma,12,2,Atlantic-Congo,West Tropical Africa
+Ag46,mamp1244,Manprusi,10,-1,Atlantic-Congo,West Tropical Africa
+Ag47,moss1236,Mossi (Ouagadougou),12,-2,Atlantic-Congo,West Tropical Africa
+Ag48,ntch1242,Basari,9,1,Atlantic-Congo,West Tropical Africa
+Ag49,kabi1261,Kabre,10,2,Atlantic-Congo,West Tropical Africa
+Ag5,sout2790,Birifor,10,-3,Atlantic-Congo,West Tropical Africa
+Ag50,moba1244,Moba,11,1,Atlantic-Congo,West Tropical Africa
+Ab6,vend1245,Venda,-23,30,Atlantic-Congo,Southern Africa
+Ag51,dita1238,Somba,11,1,Atlantic-Congo,West Tropical Africa
+Ag52,temm1241,Tem,11,1,Atlantic-Congo,West Tropical Africa
+Ag53,biss1248,Bisa,12,0,Mande,West Tropical Africa
+Ag54,yalu1240,Yalunka,10,-12,Mande,West Tropical Africa
+Ag6,pula1262,Futajalonke,11,-13,Atlantic-Congo,West Tropical Africa
+Ag7,tiey1235,Bozo,14,-5,Mande,West Tropical Africa
+Ag8,wame1240,Coniagui,13,-13,Atlantic-Congo,West Tropical Africa
+Ag9,kita1249,Malinke,11,-9,Mande,West Tropical Africa
+Ah1,kata1265,Katab,10,8,Atlantic-Congo,West Tropical Africa
+Ah10,atsa1241,Chawai,10,9,Atlantic-Congo,West Tropical Africa
+Aa3,nama1265,Nama,-26,18,Khoe-Kwadi,Southern Africa
+Ab7,nyan1305,Nyaneka,-15,14,Atlantic-Congo,South Tropical Africa
+Ah11,basa1282,Basa,8,8,Atlantic-Congo,West Tropical Africa
+Ah12,basa1282,Basakomo,8,7,Atlantic-Congo,West Tropical Africa
+Ah13,clel1238,Dakakari,12,5,Atlantic-Congo,West Tropical Africa
+Ah14,cind1241,Kamuku,11,6,Atlantic-Congo,West Tropical Africa
+Ah15,resh1242,Reshe,11,5,Atlantic-Congo,West Tropical Africa
+Ah16,ngas1240,Angas,9,9,Afro-Asiatic,West Tropical Africa
+Ah17,bero1242,Birom,10,9,Atlantic-Congo,West Tropical Africa
+Ah18,bogh1241,Burmawa,10,10,Afro-Asiatic,West Tropical Africa
+Ah19,kada1284,Adara,10,8,Atlantic-Congo,West Tropical Africa
+Ah2,juku1254,Jukun,8,10,Atlantic-Congo,West Tropical Africa
+Ab8,sout2807,Sotho,-29,28,Atlantic-Congo,Southern Africa
+Ah20,kago1246,Kagoro,10,8,Atlantic-Congo,West Tropical Africa
+Ah21,kura1249,Kurama,10,9,Atlantic-Congo,West Tropical Africa
+Ah22,taro1263,Yergum,9,10,Atlantic-Congo,West Tropical Africa
+Ah23,jibu1239,Jibu,8,11,Atlantic-Congo,West Tropical Africa
+Ah24,etky1238,Kentu,7,10,Atlantic-Congo,West Tropical Africa
+Ah25,tigo1236,Tigon,17,11,Atlantic-Congo,West Tropical Africa
+Ah26,ndoo1241,Ndoro,7,11,Atlantic-Congo,West Tropical Africa
+Ah27,bita1251,Zuande,7,11,Atlantic-Congo,West Tropical Africa
+Ah28,samb1305,Chamba,8,11,Atlantic-Congo,West Tropical Africa
+Ah29,samb1311,Daka,8,11,Atlantic-Congo,West Tropical Africa
+Ab9,nort2795,Ndebele,-20,28,Atlantic-Congo,South Tropical Africa
+Ah3,tivv1240,Tiv,7,9,Atlantic-Congo,West Tropical Africa
+Ah30,long1389,Longuda,10,12,Atlantic-Congo,West Tropical Africa
+Ah31,nucl1240,Mumuye,9,12,Atlantic-Congo,West Tropical Africa
+Ah32,momj1237,Vere,9,13,Atlantic-Congo,West-Central Tropical Africa
+Ah33,bena1260,Yungur,10,12,Atlantic-Congo,West Tropical Africa
+Ah34,bata1314,Bata,10,13,Afro-Asiatic,West Tropical Africa
+Ah35,bura1292,Bura,10,12,Afro-Asiatic,West Tropical Africa
+Ah36,gude1246,Gude,10,13,Afro-Asiatic,West Tropical Africa
+Ah37,hwan1240,Hwana,10,13,Afro-Asiatic,West Tropical Africa
+Ah38,psik1239,Kapsiki,11,14,Afro-Asiatic,West-Central Tropical Africa
+Ac1,ilaa1246,Ila,-16,27,Atlantic-Congo,South Tropical Africa
+Ah39,park1239,Podokwo,11,14,Afro-Asiatic,West-Central Tropical Africa
+Ah4,came1252,Mambila,7,12,Atlantic-Congo,West-Central Tropical Africa
+Ah5,marg1265,Margi,11,13,Afro-Asiatic,West Tropical Africa
+Ah6,gbir1241,Gure,10,8,Atlantic-Congo,West Tropical Africa
+Ah7,mafa1239,Mafa,11,14,Afro-Asiatic,West-Central Tropical Africa
+Ah8,vute1244,Bafute,6,12,Atlantic-Congo,West-Central Tropical Africa
+Ah9,igut1238,Anaguta,10,9,Atlantic-Congo,West Tropical Africa
+Ai1,west2458,Banda,7,22,Atlantic-Congo,West-Central Tropical Africa
+Ai10,otor1240,Otoro,12,31,Heibanic,Northeast Tropical Africa
+Ai11,nucl1420,Mangbetu,3,28,Central Sudanic,West-Central Tropical Africa
+Ac10,chew1246,Chewa,-14,33,Atlantic-Congo,South Tropical Africa
+Ai12,sout2782,Fali,10,14,Atlantic-Congo,West-Central Tropical Africa
+Ai13,laka1254,Laka,8,16,Central Sudanic,Northeast Tropical Africa
+Ai14,mbum1254,Mbum,7,14,Atlantic-Congo,West-Central Tropical Africa
+Ai15,mund1325,Mundang,10,14,Atlantic-Congo,West-Central Tropical Africa
+Ai16,doya1240,Namshi,9,13,Atlantic-Congo,West-Central Tropical Africa
+Ai17,sout3051,Gisiga,10,14,Afro-Asiatic,West-Central Tropical Africa
+Ai18,lagw1237,Kotoko,12,15,Afro-Asiatic,West-Central Tropical Africa
+Ai19,musg1254,Musgu,11,15,Afro-Asiatic,West-Central Tropical Africa
+Ai2,kooo1244,Nyaro,11,31,Heibanic,Northeast Tropical Africa
+Ai20,tupu1244,Tupuri,10,15,Atlantic-Congo,West-Central Tropical Africa
+Ac11,luva1239,Luvale,-12,22,Atlantic-Congo,South Tropical Africa
+Ai21,bagi1246,Bagirmi,11,17,Central Sudanic,Northeast Tropical Africa
+Ai22,sarr1246,Sara,9,18,Central Sudanic,Northeast Tropical Africa
+Ai23,ngba1284,Bwaka,3,19,Atlantic-Congo,West-Central Tropical Africa
+Ai24,manz1243,Mandja,6,18,Atlantic-Congo,West-Central Tropical Africa
+Ai25,mban1263,Mbandja,4,21,Atlantic-Congo,West-Central Tropical Africa
+Ai26,nort2774,Ngbandi,4,22,Atlantic-Congo,West-Central Tropical Africa
+Ai27,bara1361,Abarambo,4,27,Atlantic-Congo,West-Central Tropical Africa
+Ai28,popo1291,Popoi,2,26,Central Sudanic,West-Central Tropical Africa
+Ai29,lend1245,Lendu,2,30,Central Sudanic,West-Central Tropical Africa
+Ai3,zand1248,Azande,5,27,Atlantic-Congo,West-Central Tropical Africa
+Ac12,chok1245,Chokwe,-10,21,Atlantic-Congo,South Tropical Africa
+Ai30,lese1243,Lese,2,29,Central Sudanic,West-Central Tropical Africa
+Ai31,logo1259,Logo,3,30,Central Sudanic,West-Central Tropical Africa
+Ai32,lugb1240,Lugbara,3,32,Central Sudanic,East Tropical Africa
+Ai33,madi1260,Madi,4,32,Central Sudanic,Northeast Tropical Africa
+Ai34,moru1253,Moru,5,30,Central Sudanic,Northeast Tropical Africa
+Ai35,bong1285,Bongo,7,29,Central Sudanic,Northeast Tropical Africa
+Ai36,luwo1239,Jur,8,28,Nilotic,Northeast Tropical Africa
+Ai37,koal1240,Koalib,12,31,Heibanic,Northeast Tropical Africa
+Ai38,kron1241,Korongo,10,30,Kadugli-Krongo,Northeast Tropical Africa
+Ai39,ngil1242,Mesakin,11,30,Narrow Talodi,Northeast Tropical Africa
+Ac13,tong1321,Tonga,-12,34,Atlantic-Congo,South Tropical Africa
+Ai4,gaam1241,Ingassana,11,34,Eastern Jebel,Northeast Tropical Africa
+Ai40,moro1285,Moro,11,30,Heibanic,Northeast Tropical Africa
+Ai41,tira1254,Tira,11,30,Heibanic,Northeast Tropical Africa
+Ai42,tuli1249,Tullishi,12,29,Kadugli-Krongo,Northeast Tropical Africa
+Ai43,amas1236,Nyimang,12,29,Nyimang,Northeast Tropical Africa
+Ai44,anua1242,Anuak,8,34,Nilotic,Northeast Tropical Africa
+Ai45,maba1273,Meban,10,34,Nilotic,Northeast Tropical Africa
+Ai46,komo1258,Koma,9,35,Koman,Northeast Tropical Africa
+Ai47,hozo1236,Mao,9,35,Blue Nile Mao,Northeast Tropical Africa
+Ai5,mamv1243,Mamvu,3,29,Central Sudanic,West-Central Tropical Africa
+Ac14,sans1272,Bakongo,-7,15,Atlantic-Congo,South Tropical Africa
+Ai6,shil1265,Shilluk,10,32,Nilotic,Northeast Tropical Africa
+Ai7,nort2775,Gbaya,6,16,Atlantic-Congo,West-Central Tropical Africa
+Ai8,dill1242,Dilling,12,30,Nubian,Northeast Tropical Africa
+Ai9,masa1322,Masa,10,16,Afro-Asiatic,Northeast Tropical Africa
+Aj1,teso1249,Teso,2,34,Nilotic,East Tropical Africa
+Aj10,dhop1238,Acholi,3,32,Nilotic,East Tropical Africa
+Aj11,sout2832,Dinka,9,29,Nilotic,Northeast Tropical Africa
+Aj12,otuh1238,Lotuko,4,33,Nilotic,Northeast Tropical Africa
+Aj13,poju1239,Pojulu,4,31,Nilotic,Northeast Tropical Africa
+Aj14,kakw1240,Kakwa,4,31,Nilotic,Northeast Tropical Africa
+Ac15,mbal1257,Mbala,-5,18,Atlantic-Congo,West-Central Tropical Africa
+Aj15,kuku1285,Kuku,4,32,Nilotic,Northeast Tropical Africa
+Aj16,mand1425,Mondari,6,31,Nilotic,Northeast Tropical Africa
+Aj17,alur1250,Alur,2,31,Nilotic,West-Central Tropical Africa
+Aj18,meen1242,Bodi,5,35,Surmic,Northeast Tropical Africa
+Aj19,didi1258,Didinga,4,34,Surmic,East Tropical Africa
+Aj2,masa1300,Maasi,-2,36,Nilotic,East Tropical Africa
+Aj20,suri1267,Suri,6,35,Surmic,Northeast Tropical Africa
+Aj21,jiee1239,Jie,3,34,Nilotic,East Tropical Africa
+Aj22,labw1238,Labwor,3,34,Nilotic,East Tropical Africa
+Aj23,east2420,Plains Suk,1,36,Nilotic,East Tropical Africa
+Aa4,dama1270,Bergdama,-22,16,Khoe-Kwadi,Southern Africa
+Ac16,tsog1243,Mitsogho,-1,12,Atlantic-Congo,West-Central Tropical Africa
+Aj24,topo1242,Toposa,5,34,Nilotic,Northeast Tropical Africa
+Aj25,keiy1238,Keyu,0,36,Nilotic,East Tropical Africa
+Aj26,west2492,Hill Suk,1,36,Nilotic,East Tropical Africa
+Aj27,kups1238,Sapei,1,35,Nilotic,East Tropical Africa
+Aj28,dato1239,Tatoga,-5,35,Nilotic,East Tropical Africa
+Aj29,samb1315,Samburu,1,37,Nilotic,East Tropical Africa
+Aj3,nuer1246,Nuer,8,32,Nilotic,Northeast Tropical Africa
+Aj30,nucl1430,Karamojong,2,34,Nilotic,East Tropical Africa
+Aj31,pari1256,Pari,5,33,Nilotic,Northeast Tropical Africa
+Aj4,lang1324,Lango,2,33,Nilotic,East Tropical Africa
+Ac17,suku1259,Suku,-6,18,Atlantic-Congo,West-Central Tropical Africa
+Aj5,turk1308,Turkana,4,35,Nilotic,East Tropical Africa
+Aj6,luok1236,Luo,-1,34,Nilotic,East Tropical Africa
+Aj7,nand1266,Nandi,0,35,Nilotic,East Tropical Africa
+Aj8,ligo1238,Bari,5,32,Nilotic,Northeast Tropical Africa
+Aj9,kips1239,Kipsigis,-1,36,Nilotic,East Tropical Africa
+Ca1,kons1243,Konso,6,37,Afro-Asiatic,Northeast Tropical Africa
+Ca10,nort3051,Esa,10,43,Afro-Asiatic,Northeast Tropical Africa
+Ca11,bora1271,Arusi,8,40,Afro-Asiatic,Northeast Tropical Africa
+Ca12,west2721,Gibe,8,37,Afro-Asiatic,Northeast Tropical Africa
+Ca13,west2721,Macha,9,37,Afro-Asiatic,Northeast Tropical Africa
+Ac18,koon1244,Sundi,-5,14,Atlantic-Congo,West-Central Tropical Africa
+Ca14,burj1242,Burji,5,38,Afro-Asiatic,Northeast Tropical Africa
+Ca15,gede1246,Darasa,6,38,Afro-Asiatic,Northeast Tropical Africa
+Ca16,sida1246,Sidama,7,38,Afro-Asiatic,Northeast Tropical Africa
+Ca17,tsam1247,Tsamai,5,37,Afro-Asiatic,Northeast Tropical Africa
+Ca18,arbo1245,Arbore,5,37,Afro-Asiatic,Northeast Tropical Africa
+Ca19,hame1242,Banna,6,36,South Omotic,Northeast Tropical Africa
+Ca2,nort3051,Somali,8,48,Afro-Asiatic,Northeast Tropical Africa
+Ca20,daas1238,Galab,5,36,Afro-Asiatic,Northeast Tropical Africa
+Ca21,hame1242,Hamar,5,36,South Omotic,Northeast Tropical Africa
+Ca22,male1284,Male,6,37,Ta-Ne-Omotic,Northeast Tropical Africa
+Ac19,teke1278,Teke,-3,15,Atlantic-Congo,West-Central Tropical Africa
+Ca23,aari1239,Bako,6,37,South Omotic,Northeast Tropical Africa
+Ca24,dime1235,Dime,6,36,South Omotic,Northeast Tropical Africa
+Ca25,aari1239,Shangama,6,37,South Omotic,Northeast Tropical Africa
+Ca26,aari1239,Ubamer,6,37,South Omotic,Northeast Tropical Africa
+Ca27,anfi1235,Anfillo,9,35,Ta-Ne-Omotic,Northeast Tropical Africa
+Ca28,bask1236,Basketo,6,37,Ta-Ne-Omotic,Northeast Tropical Africa
+Ca29,toba1264,Yem,8,38,Ta-Ne-Omotic,Northeast Tropical Africa
+Ca3,tigr1271,Tigrinya,14,39,Afro-Asiatic,Northeast Tropical Africa
+Ca30,kafa1242,Kafa,7,36,Ta-Ne-Omotic,Northeast Tropical Africa
+Ca31,qima1242,Beta Israel,12,37,Afro-Asiatic,Northeast Tropical Africa
+Ac2,phen1239,Pende,-6,20,Atlantic-Congo,West-Central Tropical Africa
+Ca32,nara1262,Nara,16,38,NA,Northeast Tropical Africa
+Ca33,kuna1268,Kunama,15,37,NA,Northeast Tropical Africa
+Ca34,abab1239,Ababda,24,34,Afro-Asiatic,Northern Africa
+Ca35,amar1281,Amarar,20,36,Afro-Asiatic,Northeast Tropical Africa
+Ca36,mans1267,Beni-Amer,18,38,Afro-Asiatic,Northeast Tropical Africa
+Ca37,bili1260,Blin,16,36,Afro-Asiatic,Northeast Tropical Africa
+Ca38,mans1267,Tigre,17,39,Afro-Asiatic,Northeast Tropical Africa
+Ca39,west2721,Jimma,8,37,Afro-Asiatic,Northeast Tropical Africa
+Ca4,iraq1241,Iraqw,-4,35,Afro-Asiatic,East Tropical Africa
+Ca40,koor1239,Baditu,6,38,Ta-Ne-Omotic,Northeast Tropical Africa
+Ac20,yaka1269,Yaka,-7,17,Atlantic-Congo,West-Central Tropical Africa
+Ca41,dorz1235,Dorse,6,38,Ta-Ne-Omotic,Northeast Tropical Africa
+Ca42,shek1245,Shako,7,36,Dizoid,Northeast Tropical Africa
+Ca43,hade1248,Hadendowa,18,36,Afro-Asiatic,Northeast Tropical Africa
+Ca5,bish1251,Bisharin,20,35,Afro-Asiatic,Northeast Tropical Africa
+Ca6,afar1241,Afar,12,42,Afro-Asiatic,Northeast Tropical Africa
+Ca7,amha1245,Amhara,13,38,Afro-Asiatic,Northeast Tropical Africa
+Ca8,seba1251,Gurage,8,38,Afro-Asiatic,Northeast Tropical Africa
+Ca9,goro1270,Goroa,-4,36,Afro-Asiatic,East Tropical Africa
+Cb1,kano1249,Maguzawa,12,10,Afro-Asiatic,West Tropical Africa
+Cb10,kare1348,Karekare,12,11,Afro-Asiatic,West Tropical Africa
+Ac21,mpuo1241,Bunda,-5,19,Atlantic-Congo,West-Central Tropical Africa
+Cb11,mido1240,Midobi,16,27,Nubian,Northeast Tropical Africa
+Cb12,nort3133,Gimma,13,32,Afro-Asiatic,Northeast Tropical Africa
+Cb13,nort3133,Habbaniya,11,25,Afro-Asiatic,Northeast Tropical Africa
+Cb14,bath1248,Hemat,11,20,Afro-Asiatic,Northeast Tropical Africa
+Cb15,tama1331,Messiria Humr,11,28,Tamaic,Northeast Tropical Africa
+Cb16,char1283,Shuwa,13,15,Afro-Asiatic,Northeast Tropical Africa
+Cb17,furr1244,Fur,12,24,Furan,Northeast Tropical Africa
+Cb18,kane1243,Kanembu,14,14,Saharan,Northeast Tropical Africa
+Cb19,cent2050,Kanuri,12,13,Saharan,West Tropical Africa
+Cb2,nucl1347,Wolof,15,-17,Atlantic-Congo,West Tropical Africa
+Ac22,ding1239,Dzing,-4,20,Atlantic-Congo,West-Central Tropical Africa
+Cb20,zarm1239,Zerma,13,3,Songhay,West Tropical Africa
+Cb21,adam1253,Djafun,8,13,Atlantic-Congo,West-Central Tropical Africa
+Cb22,west2454,Liptako,14,0,Atlantic-Congo,West Tropical Africa
+Cb23,pula1263,Tukulor,14.73,-14.32,Atlantic-Congo,West Tropical Africa
+Cb24,boro1274,Wodaabe Fulani,12,12,Atlantic-Congo,West Tropical Africa
+Cb25,haus1257,Tazarawa,14,8,Afro-Asiatic,West Tropical Africa
+Cb26,araw1280,Zazzagawa Hausa,11,8,Afro-Asiatic,West Tropical Africa
+Cb27,baca1246,Bachama,10,12,Afro-Asiatic,West Tropical Africa
+Cb28,dera1248,Dera,10,12,Afro-Asiatic,West Tropical Africa
+Cb29,ngiz1242,Ngizim,12,10,Afro-Asiatic,West Tropical Africa
+Ac23,lele1265,Lele,-5,21,Atlantic-Congo,West-Central Tropical Africa
+Cb3,koyr1242,Songhai,17,-1,Songhay,West Tropical Africa
+Cb4,khar1296,Hasania,14,32,Afro-Asiatic,Northeast Tropical Africa
+Cb5,budu1265,Buduma,13,15,Afro-Asiatic,Northeast Tropical Africa
+Cb6,tera1251,Tera,11,12,Afro-Asiatic,West Tropical Africa
+Cb7,nucl1695,Bolewa,11,11,Afro-Asiatic,West Tropical Africa
+Cb8,boro1274,Bororo Fulani,13,5,Atlantic-Congo,West Tropical Africa
+Cb9,kano1249,Hausa Kanawa,12,9,Afro-Asiatic,West Tropical Africa
+Cc1,hass1238,Regeibat,22,-13,Afro-Asiatic,West Tropical Africa
+Cc10,taya1257,Asben,18,8,Afro-Asiatic,West Tropical Africa
+Cc11,ghat1242,Azjer,25,10,Afro-Asiatic,Northern Africa
+Ac24,saka1287,Sakata,-3,18,Atlantic-Congo,West-Central Tropical Africa
+Cc12,tadh1242,Ifora,20,2,Afro-Asiatic,West Tropical Africa
+Cc13,timb1263,Udalan Tuareg,16,0,Afro-Asiatic,West Tropical Africa
+Cc14,daza1242,Daza,17,18,Saharan,Northeast Tropical Africa
+Cc15,susi1238,Drawa,31,-7,Afro-Asiatic,Northern Africa
+Cc16,algi1247,Chaambra,32,3,Afro-Asiatic,Northern Africa
+Cc17,hass1238,Delim,22,-15,Afro-Asiatic,Northern Africa
+Cc18,hass1238,Kunta,19,-1,Afro-Asiatic,West Tropical Africa
+Cc19,hass1238,Trarza,18,-15,Afro-Asiatic,West Tropical Africa
+Cc2,teda1241,Teda,21,17,Saharan,Northeast Tropical Africa
+Cc20,zena1248,Zenaga,18,-8,Afro-Asiatic,West Tropical Africa
+Aa5,bila1255,Mbuti,2,28,Atlantic-Congo,West-Central Tropical Africa
+Ac25,song1299,Songo,-5,18,Atlantic-Congo,West-Central Tropical Africa
+Cc3,siwi1239,Siwans,29,26,Afro-Asiatic,Northern Africa
+Cc4,tumz1238,Mzab,33,4,Afro-Asiatic,Northern Africa
+Cc5,timb1263,Kel Antessar,18,-3,Afro-Asiatic,West Tropical Africa
+Cc6,nort3133,Kababish,17,31,Afro-Asiatic,Northeast Tropical Africa
+Cc7,hass1238,Barabish,20,-5,Afro-Asiatic,West Tropical Africa
+Cc8,ioul1238,Aulliminden,8,2,Afro-Asiatic,West Tropical Africa
+Cc9,hogg1238,Tuareg Ahaggar,23,6,Afro-Asiatic,Northern Africa
+Cd1,kenu1236,Barabra,23,33,Nubian,Northern Africa
+Cd10,chen1266,Zekara,34,-2,Afro-Asiatic,Northern Africa
+Cd11,guan1277,Guanche,27.99,-15.62,Afro-Asiatic,Macaronesia
+Ac26,yans1239,Yanzi,-4,18,Atlantic-Congo,West-Central Tropical Africa
+Cd12,algi1247,Algerians,31,2,Afro-Asiatic,Northern Africa
+Cd13,sout3114,Hamama,30,9,Afro-Asiatic,Northern Africa
+Cd14,oran1236,Hamyan,35,2,Afro-Asiatic,Northern Africa
+Cd15,jebl1238,Jebala,35,-5,Afro-Asiatic,Northern Africa
+Cd16,sout3117,Moroccans,33,-8,Afro-Asiatic,Northern Africa
+Cd17,cons1245,Nail,35,5,Afro-Asiatic,Northern Africa
+Cd18,said1239,Saadi,30,28,Afro-Asiatic,Northern Africa
+Cd19,sahi1245,Sahel,35,10.94,Afro-Asiatic,Northern Africa
+Cd2,egyp1253,Egyptians,25,33,Afro-Asiatic,Northern Africa
+Cd20,liby1240,Sanusi,31,22,Afro-Asiatic,Northern Africa
+Ac27,luch1239,Luchazi,-13,23,Atlantic-Congo,South Tropical Africa
+Cd21,tuni1260,Tunisians,37,10,Afro-Asiatic,Northern Africa
+Cd3,tari1263,Riffians,35,-4,Afro-Asiatic,Northern Africa
+Cd4,kaby1243,Kabyle,36,4,Afro-Asiatic,Northern Africa
+Cd5,susi1238,Shluh,30,-9,Afro-Asiatic,Northern Africa
+Cd6,egyp1246,Ancient Egyptians,30,31,Afro-Asiatic,Northern Africa
+Cd7,cent2194,Beraber,33,-7,Afro-Asiatic,Northern Africa
+Cd8,tach1249,Shawiya,36,7,Afro-Asiatic,Northern Africa
+Cd9,hass1238,Tekna,28,-11,Afro-Asiatic,Northern Africa
+Ce1,gheg1238,Gheg,42,20,Indo-European,Southeastern Europe
+Ce2,gali1257,Portuguese,42,-7,Indo-European,Southwestern Europe
+Ac28,luim1238,Luimbe,-12,18,Atlantic-Congo,South Tropical Africa
+Ce3,lati1261,Ancient Romans,42,12,Indo-European,Southeastern Europe
+Ce4,labo1236,French Basques,43,-1,Basque,Southwestern Europe
+Ce5,neap1235,Neapolitans,40.89,14.25,Indo-European,Southeastern Europe
+Ce6,stan1288,Spaniards,37,-6,Indo-European,Southwestern Europe
+Ce7,mode1248,Greeks,39,23,Indo-European,Southeastern Europe
+Ce8,west1508,Spanish Basques,43,-2,Basque,Southwestern Europe
+Cf1,stan1293,New Englanders,42,-73,Indo-European,Northeastern U.S.A.
+Cf2,afri1274,Boers,-16,28,Indo-European,South Tropical Africa
+Cf3,stan1293,Tristan da Cunha,-37.11,-12.27,Indo-European,Subantarctic Islands
+Cf4,braz1246,Brazilians,-23.68,-46.64,Indo-European,Brazil
+Ac29,sond1250,Luwa,-7,19,Atlantic-Congo,West-Central Tropical Africa
+Cf5,queb1247,French Canadians,47,-72,Indo-European,Eastern Canada
+Cg1,dutc1256,Dutch,53,7,Indo-European,Middle Europe
+Cg2,icel1247,Icelanders,64,-20,Indo-European,Northern Europe
+Cg3,iris1253,Irish,53,-9,Indo-European,Northern Europe
+Cg4,nort2671,Sami,68,22,Uralic,Northern Europe
+Cg5,wall1255,Walloons,50,5,Indo-European,Middle Europe
+Ch1,serb1264,Serbs,44,20,Indo-European,Southeastern Europe
+Ch10,baya1255,Romanians,45,26,Indo-European,Southeastern Europe
+Ch11,russ1263,Russians,53,41,Indo-European,Eastern Europe
+ch12,bash1264,Bashkir,54,56,Turkic,Eastern Europe
+Ac3,town1238,Bemba,-11,31,Atlantic-Congo,South Tropical Africa
+ch13,nort2676,Besermyan,58,52,Uralic,Eastern Europe
+ch14,chuv1255,Chuvash,57,53,Turkic,Eastern Europe
+ch15,erzy1239,Erzya Mordvins,53,50,Uralic,Eastern Europe
+ch16,esto1258,Estonians,59,26,Uralic,Eastern Europe
+ch17,gaga1249,Gagauz,45.44,29.32,Turkic,Eastern Europe
+ch18,ingr1248,Ingrians,59,29,Uralic,Eastern Europe
+ch19,livv1243,Karelians,64,33,Uralic,Eastern Europe
+Ch2,sout2604,Hutsuls,49,24,Indo-European,Eastern Europe
+ch20,midd1325,Kazan tatar,55,50,Turkic,Eastern Europe
+ch21,latv1249,Latvians,57,24,Indo-European,Eastern Europe
+Ac30,tong1318,Plateau Tonga,-18,28,Atlantic-Congo,South Tropical Africa
+ch22,kara1464,Lithuanian Karaim,55,23,Turkic,Eastern Europe
+ch23,west2405,Lithuanian Tatar,55,24,Turkic,Eastern Europe
+ch24,livv1244,Livs,57,23,Uralic,Eastern Europe
+ch25,mold1248,Moldovans,47,29,Indo-European,Eastern Europe
+ch26,sout2681,Udmurt,57,53,Uralic,Eastern Europe
+ch27,veps1250,Veps,61,35,Uralic,Eastern Europe
+ch28,voti1245,Votes,59,29,Uralic,Eastern Europe
+Ch3,czec1258,Czechs,50,16,Indo-European,Middle Europe
+Ch4,east2328,Mari,43,46,Uralic,Caucasus
+Ch5,bulg1262,Bulgarians,43,24,Indo-European,Southeastern Europe
+Ac31,buyu1239,Buye,-7,28,Atlantic-Congo,West-Central Tropical Africa
+Ch6,bela1254,Byelorussians,55,28,Indo-European,Eastern Europe
+Ch7,east2270,Ukranians,48,36,Indo-European,Eastern Europe
+Ch8,hung1274,Magyar,47,20,Uralic,Middle Europe
+Ch9,lith1251,Lithuanians,55,24,Indo-European,Eastern Europe
+Ci1,kalm1243,Kalmyk,46,46,Mongolic,Eastern Europe
+Ci10,nucl1235,Armenians,40,45,Indo-European,Caucasus
+Ci11,cent1972,Kurd,32,44,Indo-European,Western Asia
+Ci12,abkh1244,Abkhaz,43,41,Abkhaz-Adyge,Caucasus
+Ci2,xevs1238,Khevsur,43,45,Kartvelian,Caucasus
+Ci3,kumy1244,Kumyk,42,48,Turkic,Caucasus
+Ac32,kaon1241,Kaonde,-13,26,Atlantic-Congo,South Tropical Africa
+Ci4,kaba1278,Cherkess,44,42,Abkhaz-Adyge,Caucasus
+Ci5,nucl1301,Turks,38,30,Turkic,Western Asia
+Ci6,osse1243,Ossetians,43,44,Indo-European,Caucasus
+Ci7,chec1245,Chechen,43,46,Nakh-Daghestanian,Caucasus
+Ci8,imer1248,Georgians,42,45,Kartvelian,Caucasus
+Ci9,svan1243,Svan,43,43,Kartvelian,Caucasus
+Cj1,nort3142,Syrians,36,36,Afro-Asiatic,Western Asia
+Cj10,meso1252,Madan,31,47,Afro-Asiatic,Western Asia
+Cj2,east2690,Rwala,33,37,Afro-Asiatic,Western Asia
+Cj3,anci1244,Hebrews,32,35,Afro-Asiatic,Western Asia
+Ac33,lala1264,Lala,-15,31,Atlantic-Congo,South Tropical Africa
+Cj4,akka1240,Babylonians,32,45,Afro-Asiatic,Western Asia
+Cj5,sout3119,Mutair,28,47,Afro-Asiatic,Arabian Peninsula
+Cj6,sout3123,Jordanians,32,36,Afro-Asiatic,Western Asia
+Cj7,nort3139,Lebanese,34,36,Afro-Asiatic,Western Asia
+Cj8,sunn1238,Druze,32.77,35.03,Afro-Asiatic,Western Asia
+Cj9,sana1295,Yemeni,15,45,Afro-Asiatic,Arabian Peninsula
+Ea1,sind1272,Sindhi,25,68,Indo-European,Indian Subcontinent
+Ea10,east2304,Marri,30,69,Indo-European,Indian Subcontinent
+Ea11,ghil1238,Ghilzai,33,68,Indo-European,Western Asia
+Ea12,qash1240,Qashqui,30,52,Turkic,Western Asia
+Aa6,sand1273,Sandawe,-5,36,NA,East Tropical Africa
+Ac34,luun1238,Luapula,-10,29,Atlantic-Congo,South Tropical Africa
+Ea13,west2386,Punjabi,32,73,Indo-European,Indian Subcontinent
+Ea2,yusu1238,Yusufzai,35,72,Indo-European,Indian Subcontinent
+Ea3,haza1239,Hazara,35,66,Indo-European,Western Asia
+Ea4,indu1241,Kohistani,35,73,Indo-European,Indian Subcontinent
+Ea5,kamv1242,Nuristani,36,71,Indo-European,Western Asia
+Ea6,bass1257,Basseri,30,34,Indo-European,Western Asia
+Ea7,mogh1245,Moghol,34,63,Mongolic,Western Asia
+Ea8,bakh1245,Bakhtiari,33,48,Indo-European,Western Asia
+Ea9,tehr1242,Iranians,36,52,Indo-European,Western Asia
+Eb1,kaza1248,Kazakh,48,70,Turkic,Middle Asia
+Ac35,luba1250,Shila,-10,28,Atlantic-Congo,West-Central Tropical Africa
+Eb2,tuuu1240,Tu,39,100,Mongolic,China
+Eb3,halh1238,Khalka,46,97,Mongolic,Mongolia
+Eb4,daur1238,Dagur,49,125,Mongolic,China
+Eb5,turk1304,Turkmen,38,62,Turkic,Middle Asia
+Eb6,russ1264,Buryat,52,107,Mongolic,Siberia
+Eb7,peri1253,Chahar,41,115,Mongolic,China
+Eb8,nort2690,Uzbek,43,60,Turkic,Middle Asia
+Ec1,gily1242,Nivkh,53,142,NA,Russian Far East
+Ec10,khan1273,Ob Ostyak,62,74,Uralic,Siberia
+Ec11,selk1253,Selkup,59,90,Uralic,Siberia
+Ac36,tumb1250,Tumbuka,-12,34,Atlantic-Congo,South Tropical Africa
+ec12,ngan1291,Nganasan,72,90,Uralic,Siberia
+ec13,itel1242,Itelmen,54.98,161.79,Chukotko-Kamchatkan,Russian Far East
+ec14,cent2128,Ungazikmit,64,-173,Eskimo-Aleut,Russian Far East
+ec15,mans1258,Mansi,63,62,Uralic,Siberia
+ec16,even1259,Evenk,55,112,Tungusic,Siberia
+ec17,negi1245,Negidal,52,134,Tungusic,Russian Far East
+ec18,ulch1241,Ulch,50,136,Tungusic,Russian Far East
+ec19,orok1265,Orok,54.01,142.71,Tungusic,Russian Far East
+Ec2,yaku1245,Yakut,65,125,Turkic,Siberia
+ec20,oroc1248,Oroch,51,138,Tungusic,Russian Far East
+Ac37,kund1255,Kunda,-15,32,Atlantic-Congo,South Tropical Africa
+ec21,udih1248,Udihe,47,136,Tungusic,Russian Far East
+Ec3,chuk1273,Chukchi,66,177,Chukotko-Kamchatkan,Russian Far East
+Ec4,nene1249,Yurak-Samoyeds,68,75,Uralic,Siberia
+Ec5,kory1246,Koryak,61.99,164.24,Chukotko-Kamchatkan,Russian Far East
+Ec6,nort2745,Yukaghir,70,145,Yukaghir,Siberia
+Ec7,ainu1240,Ainu,44,144,Ainu,Eastern Asia
+Ec8,kett1243,Ket,62,90,Yeniseian,Siberia
+Ec9,nana1257,Nanai,47,132,Tungusic,China
+Ed1,kore1280,Koreans,38.134147,126.960754,Koreanic,China
+Ed10,mand1415,Shantung,37,118,Sino-Tibetan,China
+Ac38,nucl1395,Nyanja,-16,36,Atlantic-Congo,South Tropical Africa
+Ed13,yaey1239,Ishigakians,24.46,124.14,Japonic,Eastern Asia
+Ed14,kimm1245,Man,22,105,Hmong-Mien,Indo-China
+Ed15a,miya1259,Miyakans,24.79,125.32,Japonic,Eastern Asia
+Ed15b,wuch1236,Chekiang,31,120,Sino-Tibetan,China
+Ed16,yuec1235,Cantonese,23,113,Sino-Tibetan,China
+Ed2,sich1238,Lolo,29,103,Sino-Tibetan,China
+Ed3,manc1252,Manchu,45,126,Tungusic,China
+Ed4,horn1235,Miao,26,107,Hmong-Mien,China
+Ed5,nucl1643,Japanese,35,136,Japonic,Eastern Asia
+Ed6,chao1239,Min Chinese,24,115,Sino-Tibetan,China
+Ac39,mwer1247,Nyasa,-13,35,Atlantic-Congo,South Tropical Africa
+Ed7,cent2126,Okinawans,26.16,127.8,Japonic,Eastern Asia
+Ed8,cent2004,Minchia,26,100,Sino-Tibetan,China
+Ed9,hlai1239,Li,19,109,Tai-Kadai,China
+Ee1,bori1243,Adi,28,95,Sino-Tibetan,Indian Subcontinent
+Ee2,buru1296,Burusho,37,75,NA,China
+Ee3,lepc1244,Lepcha,28,89,Sino-Tibetan,China
+Ee4,dbus1238,Central Tibetans,30,91,Sino-Tibetan,China
+Ee5,shin1264,Shina,35,73,Indo-European,Indian Subcontinent
+Ee6,sher1255,Sherpa,28,87,Sino-Tibetan,China
+Ee7,kach1279,Kachari,27,90,Sino-Tibetan,Indian Subcontinent
+Ac4,bush1247,Kuba,-5,22,Atlantic-Congo,West-Central Tropical Africa
+Ee8,west2418,Magar,28,84,Sino-Tibetan,Indian Subcontinent
+Ef1,sant1410,Santal,24,87,Austroasiatic,Indian Subcontinent
+Ef10,mait1250,Bihari,25,86,Indo-European,Indian Subcontinent
+Ef11,bhoj1244,Uttar Pradesh,26,83,Indo-European,Indian Subcontinent
+Ef2,beng1280,Bengali,23,88,Indo-European,Indian Subcontinent
+Ef3,sans1269,Indo-Iranian,30,75,Indo-European,Indian Subcontinent
+Ef4,hooo1248,Ho,22,85,Austroasiatic,Indian Subcontinent
+Ef5,bhil1251,Bhil,22,74,Indo-European,Indian Subcontinent
+Ef6,kuru1302,Kurukh,23,85,Dravidian,Indian Subcontinent
+Ef7,maha1287,Pahari,30,78,Indo-European,Indian Subcontinent
+Ac40,nucl1396,Sena,-18,35,Atlantic-Congo,South Tropical Africa
+Ef8,kash1277,Kashmiri,34,75,Indo-European,Indian Subcontinent
+Ef9,guja1252,Gujarati,20,77,Indo-European,Indian Subcontinent
+Eg1,chen1255,Chenchu,16,79,Dravidian,Indian Subcontinent
+Eg10,telu1262,Telugu,18,79,Dravidian,Indian Subcontinent
+Eg11,koya1251,Koya,19,78,Dravidian,Indian Subcontinent
+Eg12,kuii1252,Khond,18,82,Dravidian,Indian Subcontinent
+Eg13,west2408,Muria Gond,20,81,Dravidian,Indian Subcontinent
+Eg14,mukh1238,Reddi,18,82,Dravidian,Indian Subcontinent
+Eg2,tami1289,Tamil,11,79,Dravidian,Indian Subcontinent
+Eg3,mari1414,Madia,19,81,Dravidian,Indian Subcontinent
+Ac41,mako1251,Makonde,-11,40,Atlantic-Congo,South Tropical Africa
+Eg4,toda1252,Toda,12,77,Dravidian,Indian Subcontinent
+Eg5,koda1255,Kodavas,12,76,Dravidian,Indian Subcontinent
+Eg6,mala1464,Kerala,11,76,Dravidian,Indian Subcontinent
+Eg7,oriy1255,Hill Bhuiya,21,85,Indo-European,Indian Subcontinent
+Eg8,mund1320,Kol,22,85,Austroasiatic,Indian Subcontinent
+Eg9,chha1249,Baiga,22,81,Indo-European,Indian Subcontinent
+Eh1,akab1249,Andamanese,12,93,Great Andamanese,Indo-China
+Eh10,bets1235,Betsileo,-22,47,Austronesian,Western Indian Ocean
+Eh2,meri1243,Merina,-19,46,Austronesian,Western Indian Ocean
+Eh3,tana1285,Tanala,-22,47,Austronesian,Western Indian Ocean
+Ac42,makh1264,Makua,-15,39,Atlantic-Congo,South Tropical Africa
+Eh4,vedd1240,Vedda,8,81,Indo-European,Indian Subcontinent
+Eh5,carn1240,Nicobarese,9.17,92.77,Austroasiatic,Indo-China
+Eh6,sinh1246,Sinhalese,7,80,Indo-European,Indian Subcontinent
+Eh7,tand1256,Antandroy,-25,46,Austronesian,Western Indian Ocean
+Eh8,saka1291,Sakalava,-21,43.93,Austronesian,Western Indian Ocean
+Eh9,tesa1236,Antaisaka,-22.9,47.75,Austronesian,Western Indian Ocean
+Ei1,garo1247,Garo,26,91,Sino-Tibetan,Indian Subcontinent
+Ei10,chak1266,Chakma,23,92,Indo-European,Indian Subcontinent
+Ei11,aimo1244,Aimol,25,94,Sino-Tibetan,Indian Subcontinent
+Ei12,thad1238,Thado,25,94,Sino-Tibetan,Indian Subcontinent
+Aa7,naro1249,Naron,-20,24,Khoe-Kwadi,Southern Africa
+Ac43,mamb1296,Mambwe,9,32,Atlantic-Congo,Northeast Tropical Africa
+Ei13,anga1288,Angami,26,94,Sino-Tibetan,Indian Subcontinent
+Ei14,aona1235,Ao,27,94,Sino-Tibetan,Indian Subcontinent
+Ei15,sout2732,Rengma,26,94,Sino-Tibetan,Indian Subcontinent
+Ei16,sumi1235,Sema,26,95,Sino-Tibetan,Indian Subcontinent
+Ei17,karb1241,Karbi,26,94,Sino-Tibetan,Indian Subcontinent
+Ei18,shwe1236,Palaung,23,97,Austroasiatic,Indo-China
+Ei19,asho1236,Chin,22,94,Sino-Tibetan,Indo-China
+Ei2,loth1237,Lhota,27,94,Sino-Tibetan,Indian Subcontinent
+Ei20,lush1249,Kuki,23,92,Sino-Tibetan,Indian Subcontinent
+Ei3,nucl1310,Burmese,20,95,Sino-Tibetan,Indo-China
+Ac5,lamb1271,Lamba,-13,28,Atlantic-Congo,South Tropical Africa
+Ei4,mara1382,Maras,22,93,Sino-Tibetan,Indo-China
+Ei5,kach1280,Kachin,26,97,Sino-Tibetan,Indo-China
+Ei6,puru1266,Purum,25,94,Sino-Tibetan,Indian Subcontinent
+Ei7,pwow1235,Karen,17.12,97.19,Sino-Tibetan,Indo-China
+Ei8,khas1269,Khasi,26,92,Austroasiatic,Indian Subcontinent
+Ei9,rakh1245,Mogh,20.49,92.64,Sino-Tibetan,Indo-China
+Ej1,lame1256,Lamet,20,101,Austroasiatic,Indo-China
+Ej10,rade1240,Rade,13,108,Austronesian,Indo-China
+Ej11,east2563,Cham,11,108,Austronesian,Indo-China
+Ej12,west2396,Lawa,18,98,Austroasiatic,Indo-China
+Ac6,lund1266,Ndembu,-11,26,Atlantic-Congo,West-Central Tropical Africa
+Ej13,muon1246,Muong,21,105,Austroasiatic,Indo-China
+Ej14,sema1266,Senoi,4,102,Austroasiatic,Malesia
+Ej15,oldk1249,Ancient Khmer,13,104,Austroasiatic,Indo-China
+Ej16,nege1240,Negri Sembilan,2.58,102.25,Austronesian,Indo-China
+Ej2,east2333,Mnong Gar,12,107,Austroasiatic,Indo-China
+Ej3,kens1248,Semang,5,101,Austroasiatic,Malesia
+Ej4,viet1252,Annamese,17,107,Austroasiatic,Indo-China
+Ej5,cent1989,Khmer,12,105,Austroasiatic,Indo-China
+Ej6,moke1242,Moken,11.78,98.28,Austronesian,Indo-China
+Ej7,akha1245,Akha,21,100,Sino-Tibetan,Indo-China
+Ac7,yaoo1241,Yao,-13,36,Atlantic-Congo,South Tropical Africa
+Ej8,mala1479,Malays,5,103,Austronesian,Malesia
+Ej9,thai1261,Thai,15,100,Tai-Kadai,Indo-China
+Ia1,atay1247,Atayal,24,121,Austronesian,Eastern Asia
+Ia10,bunu1267,Bunun,24,121,Austronesian,Eastern Asia
+Ia11,puyu1239,Puyuma,23,121,Austronesian,Eastern Asia
+Ia12,cebu1242,Sugbuanon,10.2,123.65,Austronesian,Malesia
+Ia13,sout2918,Badjau Tawi-Tawi,5.09,119.97,Austronesian,Malesia
+Ia14,yami1254,Tao,22.05,121.55,Austronesian,Eastern Asia
+Ia15,agus1235,Manobo,8,126,Austronesian,Malesia
+Ia16,lubu1243,Kalinga,18,121,Austronesian,Malesia
+Ac8,yomb1244,Yombe,-5,13,Atlantic-Congo,West-Central Tropical Africa
+Ia17,koro1310,Bilaan,6,125,Austronesian,Malesia
+Ia18,akla1241,Bisayan,10,123,Austronesian,Malesia
+Ia2,nort2877,Sagada,17,121,Austronesian,Malesia
+Ia3,tuwa1243,Ifugao,17,121,Austronesian,Malesia
+Ia4,cent2089,Subanun,8,123,Austronesian,Malesia
+Ia5,hanu1241,Hanunoo,13,121,Austronesian,Malesia
+Ia6,paiw1248,Paiwan,22.44,120.77,Austronesian,Eastern Asia
+Ia7,tagb1258,Tagbanua,10,119,Austronesian,Malesia
+Ia8,cent2292,Bontok,17,121,Austronesian,Malesia
+Ia9,amis1246,Ami,22.7,121.05,Austronesian,Eastern Asia
+Ac9,ngon1269,Ngoni,-12,33,Atlantic-Congo,South Tropical Africa
+Ib1,iban1264,Iban,2,112,Austronesian,Malesia
+Ib2,java1254,Javanese,-7,110,Austronesian,Malesia
+Ib3,bali1278,Balinese,-8.18,115.02,Austronesian,Malesia
+Ib4,bata1289,Toba Batak,2,99,Austronesian,Malesia
+Ib5,cent2100,Kadazan-Dusun,6,117,Austronesian,Malesia
+Ib6,mina1268,Minangkabau,-1,101,Austronesian,Malesia
+Ib7,ment1249,Mentaweians,-2.93,100.23,Austronesian,Malesia
+Ib8,kubu1239,Anak Dalam,-3,103,Austronesian,Malesia
+Ib9,puna1275,Punan,3,115,Austronesian,Malesia
+Ic1,maka1311,Macassarese,-5.31,119.69,Austronesian,Malesia
+Ad1,baju1245,Bajuni,-2,41,Atlantic-Congo,East Tropical Africa
+Ic10,tobe1252,Tobelorese,1,128,North Halmahera,Malesia
+Ic11,ambo1250,Ambonese,-3.71,128.18,Austronesian,Malesia
+Ic12,sumb1241,Sumbawanese,-8.63,117.27,Austronesian,Malesia
+Ic13,kodi1247,Kodi,-9.66,119.07,Austronesian,Malesia
+Ic2,abui1241,Alorese,-8.22,124.26,Timor-Alor-Pantar,Malesia
+Ic3,tetu1245,Belu,-9,126,Austronesian,Malesia
+Ic4,term1237,Rotinese,-10.71,123.18,Austronesian,Malesia
+Ic5,pamo1252,Toradja,-2,121,Austronesian,Malesia
+Ic6,sela1259,Tanimbarese,-8.19,130.96,Austronesian,Malesia
+Ic7,lama1277,Ili-Mandiri,-8.33,122.85,Austronesian,Malesia
+Ad10,sham1280,Shambaa,-5,38,Atlantic-Congo,East Tropical Africa
+Ic8,keii1239,Kei,-5.58,133.07,Austronesian,Malesia
+Ic9,kamb1299,Sumbanese,-10,120,Austronesian,Malesia
+Id1,east2379,Northern Aranda,-24,134,Pama-Nyungan,Australia
+Id10,warl1254,Walbiri,-22,132,Pama-Nyungan,Australia
+Id11,gunn1248,Gidjingali,-12.29,134.32,Maningrida,Australia
+Id12,jirj1239,Yir Yoront,-15,142,Pama-Nyungan,Australia
+Id13,anin1240,Anindilyagwa,-13.99,136.6,Gunwinyguan,Australia
+Id2,dhuw1249,"Yolngu, Dhuwal",-12.48,135.96,Pama-Nyungan,Australia
+Id3,tiwi1244,Tiwi,-11.56,130.81,NA,Australia
+Id4,dier1241,Diyari,-28,138,Pama-Nyungan,Australia
+Ad11,bena1262,Bena,-9,36,Atlantic-Congo,East Tropical Africa
+Id5,kari1304,Kariyarra,-21,118,Pama-Nyungan,Australia
+Id6,wikm1247,Wikmunkan,-14,142,Pama-Nyungan,Australia
+Id7,murr1258,Murriny Patha,-14,130,Southern Daly,Australia
+Id8,port1278,Tasmanians (northwestern),-42,146,Western Tasmanian,Australia
+Id9,wang1291,Ngiyambaa,-32,146,Pama-Nyungan,Australia
+Ie1,ekar1243,Mee,-4,136,Nuclear Trans New Guinea,Papuasia
+Ie10,motu1246,Motu,-9,147,Austronesian,Papuasia
+Ie11,umbu1258,Kakoli,-6,144,Nuclear Trans New Guinea,Papuasia
+Ie12,kwom1262,Kwoma,-4,142,Sepik,Papuasia
+Ie13,sout2949,Kiwai,-9,143,Kiwaian,Papuasia
+Ad12,gusi1247,Gusii,-1,35,Atlantic-Congo,East Tropical Africa
+Ie14,meri1244,Miriam,-9.91,144.06,Eastern Trans-Fly,Papuasia
+Ie15,ambu1247,Abelam,-3.79,143.09,Ndu,Papuasia
+Ie16,foii1241,Kutubu,-6,143,East Kutubu,Papuasia
+Ie17,sian1257,Siane,-6,145,Nuclear Trans New Guinea,Papuasia
+Ie18,kima1246,Kimam,-7.52,138.46,Kolopom,Papuasia
+Ie19,nucl1622,Marind-Amin,-8,139,Anim,Papuasia
+Ie2,want1252,Wantoat,-6.15,146.53,Nuclear Trans New Guinea,Papuasia
+Ie20,koit1244,Koita,-9,147,Koiarian,Papuasia
+Ie21,mail1248,Mailu,-10,149,Mailuan,Papuasia
+Ie22,meke1243,Mekeo,-9,147,Austronesian,Papuasia
+Aa8,xamm1241,/Xam,-30,23,Tuu,Southern Africa
+Ad13,chig1238,Kiga,-3,30,Atlantic-Congo,West-Central Tropical Africa
+Ie23,sout2940,Muju,-6,141,Nuclear Trans New Guinea,Papuasia
+Ie24,gras1249,Koiari,-9,148,Koiarian,Papuasia
+Ie25,fuyu1242,Mafulu,-8,147,Goilalan,Papuasia
+Ie26,adze1240,Ngarawapum,-6,146,Austronesian,Papuasia
+Ie27,bana1292,Banaro,-4.56,144.34,Lower Sepik-Ramu,Papuasia
+Ie28,buga1250,Busama,-6.69,147.26,Austronesian,Papuasia
+Ie29,mana1295,Manam,-4.08,145.03,Austronesian,Papuasia
+Ie3,buki1249,Arapesh,-4,144,Nuclear Torricelli,Papuasia
+Ie30,kamo1255,Mimika,-4,135,Nuclear Trans New Guinea,Papuasia
+Ie31,fore1270,Fore,-6,145,Nuclear Trans New Guinea,Papuasia
+Ad14,lugu1238,Luguru,-8,38,Atlantic-Congo,East Tropical Africa
+Ie32,sioo1240,Sio,-6,147,Austronesian,Papuasia
+Ie33,nucl1595,Soromadja,-2,138,Greater Kwerba,Papuasia
+Ie34,bong1287,Bgu,-2.34,139.6,Austronesian,Papuasia
+Ie35,iatm1242,Iatmul,-4,143,Ndu,Papuasia
+Ie36,sama1240,Samarokena,-3,140,Greater Kwerba,Papuasia
+Ie37,ngal1298,Star Mountain,-5,141,Nuclear Trans New Guinea,Papuasia
+Ie38,midg1235,Dani,-4,139,Nuclear Trans New Guinea,Papuasia
+Ie39,orok1267,Elema,-7.82,145.31,Eleman,Papuasia
+Ie4,woge1237,Wogeo,-3.24,144.1,Austronesian,Papuasia
+Ie5,namb1293,Keraki,-9,142,Morehead-Wasur,Papuasia
+Ad15,nyam1275,Iwa,-10,32,Atlantic-Congo,South Tropical Africa
+Ie6,waro1242,Waropen,-2.14,137.23,Austronesian,Papuasia
+Ie7,enga1252,Enga,-6,144,Nuclear Trans New Guinea,Papuasia
+Ie8,pura1257,Purari,-7,145,NA,Papuasia
+Ie9,orok1269,Orokaiva,-9,148,Nuclear Trans New Guinea,Papuasia
+If1,pala1344,Palauans,7.45,134.54,Austronesian,Northwestern Pacific
+If10,mort1237,Nomoians,6.89,152.74,Austronesian,Northwestern Pacific
+If11,kosr1238,Kosraeans,5.31,162.98,Austronesian,Northwestern Pacific
+If12,rali1241,Bikinians,11.7,165.29,Austronesian,Northwestern Pacific
+If13,naur1243,Nauruans,-0.53,166.92,Austronesian,Southwestern Pacific
+If14,bana1287,Makin,3.38,172.99,Austronesian,Southwestern Pacific
+Ad16,ngon1268,Ngonde,-10,34,Atlantic-Congo,South Tropical Africa
+If15,caro1242,Carolinians,15.21,145.76,Austronesian,Northwestern Pacific
+If16,lamo1243,Lamotrek,7.46,146.38,Austronesian,Northwestern Pacific
+If17,rali1241,Marshallese - Jaluit atoll,6.28,169.49,Austronesian,Northwestern Pacific
+If2,chuu1238,Trukese,7.34,151.6,Austronesian,Northwestern Pacific
+If3,rata1243,Majuro,7.09,171.13,Austronesian,Northwestern Pacific
+If4,nucl1479,Ifaluk,7.25,144.46,Austronesian,Northwestern Pacific
+If5,pohn1238,Ponapeans,6.88,158.22,Austronesian,Northwestern Pacific
+If6,yape1248,Yapese,9.55,138.13,Austronesian,Northwestern Pacific
+If7,nuii1237,Gilbert Onotoa,-1.47,175.06,Austronesian,Southwestern Pacific
+If8,cham1312,Chamorro,15.13,145.71,Austronesian,Northwestern Pacific
+Ad17,safw1238,Safwa,-8,33,Atlantic-Congo,East Tropical Africa
+If9,ulit1238,Ulithians,10.02,139.79,Austronesian,Northwestern Pacific
+Ig1,siwa1245,Siuai,-6,155,South Bougainville,Papuasia
+Ig10,lele1270,Usiai,-2,147,Austronesian,Papuasia
+Ig11,yele1255,Rossel Islanders,-11.36,154.14,NA,Papuasia
+Ig12,vagh1249,Choiseulese,-6.69,156.52,Austronesian,Papuasia
+Ig13,wuvu1239,Aua,-1.74,142.85,Austronesian,Papuasia
+Ig14,suau1242,Dahuni,-10.41,149.91,Austronesian,Papuasia
+Ig15,bola1250,Bakovi,-5.42,150.05,Austronesian,Papuasia
+Ig16,bwai1242,Bwaidoga,-9.44,150.33,Austronesian,Papuasia
+Ig17,mudu1242,Kombe,-4.67,149.53,Austronesian,Papuasia
+Ad18,bend1258,Bende,-7,31,Atlantic-Congo,East Tropical Africa
+Ig18,kwai1243,Kwaio,-9,161,Austronesian,Papuasia
+Ig19,moli1248,Molima,-10,151,Austronesian,Papuasia
+Ig2,kili1267,Trobriands,-8.43,151.09,Austronesian,Papuasia
+Ig20,long1395,Kaoka,-9.49,159.82,Austronesian,Papuasia
+Ig21,tang1355,Tangu,-3.38,153.31,Lower Sepik-Ramu,Papuasia
+Ig3,tinp1237,Kurtatchi,-5.6,154.91,Austronesian,Papuasia
+Ig4,nots1237,Lesu,-3.06,151.66,Austronesian,Papuasia
+Ig5,dobu1241,Dobuans,-10,151,Austronesian,Papuasia
+Ig6,saaa1240,Ulawans,-9.63,161.44,Austronesian,Papuasia
+Ig7,naka1262,Lakalai,-5.5,150.81,Austronesian,Papuasia
+Ad19,fipa1238,Fipa,-8,31,Atlantic-Congo,East Tropical Africa
+Ig8,simb1256,Simboese,-8,157,Austronesian,Papuasia
+Ig9,tita1241,Manus,-2,147,Austronesian,Papuasia
+Ih1,mota1237,Mota,-13.84,167.7,Austronesian,Southwestern Pacific
+Ih10,sout2869,Tannese,-19.6,169.44,Austronesian,Southwestern Pacific
+Ih11,lame1260,Epi,-16.61,168.17,Austronesian,Southwestern Pacific
+Ih12,siee1239,Eromangans,-18.85,169.16,Austronesian,Southwestern Pacific
+Ih13,nort2839,Ranon,-16.18,168.15,Austronesian,Southwestern Pacific
+Ih14,bauu1243,Mbau Fijians,-17.81,178.32,Austronesian,Southwestern Pacific
+Ih2,sout2857,Seniang,-16.51,167.47,Austronesian,Southwestern Pacific
+Ih3,saaa1241,Bunlap,-15.95,168.22,Austronesian,Southwestern Pacific
+Ad2,nyor1246,Nyoro,2,32,Atlantic-Congo,East Tropical Africa
+Ih4,laua1243,Lau,-17.74,-179.31,Austronesian,Southwestern Pacific
+Ih5,ajie1238,Ajie,-21.37,165.47,Austronesian,Southwestern Pacific
+Ih6,rotu1241,Rotumans,-12.5,177.07,Austronesian,Southwestern Pacific
+Ih7,dehu1237,Lifu,-20.94,167.23,Austronesian,Southwestern Pacific
+Ih8,nort2843,Vanua Levu,-17.81,178.32,Austronesian,Southwestern Pacific
+Ih9,natu1246,Santa Cruz Islanders,-10.73,165.85,Austronesian,Southwestern Pacific
+Ii1,samo1305,American Samoans,-13.68,-172.41,Austronesian,Southwestern Pacific
+Ii10,renn1242,Rennell Islanders,-11.74,160.42,Austronesian,Papuasia
+Ii12,tong1325,Tongans,-19.74,-175.07,Austronesian,Southwestern Pacific
+Ii13,wall1257,Uveans,-13.28,-176.17,Austronesian,Southwestern Pacific
+Ad20,nyam1276,Nyamwezi,-5,33,Atlantic-Congo,East Tropical Africa
+Ii14,samo1305,Upolu Samoans,-13.94,-171.77,Austronesian,Southwestern Pacific
+Ii2,tiko1237,Tikopia,-12.29,168.83,Austronesian,Southwestern Pacific
+Ii3,puka1242,Pukapukans,-10.89,-165.84,Austronesian,Southwestern Pacific
+Ii4,tuva1244,Ellice,-7.48,178.68,Austronesian,Southwestern Pacific
+Ii5,onto1237,Ontong Java,-5.48,159.7,Austronesian,Papuasia
+Ii6,toke1240,Tokelau,-9.2,-171.85,Austronesian,Southwestern Pacific
+Ii7,kapi1249,Kapingamarangi,1.09,154.8,Austronesian,Northwestern Pacific
+Ii8,east2447,Futunans,-14.31,-178.11,Austronesian,Southwestern Pacific
+Ii9,niue1239,Niueans,-19.05,-169.86,Austronesian,Southwestern Pacific
+Ij1,raro1241,Mangaians,-21.93,-157.91,Austronesian,South-Central Pacific
+Ad21,pimb1238,Pimbwe,-7,31,Atlantic-Congo,East Tropical Africa
+Ij10,penr1237,Tongarevans,-9.02,-158.03,Austronesian,Southwestern Pacific
+Ij2,maor1246,Māori,-38.41,176.31,Austronesian,New Zealand
+Ij3,nort2845,Marquesans,-8.9,-140.08,Austronesian,South-Central Pacific
+Ij4,raka1237,Manihikians,-10.41,-160.98,Austronesian,Southwestern Pacific
+Ij5,tuam1242,Raroians,-15.94,-142.31,Austronesian,South-Central Pacific
+Ij6,hawa1245,Hawaiians,19.89,-155.83,Austronesian,North-Central Pacific
+Ij7,mang1401,Mangarevans,-23.12,-134.97,Austronesian,South-Central Pacific
+Ij8,tahi1242,Tahitians,-17.71,-149.54,Austronesian,South-Central Pacific
+Ij9,rapa1244,Easter Islanders,-27.12,-109.36,Austronesian,South-Central Pacific
+Aa9,hadz1240,Hadza,-3,35,NA,East Tropical Africa
+Ad22,suku1261,Sukuma,-3,34,Atlantic-Congo,East Tropical Africa
+Ad23,sang1330,Sangu,-8,34,Atlantic-Congo,East Tropical Africa
+Ad24,gogo1263,Gogo,-7,36,Atlantic-Congo,East Tropical Africa
+Ad25,lang1320,Rangi,-5,36,Atlantic-Congo,East Tropical Africa
+Ad26,nyat1246,Turu,-5,34,Atlantic-Congo,East Tropical Africa
+Ad27,kwer1261,Kwere,-7,39,Atlantic-Congo,East Tropical Africa
+Ad28,zigu1242,Zigula,-5.84,38.79,Atlantic-Congo,East Tropical Africa
+Ad29,pemb1239,Hadimu,-6.07,39.43,Atlantic-Congo,East Tropical Africa
+Ad3,moch1256,Chagga,-3,37,Atlantic-Congo,East Tropical Africa
+Ad30,digo1243,Digo,-4,39,Atlantic-Congo,East Tropical Africa
+Nd26,sout2967,Wadatkuht,41,-120,Uto-Aztecan,Southwestern U.S.A.
+Nd39,west2622,Spring Valley Shoshoni,40,-115,Uto-Aztecan,Southwestern U.S.A.

@@ -1,0 +1,995 @@
+---
+title: 'Identifying covariate traits of trance and possession phenomena in the Ethnographic Atlas using multiple imputation and nested sparse regression'
+author: "Péter Rácz"
+date: '`r format(Sys.time(), "%d %B, %Y")`'
+output: pdf_document
+bibliography: trance.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, error = FALSE, message = FALSE, fig.path = 'figures/', fig.width = 8, fig.height = 8)
+```
+
+## Structure of the SI
+
+The EA dataset is challenging in three ways. (1) Many, correlated, predictors might explain the outcome, (2) Data are structured by cultural and geographic distance, (3) Data are missing.
+
+The analysis attempts to meet the challenge by the (1) Use of shrinkage for predictor selection, (2) Use of a nested model to account for cultural and geographic structure (in a relatively simple way), (3) Use of imputed data in model selection.
+
+Models are fit in R [@R] using Stan [@RStan] and brms [@brms]. Figures are created using ggplot [@ggplot2], tidybayes [@tidybayes], and bayesplot [@bayesplot].
+
+Data come from the Ethnographic Atlas [@murdock1967ethnographic] made available in the D-Place database [@kirby2016d] (see helper file).
+
+Analysis was heavily inspired by Kevin Stadler [(_link_)](https://kevinstadler.github.io/blog/bayesian-ordinal-regression-with-random-effects-using-brms/) and Michael Betancourt [(_link_)](https://betanalpha.github.io/assets/case_studies/bayes_sparse_regression.html), as well as by Andrew Gelman's collection of prior recommendations [(_link_)](https://github.com/stan-dev/stan/wiki/Prior-Choice-Recommendations).
+
+This Supplementary Information is structured in the following way. First, we consider the starting predictors. Second, we code the outcome. Third, we consider autocorrelation in the data. Fourth, we consider missing data using imputed datasets. Fifth, we consider variable selection using sparse regression. Sixth, and finally, we refit the best model on the available EA data and perform some additional robustness checks.
+
+```{r header}
+
+# --- random seed --- #
+set.seed(1991)
+
+# --- dir --- #
+setwd('~/Github/Racz2021/')
+
+# --- detect cores --- #
+options(mc.cores=parallel::detectCores())
+
+# --- packages --- #
+
+library(tidyverse) # everything
+library(knitr) # tables
+library(kableExtra) # html tables
+library(broom) # tidy summaries
+
+library(corrplot) # correlations plot
+library(patchwork) # plot composer
+library(ggthemes) # colourblind
+
+library(brms) # fitting stan
+library(tidybayes) # tidy and brms
+library(bayesplot) # brms and plots
+
+# --- functions --- #
+
+# takes wide ea df with var_title2 as colnames, fixes var types, returns df
+recodeThing = function(d){
+  d = d %>% 
+    mutate(
+      Cousin_marriages_permitted = as.double(Cousin_marriages_permitted),
+      Settlement_patterns = as.double(Settlement_patterns),
+      Mean_size_of_local_communities = as.double(Mean_size_of_local_communities),
+      Jurisdictional_hierarchy_of_local_community = as.double(Jurisdictional_hierarchy_of_local_community),
+      Jurisdictional_hierarchy_beyond_local_community = as.double(Jurisdictional_hierarchy_beyond_local_community),
+      Religion_high_gods = as.double(Religion_high_gods),
+      Class_differentiation_primary = as.double(Class_differentiation_primary),
+      Caste_differentiation_primary = as.double(Caste_differentiation_primary),
+      Slavery_type = as.double(Slavery_type),
+      Norms_of_premarital_sexual_behavior_of_girls = as.double(Norms_of_premarital_sexual_behavior_of_girls),
+      Kin_terms_for_cousins = as.double(Kin_terms_for_cousins)
+    )
+return(d)  
+}
+
+# takes imputed df, pairs up with var and obs dictionaries, tidies up, recodes, filters for region and family, returns df
+getImputedData = function(i1){
+  
+  i1l = i1 %>% 
+    select(-X1,-Family,-autotyp.area) %>% 
+    pivot_longer( -soc_id, names_to = 'num_id', values_to = 'code') %>%
+    mutate(num_id = as.double(num_id)) %>% 
+    inner_join(variables_dict, by = c("num_id", "code"))
+  
+  i1w = i1l %>% 
+    select(soc_id, var_title2, recoded_value) %>% 
+    pivot_wider(names_from = var_title2, values_from = recoded_value) %>% 
+    left_join(observations_dict, by = "soc_id") %>% 
+    mutate(trance = as.double(Trance_states))
+  
+  impd = recodeThing(i1w)
+  
+  impd2 = impd %>% filter(!is.na(family),!is.na(region))
+  return(impd2)
+}
+
+# takes model, draws samples from brms model, makes tidy, picks betas, makes plot, returns plot
+drawPosteriors = function(model1){
+  
+  posts = posterior_samples(model1) %>% 
+    rownames_to_column() %>% 
+    pivot_longer(- rowname, names_to = 'predictor', values_to = 'draw') %>% 
+    filter(str_detect(predictor, 'b_'), !str_detect(predictor, 'Intercept'))
+  
+  ordering = posts %>% 
+    group_by(predictor) %>% 
+    summarise(median = median(draw)) %>% 
+    mutate(abs_median = abs(median))
+  
+  posts = left_join(posts, ordering, by = "predictor") %>% 
+    mutate(predictor = reorder(predictor, abs_median))
+
+  p1 = posts %>% 
+    ggplot(aes(x = draw, y = predictor)) +
+    geom_halfeyeh(alpha = .5, .width = c(.67,.89,.97)) +
+    geom_vline(xintercept = 0, linetype = "dashed") +
+    xlab('posterior distribution')
+
+return(p1)
+}
+
+# takes two models and two model ids (string, whatever you want), draws samples from brms model, makes tidy, picks betas, makes plot, returns plot
+comparePosteriors = function(model1, model2, id1, id2){
+  posts = posterior_samples(model1) %>% 
+    rownames_to_column() %>% 
+    pivot_longer(- rowname, names_to = 'predictor', values_to = 'draw') %>% 
+    filter(str_detect(predictor, 'b_')) %>% 
+    mutate(model = id1)
+  posts2 = posterior_samples(model2) %>% 
+    rownames_to_column() %>% 
+    pivot_longer(- rowname, names_to = 'predictor', values_to = 'draw') %>% 
+    filter(str_detect(predictor, 'b_')) %>% 
+    mutate(model = id2) %>% 
+    bind_rows(posts)
+  
+  p1 = posts2 %>% 
+    ggplot(aes(x = draw, y = predictor, fill = model)) +
+    geom_halfeyeh(alpha = .5, .width = c(.67,.89,.97)) +
+    scale_fill_brewer(palette = 'Dark2')
+  
+  return(p1)
+}
+
+# --- data --- #
+
+# variables dictionary
+variables_dict = read_csv('data/t_var_dict.csv')
+# observations dictionary
+observations_dict = read_csv('data/t_obs_dict.csv')
+# observations and values
+min_dat = read_csv('data/t_dat.csv')
+
+# wide EA data 
+dw1 = min_dat %>% 
+  select(soc_id, num_id, code) %>% 
+  mutate(num_id = as.double(num_id)) %>% 
+  inner_join(variables_dict, by = c("num_id", "code"))
+
+dw1 = dw1 %>% 
+  select(soc_id, var_title2, recoded_value) %>% 
+  pivot_wider(names_from = var_title2, values_from = recoded_value) %>% 
+  left_join(observations_dict, by = "soc_id") %>% 
+  mutate(trance = as.double(Trance_states))
+
+# wide EA data, recoded
+dw2 = recodeThing(dw1)
+
+# wide EA data, recoded, no missing family or region
+dw3 = dw2 %>% filter(!is.na(family),!is.na(region))
+
+# wide EA data, recoded, no missing region, no missing important variables
+dw4 = dw2 %>% filter(!is.na(region),!is.na(Trance_states),!is.na(Slavery_type),!is.na(Religion_high_gods),!is.na(Jurisdictional_hierarchy_beyond_local_community), !is.na(Descent_major_type),!is.na(Settlement_patterns),!is.na(Class_differentiation_primary))
+
+# wide EA data, recoded, no missing region, no missing important variables, no IE
+dw5 = filter(dw4, family != 'Indo-European')
+
+# wide EA data, recoded, no missing region, no missing important variables, no big societies
+small_soc = filter(min_dat, var_id == 'EA202') %>% 
+  mutate(log_pop_size = log(code), keep = log_pop_size < quantile(log_pop_size, .95, na.rm = T)) %>% 
+  filter(keep | is.na(keep)) %>% # we keep NAs
+  pull(soc_id)
+dw6 = filter(dw4, soc_id %in% small_soc)
+
+# --- "data" --- #
+
+i1 = read_csv('data/EA_imputed_completeDataframes/FullImputation_1.csv') %>% 
+    select(-X1,-Family,-autotyp.area) %>% 
+    pivot_longer( -soc_id, names_to = 'num_id', values_to = 'code') %>%
+    mutate(num_id = as.double(num_id)) %>% 
+    inner_join(variables_dict, by = c("num_id", "code")) %>% 
+    select(soc_id, var_id, code)
+
+# samples = sample(1:100, 10)
+samples = c(16, 24, 55, 25, 27, 82, 67, 7, 48, 61)
+samples = tibble(id = samples) %>%  
+  rowwise() %>% 
+  mutate(
+    path = paste0('data/EA_imputed_completeDataframes/FullImputation_', id, '.csv'),
+    data = map(path, ~ read_csv(.))
+  )
+
+samples = samples %>% select(-path) %>% unnest(cols = c(data)) %>% group_by(id) %>% nest() # your guess is as good as mine
+
+samples = samples %>% 
+  mutate(
+    data2 = map(data, ~ getImputedData(.))
+  )
+
+# finally, use 1 to run all the models first
+
+impd = samples$data2[[1]]
+
+# --- priors --- #
+
+laplace_priors = c(
+  prior(student_t(1, 0, 2.5), class = "Intercept"),
+  prior(double_exponential(0, 1), class = "b")
+)
+
+horseshoe_priors = c(
+  prior(student_t(1, 0, 2.5), class = "Intercept"),
+  prior(horseshoe(3, scale_global = .5), class = "b")
+)
+
+student_priors = c(
+  prior(student_t(1, 0, 2.5), class = "Intercept"),
+  prior(student_t(1, 0, 2.5), class = "b")
+)
+
+# --- models --- #
+
+load('models/fit1.rda') # imputed data, all predictors, laplace prior
+load('models/fit2.rda') # imputed data, all predictors,  student prior
+load('models/fit3.rda') # imputed data, all predictors,  horseshoe prior
+
+load('models/fit3b.rda') # fit3, no region intercept
+load('models/fit3c.rda') # no family intercept
+load('models/fit3d.rda') # no random effects structure
+
+load('models/fit3c_unif.rda') # 3c with uniform priors, not super useful
+load('models/fit3c_long.rda') # 3c with 5000 iterations
+load('models/fit3c_rand.rda') # 3c with reshuffled rows of data
+
+load('models/fit4.rda') # real data, solid predictors, student prior
+load('models/fit5.rda') # fit4 excluding IE languages
+load('models/fit6.rda') # fit4 excluding largest 5% pop size
+
+load('models/fit4_unif.rda') # 4 with uniform priors
+load('models/fit4_long.rda') # 4 with 5000 iterations
+load('models/fit4_rand.rda') # 4 with reshuffled rows of data
+
+# --- formulae --- #
+
+my_formula = fit1$formula
+my_formula2 = fit3c$formula
+my_formula3 = fit4$formula
+
+```
+
+## Starting predictor variables
+
+The EA contains values of `r min_dat$var_id %>% unique %>% length` variables for `r min_dat$soc_id %>% unique %>% length` societies.
+
+The existing literature identifies a number of promising correlates of trance states in the Ethnographic Atlas. We select twenty-one of these as starting variables. Categorical variables will be fit with a default intercept, ordinal variables, where we can posit a hierarchy between factor levels, will be fit as numeric scales. This runs the risk of missing non-linear effects, but greatly contributes to model health in the long run.
+
+For many of these variables, a large amount of data are missing.
+
+```{r starting_variables}
+variables_missing = min_dat %>% 
+  filter(var_id %in% variables_dict$var_id, is.na(code)) %>%
+  left_join(variables_dict %>% 
+  distinct(var_id, var_title, var_type)) %>% 
+  count(var_id, var_title, code) %>% mutate(percent_missing = n / 12.91) %>% 
+  mutate(type = ifelse(var_id %in% c('EA113', 'EA015', 'EA042', 'EA074'), 'categorical', 'ordinal')) %>% 
+  select(var_id, var_title, type, percent_missing)
+
+variables_missing %>% 
+  kable(digits = 0, "latex", booktabs = T)
+
+total_missing_percent = nrow(filter(min_dat, var_id %in% variables_dict$var_id, is.na(code))) / nrow(filter(min_dat, var_id %in% variables_dict$var_id)) * 100
+
+```
+
+@thompson2018quantifying use multiple imputation using classification and regression trees [@buuren2010mice] to impute missing data in the EA dataset. As they point out, the rough accuracy of this method for unseen data is 74%, compared to a random sampling baseline of 19%.
+
+We borrow one of their imputed datasets to help us visualise correlations between our variables. We assume that 74% of the imputations for the missing `r round(total_missing_percent)`% will be accurate. This means that `r round(100 - (total_missing_percent - total_missing_percent*.74))`% of the underlying data are accurate.
+
+This is good enough for this figure. We will take data imputation more seriously in our models.
+
+We visualise Spearman correlations between the relevant variables in our imputed dataset. We can see that some of these are indeed correlated. For example, primary class differentiations in a society (EA066) increase with the increase of structure in the larger community (EA033). Different primary subsistence economies (EA042) go together with different levels of local and larger social hierarchical complexity. This makes sense.
+
+```{r starting_corr}
+i1 %>% 
+  filter(var_id %in% variables_dict$var_id) %>% 
+  pivot_wider(
+    names_from = var_id,
+    values_from = code
+  ) %>% 
+  select(- soc_id ) %>% 
+  cor(use = 'complete.obs', method = 'spearman') %>% 
+  corrplot(method="pie", type = 'lower')
+```
+
+## Outcome variable
+
+Trance and possession states are coded in the Ethnographic Atlas under EA112.
+
+```{r outcome_descr}
+out_counts = min_dat %>% 
+  filter(var_id == 'EA112') %>% 
+  count(code, name = "n obs")
+
+variables_dict %>% 
+  left_join(out_counts) %>% 
+  select(var_id, var_title, code, var_description, recoded_value, `n obs`) %>% 
+  filter(var_id == 'EA112') %>% 
+  arrange(recoded_value) %>%
+  rename(description = var_description, recoded = recoded_value, original = code) %>% 
+  select(description, original, recoded, `n obs`) %>% 
+  kable("latex", booktabs = T) %>% 
+  column_spec(4, width = "20em")
+
+```
+
+The levels of this categorical variable hint at the difficulty of encoding complex relationship between trance states and possession in human cultures. 
+
+For the purposes of this broad-brush analysis, we can recognise a number of implicative structures. Societies can be grouped according to whether:
+
+1. *No* trance states are known to occur and *no* belief in possession exists.
+2. *Either* trance states are known to occur *or* belief in possession exists.
+3. *Both* trance states are known to occur *and* belief in possession exists. *No relationship is stipulated between the two*.
+4. *Both* trance states are known to occur *and* belief in possession exists. *Not all* trance states are explained through possession __or__ *not all* cases of possession are related to trance.
+5. *Both* trance states are known to occur *and* belief in possession exists. *All* trance states are explained through possession __and__ *all* cases of possession are related to trance.
+
+Here we stipulated a hierarchy of types of trance and possession beliefs across the societies recorded in the Ethnographic Atlas.
+
+Let's put this on a map.
+
+```{r trance_map, fig.width = 12, fig.height = 5.5}
+mapWorld = map_data('world', wrap=c(-25,335), ylim=c(-55,75)) # pacific centered
+
+dw1 = dw1 %>% 
+  mutate(
+    lon2 = ifelse(lon < -20, lon + 360, lon),
+    `trance and possession` = case_when(
+      trance == 1 ~ "¬(P||T)",
+      trance == 2 ~ "P||T",
+      trance == 3 ~ "P&T",
+      trance == 4 ~ "P->T",
+      trance == 5 ~ "P=>T",
+      is.na(trance) ~ 'missing'
+    ) %>% factor(levels = c("¬(P||T)","P||T","P&T","P->T","P=>T", 'missing'))
+  )
+
+dw1$trance2 = as.character(dw1$trance)
+dw1$trance2 = ifelse(is.na(dw1$trance2), 'm', dw1$trance2)
+
+ggplot() + 
+  geom_polygon(data = mapWorld, aes(x=long, y = lat, group = group)) + 
+  geom_text(data = dw1 %>% filter(!is.na(`trance and possession`)), aes(x = lon2, y = lat, colour = `trance and possession`, label = trance2)) +
+  scale_colour_colorblind(
+    name = 'Trance and\npossession\nphenomena',
+    labels = c(
+      '1) neither P nor T',
+      '2) P xor T',
+      '3) P and T',
+      '4) P implies T',
+      '5) P strictly implies T',
+      'missing'
+      )
+    ) +
+  theme_void() +
+  theme(legend.position = 'top')
+```
+
+Data are mostly absent for the Eurasian landmass. Possession and/or Trance states are posited (2-3) primarily in the Americas in the dataset, whereas strong links are present for the two (4 and especially 5) primarily in Sub-Saharan Africa and Oceania.
+
+## Modelling: coding the outcome
+
+Without making a deep ontological commitment to this hierarchy we can use it to model the distribution of trance and possession beliefs in the dataset by using an ordered categorical model. This is an extension of the logistic generalised linear regression model which predicts the relative likelihood of one outcome (say, presence of trance states) over another (say, absence of trance states).
+
+The ordered model assumes that the levels of this hierarchy are ordered from 1 to 5 and predicts the cumulative likelihood of responses in an expanding set of the levels in our hierarchy. It makes a prediction for 
+
+- 1 (viz that trance and possession states are categorically absent) vs 2:5 (they are present on some level), 
+- 1:2 (viz that trance or possession states can be observed but not together) vs 3:5  (they can be observed together)
+- 1:3 (viz that trance or possession states can be observed but without a relationship between the two) vs 4:5 (there is a relationship)
+- 1:4 (viz that trance or possession states and a relationship between them can be observed but if such a relationship exists it's not exclusive) vs 5 (the relationship between possession and trance is exclusive)
+
+What we do stipulate is this ordering of the levels. However this is justified to some extent by the implicational structure.
+
+## Modelling: accounting for Galton's problem
+
+The state of the art in accounting for cultural distance between observations relies on the use of phylogenetic comparative methods that use language trees to calculate distances between cultural units and take these distances into account when correcting for autocorrelation. These are difficult to deploy for the EA data, since the `r observations_dict %>% nrow` societies in the dataset speak `r observations_dict$glottocode %>% unique %>% length` languages that come from `r observations_dict$family %>% unique %>% length` language families. 
+
+Following standard practice, we assume a grouping factor for language family and one for geographic-cultural region as defined in the Ethnographic Atlas. These will go to some length in accounting for autocorrelation in cultural behaviour, viz that trance and possession states might be more typical for certain cultural groups or regions.
+
+## Modelling: variable selection
+
+With `r nrow(variables_missing)`, collinear, predictor variables, it becomes difficult for a model to capture those that are relevant in explaining variation in the outcome. The use of stepwise regression is generally discouraged [@flom2007stopping]. Frequentist methods, like L1 (Lasso) and L2 (Ridge) regularisation, exist for variable selection and regularisation.
+
+If we want to assume that, among a large set of possibly covariate predictors, only a few have any robust correlation with our outcome, the Bayesian approach is to build this assumption into our model in the form of an informative prior distribution. Such sparsity-inducing distributions will allow for variable selection in the vein of the frequentist LASSO method [@tibshirani1996regression], except that we introduce sparsity through the distribution rather than by using a penalised maximum likelihood estimator.
+
+We consider three types of prior distributions in our models: a weakly informative Student's t distribution (which does not push the model towards variable selection), a Laplace distribution (effectively, the Bayesian equivalent of the LASSO method), and the Horseshoe prior, a heavy-tailed Cauchy prior distribution that generally pushes weaker posteriors towards zero [@carvalho2009handling], which we use by adjusting the global scale to .5 to favour shrinkage [@piironen2016hyperprior].
+
+We use the Widely Applicable Information Criterion (WAIC) and leave-one-out cross-validation for model selection.
+
+## Modelling: missing data
+
+@thompson2018quantifying published 100 iterations of the imputed EA dataset. These have, on average, 74% accuracy in the imputed values. We draw a random dataset from this set of 100 to fit our model and draw a full set of ten random datasets to refit the model. We walk through these steps below.
+
+## Fitting the model
+
+```{r fitting_models1, eval=F}
+# models pre-loaded; chunk not run
+
+fit1 = brm(
+  trance ~
+  Domestic_organization + 
+  Marital_residence_with_kin_prevailing_pattern + 
+  Community_marriage_organization + 
+  Cousin_marriages_permitted +
+  Kin_terms_for_cousins +
+  Settlement_patterns +
+  Mean_size_of_local_communities +
+  Jurisdictional_hierarchy_of_local_community +
+  Jurisdictional_hierarchy_beyond_local_community +
+  Religion_high_gods +
+  Subsistence_economy_dominant_activity +
+  Descent_major_type +
+  Class_differentiation_primary +
+  Caste_differentiation_primary +
+  Slavery_type +
+  Political_succession +
+  Inheritance_rule_for_real_property_land +
+  Norms_of_premarital_sexual_behavior_of_girls +
+    (1|region) + (1|family),
+data = impd,
+family = cumulative(link = "logit", threshold = "flexible"),
+prior = laplace_priors,
+  sample_prior = T
+)
+
+fit1 = add_criterion(fit1, c('loo', 'waic'))
+
+my_formula = fit1$formula
+
+fit2 = brm(
+  formula = my_formula,
+  data = impd,
+  family = cumulative(link = "logit", threshold = "flexible"),
+  prior = student_priors,
+  sample_prior = T
+)
+
+fit2 = add_criterion(fit2, c('loo', 'waic'))
+
+fit3 = brm(
+  formula = my_formula,
+  data = impd,
+  family = cumulative(link = "logit", threshold = "flexible"),
+  prior = horseshoe_priors,
+  control=list(adapt_delta=0.99, stepsize = 0.01, max_treedepth =15),
+  sample_prior = T
+)
+
+fit3 = add_criterion(fit3, c('loo', 'waic'))
+
+save(fit1, file = 'models/fit1.rda')
+save(fit2, file = 'models/fit2.rda')
+save(fit3, file = 'models/fit3.rda')
+```
+
+We draw ten imputed datasets at random from @thompson2018quantifying and use the __first__ of these for model selection.
+
+We fit a multilevel ordered categorical model on the dataset. It predicts the presence of trance states and possession phenomena in a society as a five-step scale (see above) using the 21 pre-selected variables as predictors (see above). We assume a grouping factor for language family and geographic region, drawn from the Ethnographic Atlas.
+
+We fit the model thrice, with a Laplace prior (Fit 1), a Student-t prior (Fit 2), and a Horseshoe prior (Fit 3). We use four mcmc chains with 2000 iterations each.
+
+We estimate the expected log pointwise predictive density for each model and consider their differences:
+
+```{r fitting_models2}
+
+loo_compare(fit1,fit2,fit3) %>% kable("latex", booktabs = T, digits = 2)
+```
+
+This indicates that using the Horseshoe prior provides the best fit on the dataset.
+
+Next, we refit Fit 3 on the dataset without a grouping factor for geographic region (Fit 3b), language family (Fit 3c), or both (Fit 3d) and compare these as well:
+
+```{r fitting_models3, eval=F}
+# models pre-loaded; chunk not run
+
+fit3b = brm(
+  trance ~
+    Domestic_organization + 
+    Marital_residence_with_kin_prevailing_pattern + 
+    Community_marriage_organization + 
+    Cousin_marriages_permitted +
+    Kin_terms_for_cousins +
+    Settlement_patterns +
+    Mean_size_of_local_communities +
+    Jurisdictional_hierarchy_of_local_community +
+    Jurisdictional_hierarchy_beyond_local_community +
+    Religion_high_gods +
+    Subsistence_economy_dominant_activity +
+    Descent_major_type +
+    Class_differentiation_primary +
+    Caste_differentiation_primary +
+    Slavery_type +
+    Political_succession +
+    Inheritance_rule_for_real_property_land +
+    Norms_of_premarital_sexual_behavior_of_girls +
+    (1|family),
+  data = impd,
+  family = cumulative(link = "logit", threshold = "flexible"),
+  prior = horseshoe_priors,
+  control=list(adapt_delta=0.99, stepsize = 0.01, max_treedepth =15)
+)
+
+fit3b = add_criterion(fit3b, c('loo', 'waic'))
+
+fit3c = brm(
+  trance ~
+    Domestic_organization + 
+    Marital_residence_with_kin_prevailing_pattern + 
+    Community_marriage_organization + 
+    Cousin_marriages_permitted +
+    Kin_terms_for_cousins +
+    Settlement_patterns +
+    Mean_size_of_local_communities +
+    Jurisdictional_hierarchy_of_local_community +
+    Jurisdictional_hierarchy_beyond_local_community +
+    Religion_high_gods +
+    Subsistence_economy_dominant_activity +
+    Descent_major_type +
+    Class_differentiation_primary +
+    Caste_differentiation_primary +
+    Slavery_type +
+    Political_succession +
+    Inheritance_rule_for_real_property_land +
+    Norms_of_premarital_sexual_behavior_of_girls +
+    (1|region),
+  data = impd,
+  family = cumulative(link = "logit", threshold = "flexible"),
+  prior = horseshoe_priors,
+  control=list(adapt_delta=0.99, stepsize = 0.01, max_treedepth = 15)
+)
+
+fit3c = add_criterion(fit3c, c('loo', 'waic'))
+
+fit3d = brm(
+  trance ~
+    Domestic_organization + 
+    Marital_residence_with_kin_prevailing_pattern + 
+    Community_marriage_organization + 
+    Cousin_marriages_permitted +
+    Kin_terms_for_cousins +
+    Settlement_patterns +
+    Mean_size_of_local_communities +
+    Jurisdictional_hierarchy_of_local_community +
+    Jurisdictional_hierarchy_beyond_local_community +
+    Religion_high_gods +
+    Subsistence_economy_dominant_activity +
+    Descent_major_type +
+    Class_differentiation_primary +
+    Caste_differentiation_primary +
+    Slavery_type +
+    Political_succession +
+    Inheritance_rule_for_real_property_land +
+    Norms_of_premarital_sexual_behavior_of_girls,
+  data = impd,
+  family = cumulative(link = "logit", threshold = "flexible"),
+  prior = horseshoe_priors,
+  control=list(adapt_delta=0.99, stepsize = 0.01, max_treedepth = 15)
+)
+
+fit3d = add_criterion(fit3d, c('loo', 'waic'))
+
+save(fit3b, file = 'models/fit3b.rda')
+save(fit3c, file = 'models/fit3c.rda')
+save(fit3d, file = 'models/fit3d.rda')
+```
+
+```{r fitting_models4}
+loo_compare(fit3,fit3b,fit3c,fit3d) %>% kable("latex", booktabs = T, digits = 2)
+```
+
+The results indicate that grouping observations by language family doesn't account for a substantial amount of variation. Geographic region, however, is a useful grouping factor.
+
+We use the WAMBS checklist to collect diagnostics on the best model, Fit 3c. This includes refitting the model using flat priors (Fit 3b unif), with 5000 iterations per chain (Fit 3b long), and with the order of observations in the data reshuffled (Fit 3b rand) and checking diagnostics of chain convergence.
+
+```{r fitting_models5, eval = F}
+my_formula2 = fit3c$formula
+my_data_r = sample_n(impd, nrow(impd))
+
+fit3c_unif = brm(
+  formula = my_formula2, 
+  data = impd, 
+  family = bernoulli, 
+  save_all_pars = T, control=list(adapt_delta=0.99, stepsize = 0.01, max_treedepth =15))
+
+fit3c_long = brm(
+  formula = my_formula2, 
+  data = impd, 
+  family = bernoulli, prior = horseshoe_priors, 
+  save_all_pars = T, iter = 5000, control=list(adapt_delta=0.99, stepsize = 0.01, max_treedepth =15))
+
+fit3c_rand = brm(
+  formula = my_formula2, 
+  data = my_data_r, 
+  family = bernoulli, prior = horseshoe_priors, 
+  save_all_pars = T, control=list(adapt_delta=0.99, stepsize = 0.01, max_treedepth =15))
+
+fit3c_unif = add_criterion(fit3c_unif, c('loo', 'waic'))
+fit3c_long = add_criterion(fit3c_long, c('loo', 'waic'))
+fit3c_rand = add_criterion(fit3c_rand, c('loo', 'waic'))
+
+save(fit3c_unif, file = 'models/fit3c_unif.rda')
+save(fit3c_long, file = 'models/fit3c_long.rda')
+save(fit3c_rand, file = 'models/fit3c_rand.rda')
+```
+
+```{r fitting_models6}
+my_data_r = sample_n(impd, nrow(impd))
+
+if (any(rhat(fit3c_unif) > 1.01)) print('oh no')
+if (any(rhat(fit3c_long) > 1.01)) print('oh no')
+if (any(rhat(fit3c_rand) > 1.01)) print('oh no')
+```
+
+This process leads us to a best model (Fit 3c) which uses Horseshoe priors and region as grouping factor. 
+
+## Robustness checks on imputed data
+
+We take this model and fit it on ten random datasets from the 100 imputed datasets published by @thompson2018quantifying.
+
+```{r robustness_iteration, eval = F}
+# chunk not run
+
+samples = samples %>% 
+  mutate(
+    model = map(data2, ~ 
+                  brm(
+                    formula = my_formula2, 
+                    data = ., 
+                    family = bernoulli, prior = horseshoe_priors, 
+                    save_all_pars = T, control=list(adapt_delta=0.99, stepsize = 0.01, max_treedepth =15))
+                  )
+  )
+
+samples = samples %>% 
+  mutate(
+    summary = map(model, ~ summary(.)),
+    posterior_samples = map(model, ~ posterior_samples(.))
+  )
+
+samples = samples %>% 
+  mutate(
+    posterior_samples_long = map(model, ~ posterior_samples(.) %>% 
+                                   rownames_to_column() %>% 
+                                   pivot_longer(- rowname, names_to = 'predictor', values_to = 'draw') %>% 
+                                   filter(str_detect(predictor, 'b_'))
+    )
+  )
+
+save(samples, file = 'models/samples.rda')
+samples_tsv = samples %>% 
+  select(id, posterior_samples_long) %>% 
+  unnest(cols = c(posterior_samples_long))
+
+write_tsv(samples_tsv, 'data/imputed_posteriors.tsv')
+```
+
+First, we look at draws from the posterior distributions for our predictors from Fit 3c. The horizontal lineranges indicate the 66%, 89%, and 97% confidence intervals. 89% is the closest smaller prime number to the default 95% confidence intervals used in frequentist studies, while the other limits also have the advantage of being prime numbers [@mcelreath2020statistical]. Predictors on the y axis are ordered according to absolute medians: those that shift the prior the most are on top.
+
+```{r robustness_iterations2}
+fit3c %>% 
+  drawPosteriors() + 
+  coord_cartesian(xlim = c(-.5,.5))
+```
+
+As we see, most predictors have relatively little to contribute in this sparse model, except for some notable exceptions.
+
+
+```{r robustness_iterations3}
+# load('models/samples.rda')
+draws = read_tsv('data/imputed_posteriors.tsv')
+draws %>% 
+  filter(!str_detect(predictor, 'Intercept')) %>% 
+  group_by(predictor) %>% mutate(abs_median = abs(median(draw))) %>% 
+  ungroup() %>% mutate(
+    predictor = reorder(predictor, abs_median),
+    model_id = paste0('model ', id)
+    ) %>% 
+  ggplot( aes(x = draw, y = predictor, fill = model_id)) +
+    geom_halfeyeh(alpha = .5, .width = c(.67,.89,.97)) +
+    coord_cartesian(xlim = c(-.5,.5)) +
+  scale_fill_brewer(palette = 'Spectral')
+
+```
+
+This is the same plot of posteriors ordered by absolute median, except that each row plots ten distributions instead of one. This is a dense figure, but what the reader can garner is that most variation is visible for those predictors at the top. These are the ones that generall have non-zero effects.
+
+The ten models are identical with the exception of the datasets. The missing values of the EA data were imputed by @thompson2018quantifying for each imputed dataset. We can assess the overall effects across these data by pooling the draws from the posterior distributions across models. The result can be seen below.
+
+```{r robustness_iterations4}
+# load('models/samples.rda')
+# draws = read_tsv('data/imputed_posteriors.tsv')
+draws %>% 
+  filter(!str_detect(predictor, 'Intercept')) %>% 
+  group_by(predictor) %>% mutate(abs_median = abs(median(draw))) %>% 
+  ungroup() %>% mutate(
+    predictor = reorder(predictor, abs_median),
+    ) %>% 
+  ggplot( aes(x = draw, y = predictor)) +
+    geom_halfeyeh(alpha = .5, .width = c(.67,.89,.97)) +
+    coord_cartesian(xlim = c(-.5,.5))
+
+variables_dict_keep = variables_dict %>% 
+  filter(var_title2 %in% c(
+    'Slavery_type',
+    'Religion_high_gods',
+    'Jurisdictional_hierarchy_beyond_local_community',
+    'Descent_major_type',
+    'Settlement_patterns',
+    'Class_differentiation_primary'
+      )
+    )
+
+```
+
+Altogether, across the ten models fit on the ten imputed datasets, most of our starting variables explain little variation in the outcome. 
+
+We pick the top six variables. Note that this is, to some degree, arbitrary. We pick the first five because the the 67% CI of the pooled distribution excludes zero. We pick class differentiation because it sounds interesting.
+
+```{r }
+variables_dict_keep %>% 
+  distinct(var_id, var_title) %>% 
+  kable("latex", booktabs = T)
+
+```
+
+## Refitting the model on real data
+
+We refit the model on the complete observations of the EA (`r nrow(dw4)`/`r nrow (dw2)` societies). We use weakly informative student-t priors for both betas and intercepts. We are now done with variable selection and want to see how our model holds up on the real thing.
+
+```{r refitting_model, eval = F}
+fit4 = brm(
+  trance ~
+    Slavery_type +
+    Religion_high_gods +
+    Jurisdictional_hierarchy_beyond_local_community +
+    Descent_major_type +
+    Settlement_patterns +
+    Class_differentiation_primary +
+    (1|region),
+  data = dw4,
+  family = cumulative(link = "logit", threshold = "flexible"),
+  prior = student_priors,
+  control=list(adapt_delta=0.99, stepsize = 0.01, max_treedepth = 15),
+  sample_prior = T
+)
+
+fit4 = add_criterion(fit4, c('loo', 'waic'))
+save(fit4, file = 'models/fit4.rda')
+```
+
+We check the model using the WAMBS checklist (selectively).
+
+```{r refitting_model_wambs, eval = F}
+my_data_r2 = sample_n(dw4, nrow(dw4))
+
+fit4_unif = brm(
+  formula = my_formula3, 
+  data = dw4, 
+  family = bernoulli, 
+  save_all_pars = T, control=list(adapt_delta=0.99, stepsize = 0.01, max_treedepth =15))
+
+fit4_long = brm(
+  formula = my_formula3, 
+  data = dw4, 
+  family = bernoulli, prior = student_priors, 
+  save_all_pars = T, iter = 5000, control=list(adapt_delta=0.99, stepsize = 0.01, max_treedepth =15))
+
+fit4_rand = brm(
+  formula = my_formula3, 
+  data = my_data_r2, 
+  family = bernoulli, prior = student_priors, 
+  save_all_pars = T, control=list(adapt_delta=0.99, stepsize = 0.01, max_treedepth =15))
+
+save(fit4_unif, file = 'models/fit4_unif.rda')
+save(fit4_long, file = 'models/fit4_long.rda')
+save(fit4_rand, file = 'models/fit4_rand.rda')
+```
+
+```{r refitting_checks}
+if (any(rhat(fit4_unif) > 1.01)) print('oh no')
+if (any(rhat(fit4_long) > 1.01)) print('oh no')
+if (any(rhat(fit4_rand) > 1.01)) print('oh no')
+
+```
+
+The posterior distributions of the model can be seen below.
+
+```{r refitting_model_final, fig.width = 6, fig.height = 4}
+
+drawPosteriors(fit4) +
+  scale_y_discrete(labels=c(
+    "b_Religion_high_gods" = "Religion: high gods",
+    "b_Slavery_type" = "Slavery type",
+    "b_Jurisdictional_hierarchy_beyond_local_community" = "Jurisdictional hierarchy\nbeyond local community",
+    "b_Settlement_patterns" = "Settlement patterns",
+    "b_Descent_major_typepatrilineal" = "Patrilineal descent",
+    "b_Class_differentiation_primary" = "Primary class differentiation"
+  )) + ylab('')
+
+```
+
+We can see that we have strong evidence from the model on the effect of slavery, religion, and hierarchy beyond the local community on trance and possession states in the data. Evidence is weaker for the effect of descent, class differentiation, and settlement patterns. We can calculate the strength of the evidence. We have robust evidence (alpha = 0.03) for the first three, much weaker evidence (alpha = 0.33) for the remaining two.
+
+```{r refitting_hypotheses}
+ha = hypothesis(fit4, 'Religion_high_gods<0', alpha = 0.03)$hypothesis
+hb = hypothesis(fit4, 'Slavery_type>0', alpha = 0.03)$hypothesis
+hc = hypothesis(fit4, 'Jurisdictional_hierarchy_beyond_local_community>0', alpha = 0.03)$hypothesis
+hd = hypothesis(fit4, 'Descent_major_typepatrilineal>0', alpha = 0.33)$hypothesis
+he = hypothesis(fit4, 'Class_differentiation_primary>0', alpha = 0.33)$hypothesis
+
+bind_rows(ha,hb,hc,hd,he) %>% 
+  select(Hypothesis, Estimate, Est.Error, CI.Lower, CI.Upper) %>% 
+  mutate(Hypothesis = str_replace_all(Hypothesis, '[_]', ' ') %>% str_replace_all('[)(]', '')) %>% 
+  bind_cols(alpha = c(0.03, 0.03, 0.03, 0.33, 0.33)) %>% 
+  kable(digits = 2, "latex", booktabs = T) %>% 
+  column_spec(1, width = "15em")
+
+```
+
+## Robustness checks
+
+We perform two robustness checks by filtering the dataset.
+
+We filter the data excluding societies speaking languages in the Indo-European family and refit Fit 4 (Fit 5). We also filter the data excluding societies with population size in the highest 5% of natural log population size and refit Fit 4 again (Fit 6).
+
+```{r robustness_models, eval=F}
+
+fit5 = brm(
+  formula = my_formula3,
+  data = dw5,
+  family = cumulative(link = "logit", threshold = "flexible"),
+  prior = student_priors,
+  control=list(adapt_delta=0.99, stepsize = 0.01, max_treedepth = 15),
+  sample_prior = T
+)
+
+fit6 = brm(
+  formula = my_formula3,
+  data = dw6,
+  family = cumulative(link = "logit", threshold = "flexible"),
+  prior = student_priors,
+  control=list(adapt_delta=0.99, stepsize = 0.01, max_treedepth = 15),
+  sample_prior = T
+)  
+
+save(fit5, file = 'models/fit5.rda')
+save(fit6, file = 'models/fit6.rda')
+```
+
+We draw posteriors for the estimates in these three models and visualise the results below.
+
+```{r robustness_model2, fig.width = 10, fig.height = 5}
+
+# they say build a function if you do something more than three times so I'm getting away with this
+posts4 = posterior_samples(fit4) %>% 
+    rownames_to_column() %>% 
+    pivot_longer(- rowname, names_to = 'predictor', values_to = 'draw') %>% 
+    filter(str_detect(predictor, 'b_'), !str_detect(predictor, 'Intercept')) %>% 
+    mutate(data = 'all complete observations, n = 428')
+posts5 = posterior_samples(fit5) %>% 
+    rownames_to_column() %>% 
+    pivot_longer(- rowname, names_to = 'predictor', values_to = 'draw') %>% 
+    filter(str_detect(predictor, 'b_'), !str_detect(predictor, 'Intercept')) %>% 
+    mutate(data = 'excluding IE languages, n = 397')
+posts6 = posterior_samples(fit6) %>% 
+    rownames_to_column() %>% 
+    pivot_longer(- rowname, names_to = 'predictor', values_to = 'draw') %>% 
+    filter(str_detect(predictor, 'b_'), !str_detect(predictor, 'Intercept')) %>% 
+    mutate(data = 'excluding top 5% of all, n = 399')
+
+bind_rows(posts4, posts5, posts6) %>% 
+  ggplot( aes(x = draw, y = predictor, fill = data)) +
+    geom_halfeyeh(alpha = .5, .width = c(.67,.89,.97)) +
+    coord_cartesian(xlim = c(-.75,.75)) +
+    geom_vline(xintercept = 0, linetype = "dashed") +
+    scale_fill_brewer(palette = 'Spectral')
+
+
+```
+
+Some effects are shrunk in the refit models, but the differences are not very large.
+
+## Visualising predictions
+
+We take each predictor and draw predictions from Fit 4 for societies at each of its levels. Then, we calculate the mean and the standard deviation and plot these against each other, levels of the predictor on the x axis, predictions for the five levels of the outcome on the y axis.
+
+```{r predictions, fig.width = 9, fig.height = 9}
+
+pred = predict(fit4)
+pred = as_tibble(pred)
+names(pred) = c('no P, no T', 'P xor T', 'P and T', 'P -> T', 'P <-> T')
+
+dw4a = dw4 %>% 
+  select(soc_id) %>% 
+  bind_cols(pred) %>% 
+  pivot_longer(- soc_id, names_to = 'level', values_to = 'p')
+
+dw4b = dw4 %>% 
+  select(soc_id, 
+         Jurisdictional_hierarchy_beyond_local_community,
+         Religion_high_gods,
+         Descent_major_type,
+         Class_differentiation_primary,
+         Slavery_type,
+         Settlement_patterns
+         ) %>% 
+  mutate_if(is.double, as.character) %>% 
+  pivot_longer(-soc_id, names_to = 'var_title2', values_to = 'recoded_value')
+
+dw4c = variables_dict %>% 
+  filter(var_title2 %in% dw4b$var_title2) %>% 
+  select(var_title2, var_name, recoded_value) %>% 
+  filter(var_title2 != 'Descent_major_type')
+
+dw4d = left_join(dw4b,dw4c, by = c('var_title2', 'recoded_value'))
+
+dw4e = left_join(dw4a,dw4d, by = "soc_id")
+
+dw4e = dw4e %>% 
+  mutate(
+    var_name = ifelse(
+      var_title2 == 'Descent_major_type', recoded_value, var_name
+      )
+  )
+
+buildPredSummary = function(d,my_var_title2){    
+  d2 = d %>% 
+    filter(var_title2 == my_var_title2) %>% 
+    group_by(var_name,recoded_value,level) %>% 
+    summarise(
+      mean = mean(p),
+      sd = sd(p)
+    ) %>% 
+    ungroup() %>% 
+    mutate(
+      level2 = factor(level, levels = c('no P, no T', 'P xor T', 'P and T', 'P -> T', 'P <-> T'))
+      )
+return(d2)
+}
+
+makePredPlot = function(d){
+p = ggplot(d, aes(x = var_name, y = mean, colour = level2, group = level2)) +
+  geom_point() +
+  geom_linerange(aes(ymin = mean - sd, ymax = mean + sd)) +
+  geom_line(aes(linetype = level2)) +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle = -45, hjust = 1)) +
+  labs(colour = "Type of possession and trance", linetype = '') +
+  scale_color_colorblind() +
+  ylab('probability of each level') +
+  scale_x_discrete(position = "top") 
+  
+return(p)
+}
+    
+slavery = buildPredSummary(dw4e, 'Slavery_type')    
+slavery = mutate(slavery, var_name = var_name %>% factor %>% reorder(recoded_value %>% as.double))
+religion = buildPredSummary(dw4e, 'Religion_high_gods')
+religion = mutate(religion, var_name = var_name %>% factor %>% reorder(recoded_value %>% as.double))
+hierarchy = buildPredSummary(dw4e, 'Jurisdictional_hierarchy_beyond_local_community')
+hierarchy = mutate(hierarchy, var_name = var_name %>% factor %>% reorder(recoded_value %>% as.double))
+patrilineal = buildPredSummary(dw4e, 'Descent_major_type')
+patrilineal$var_name = factor(patrilineal$var_name, levels = c('patrilineal', 'other')) # this is why I can't put this all in a function
+class = buildPredSummary(dw4e,'Class_differentiation_primary')
+class = mutate(class, var_name = var_name %>% factor %>% reorder(recoded_value %>% as.double))
+settlement = buildPredSummary(dw4e,'Settlement_patterns')
+settlement = mutate(settlement, var_name = var_name %>% factor %>% reorder(recoded_value %>% as.double))
+
+p1 = makePredPlot(slavery) + xlab('Slavery type') + theme(legend.position = 'top', legend.direction = 'vertical')
+p2 = makePredPlot(religion) + xlab('Religion: high gods') + guides(colour = F, linetype = F)
+p3 = makePredPlot(hierarchy) + xlab('Jurisdictional hierarchy\nbeyond local community') + guides(colour = F, linetype = F)
+p4 = makePredPlot(patrilineal) + xlab('Main type of descent') + guides(colour = F, linetype = F)
+p5 = makePredPlot(class) + xlab('Primary class differentiation') + guides(colour = F, linetype = F)
+p6 = makePredPlot(settlement) + xlab('Settlement patterns') + guides(colour = F, linetype = F)
+
+p1 + p2 + p3 + p4 + p5 + p6 + plot_layout(ncol = 3)
+
+```
+
+## References

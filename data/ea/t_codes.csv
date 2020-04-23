@@ -1,0 +1,757 @@
+var_id,code,var_description,var_name,num_id
+EA001,0,Zero to 5 percent dependence,0-5%,1
+EA001,1,6 to 15 percent dependence,6-15%,1
+EA001,2,16 to 25 percent dependence,16-25%,1
+EA001,3,26 to 35 percent dependence,26-35%,1
+EA001,4,36 to 45 percent dependence,36-45%,1
+EA001,5,46 to 55 percent dependence,46-55%,1
+EA001,6,56 to 65 percent dependence,56-65%,1
+EA001,7,66 to 75 percent dependence,66-75%,1
+EA001,8,76 to 85 percent dependence,76-85%,1
+EA001,9,86 to 100 percent dependence,86-100%,1
+EA001,NA,Missing data,Missing data,1
+EA002,0,Zero to 5 percent dependence,0-5%,2
+EA002,1,6 to 15 percent dependence,6-15%,2
+EA002,2,16 to 25 percent dependence,16-25%,2
+EA002,3,26 to 35 percent dependence,26-35%,2
+EA002,4,36 to 45 percent dependence,36-45%,2
+EA002,5,46 to 55 percent dependence,46-55%,2
+EA002,6,56 to 65 percent dependence,56-65%,2
+EA002,7,66 to 75 percent dependence,66-75%,2
+EA002,8,76 to 85 percent dependence,76-85%,2
+EA002,9,86 to 100 percent dependence,86-100%,2
+EA002,NA,Missing data,Missing data,2
+EA003,0,Zero to 5 percent dependence,0-5%,3
+EA003,1,6 to 15 percent dependence,6-15%,3
+EA003,2,16 to 25 percent dependence,16-25%,3
+EA003,3,26 to 35 percent dependence,26-35%,3
+EA003,4,36 to 45 percent dependence,36-45%,3
+EA003,5,46 to 55 percent dependence,46-55%,3
+EA003,6,56 to 65 percent dependence,56-65%,3
+EA003,7,66 to 75 percent dependence,66-75%,3
+EA003,8,76 to 85 percent dependence,76-85%,3
+EA003,9,86 to 100 percent dependence,86-100%,3
+EA003,NA,Missing data,Missing data,3
+EA004,0,Zero to 5 percent dependence,0-5%,4
+EA004,1,6 to 15 percent dependence,6-15%,4
+EA004,2,16 to 25 percent dependence,16-25%,4
+EA004,3,26 to 35 percent dependence,26-35%,4
+EA004,4,36 to 45 percent dependence,36-45%,4
+EA004,5,46 to 55 percent dependence,46-55%,4
+EA004,6,56 to 65 percent dependence,56-65%,4
+EA004,7,66 to 75 percent dependence,66-75%,4
+EA004,8,76 to 85 percent dependence,76-85%,4
+EA004,9,86 to 100 percent dependence,86-100%,4
+EA004,NA,Missing data,Missing data,4
+EA005,0,Zero to 5 percent dependence,0-5%,5
+EA005,1,6 to 15 percent dependence,6-15%,5
+EA005,2,16 to 25 percent dependence,16-25%,5
+EA005,3,26 to 35 percent dependence,26-35%,5
+EA005,4,36 to 45 percent dependence,36-45%,5
+EA005,5,46 to 55 percent dependence,46-55%,5
+EA005,6,56 to 65 percent dependence,56-65%,5
+EA005,7,66 to 75 percent dependence,66-75%,5
+EA005,8,76 to 85 percent dependence,76-85%,5
+EA005,9,86 to 100 percent dependence,86-100%,5
+EA005,NA,Missing data,Missing data,5
+EA006,NA,Missing data,Missing data,6
+EA006,1,"Bride-price or bride-wealth, i.e., transfer of a substantial consideration in the form of livestock, goods, or money from the groom or his relatives to the kinsmen of the bride",Bride-wealth,6
+EA006,2,"Bride-service, i.e., a substantial material consideration in which the principal element consists of labor or other services rendered by the groom to the bride's kinsmen",Bride-service,6
+EA006,3,"Token bride-price, i.e., a small or symbolic payment only",Token bride-wealth,6
+EA006,4,"Gift exchange, i.e., reciprocal exchange of gifts of substantial value between the relatives of the bride and groom, or a continuing exchange of goods and services in approximately equal amounts between the groom or his kinsmen and the bride's relatives",Gift exchange,6
+EA006,5,"Exchange, i.e., transfer of a sister or other female relative of the groom in exchange for the bride",Woman exchange,6
+EA006,6,"Absence of any significant consideration, or bridal gifts only",Insignificant,6
+EA006,7,"Dowry, i.e., transfer of a substantial amount of property from the bride's relatives to the bride, the groom, or the kinsmen of the latter",Dowry,6
+EA007,NA,Missing data,Missing data,7
+EA007,1,"Bride-price or bride-wealth, i.e., transfer of a substantial consideration in the form of livestock, goods, or money from the groom or his relatives to the kinsmen of the bride",Bride-wealth,7
+EA007,2,"Bride-service, i.e., a substantial material consideration in which the principal element consists of labor or other services rendered by the groom to the bride's kinsmen",Bride-service,7
+EA007,3,"Token bride-price, i.e., a small or symbolic payment only",Token bride-wealth,7
+EA007,4,"Gift exchange, i.e., reciprocal exchange of gifts of substantial value between the relatives of the bride and groom, or a continuing exchange of goods and services in approximately equal amounts between the groom or his kinsmen and the bride's relatives",Gift exchange,7
+EA007,5,"Exchange, i.e., transfer of a sister or other female relative of the groom in exchange for the bride",Woman exchange,7
+EA007,6,"Absence of any significant consideration, or bridal gifts only",Insignificant,7
+EA007,7,"Dowry, i.e., transfer of a substantial amount of property from the bride's relatives to the bride, the groom, or the kinsmen of the latter",Dowry,7
+EA007,8,"No alternate mode or supplementary practices, see ""Mode of marriage (primary)""",No alternate,7
+EA008,NA,Missing data,Missing data,8
+EA008,1,Independent nuclear families with monogamy,"Nuclear, monogamous",8
+EA008,2,Independent nuclear families with occasional or limited polygyny,"Nuclear, limited polygyny",8
+EA008,3,Independent polyandrous families,Polyandrous,8
+EA008,4,"Independent polygynous families, unusual co-wives pattern (either polygyny is preferentially sororal, with cowives in separate quarters or it is typically non-sororal, with cowives in same quarters","Polygyny, atypical cowives pattern",8
+EA008,5,"Independent polygynous families, usual co-wives pattern (either polygyny is preferentially sororal, with cowives in same quarters, OR typically non-sororal, with cowives in separate quarters)","Polygyny, typical cowives pattern",8
+EA008,6,"Minimal extended or ""stem"" families, i.e., those consisting of only two related families of procreation (disregarding polygamous unions), particularly of adjacent generations",Minimal extended,8
+EA008,7,"Small extended families, i.e., those normally embracing the families of procreation of only one individual in the senior generation but of at least two in the next generation. Such families usually dissolve on the death of the head",Small extended,8
+EA008,8,"Large extended families, i.e., corporate aggregations of smaller family units occupying a single dwelling or a number of adjacent dwellings and normally embracing the families of procreation of at least two siblings or cousins in each of at least two adjacent generations",Large extended,8
+EA009,NA,Missing data,Missing data,9
+EA009,1,Monogamous,Monogamous,9
+EA009,2,"Polygynous, with polygyny occasional or limited",Limited polygyny,9
+EA009,3,"Polygynous, with polygyny common and preferentially sororal, and co-wives not reported to occupy separate quarters","Polygyny, sororal cohabit",9
+EA009,4,"Polygynous, with polygyny common and preferentially sororal, and co-wives typically occupying separate quarters","Polygyny, sororal separate",9
+EA009,5,"Polygynous, with polygyny general and not reported to be preferentially sororal, and co-wives typically occupying separate quarters","Polygyny, non-sororal cohabit",9
+EA009,6,"Polygynous, with polygyny general and not reported to be preferentially sororal, and co-wives not reported to occupy separate quarters","Polygyny, non-sororal separate",9
+EA009,7,Polyandrous,Polyandrous,9
+EA010,NA,Missing data,Missing data,10
+EA010,1,"Avunculocal, i.e., normal residence with or near the maternal uncle or other male matrilineal kinsmen of the husband",Avunculocal,10
+EA010,2,"Ambilocal, i.e., residence established optionally with or near the parents of either the husband or the wife, depending upon circumstances or personal choice, where neither alternative exceeds the other in actual frequency by a ratio greater than two to one.",Ambilocal,10
+EA010,3,"Optionally uxorilocal or avunculocal. This may be the case in a uxorilocal society where many men marry a MoBrDa and thus, in fact, live avunculocally",Avuncu-uxorilocal,10
+EA010,4,Optionally patrilocal (or virilocal) or avunculocal,Avuncu-virilocal,10
+EA010,5,"Matrilocal, i.e., normal residence with or near the female matrilineal kinsmen of the wife. Cf. U Uxorilocal",Matrilocal,10
+EA010,6,"Neolocal, i.e., normal residence apart from the relatives of both spouses or at a place not determined by the kin ties of either",Neolocal,10
+EA010,7,"Nonestablishment of a common household, i.e., where both spouses remain in their natal households, sometimes called ""duolocal"" or ""natolocal"" residence",Separate,10
+EA010,8,"Patrilocal, i.e., normal residence with or near the male patrilineal kinsmen of the husband. Cf. V Virilocal",Patrilocal,10
+EA010,9,"Uxorilocal. Equivalent to ""matrilocal"" but confined to instances where the wife's matrikin are not aggregated in matrilocal and matrilineal kin groups",Uxorilocal,10
+EA010,10,"Virilocal. Equivalent to ""patrilocal"" but confined to instances where the husband's patrikin are not aggregated in patrilocal and patrilineal kin groups",Virilocal,10
+EA010,11,"Ambilocal, with a marked preponderance of uxorilocal practice (i.e., uxorilocal option exceeds virilocal option in actual frequency by a ratio greater than two to one).",Ambi-uxo,10
+EA010,12,"Ambilocal, with a marked preponderance of virilocal practice (i.e., virilocal option exceeds uxorilocal option in actual frequency by a ratio greater than two to one).",Ambi-viri,10
+EA201,NA,Missing data,Missing data,201
+EA201,1,Pattern of marital residence differs in the first years of marriage relative to later years.,Different,201
+EA201,2,Pattern of marital residence in the first years of marriage not different from later years.,Same,201
+EA011,NA,Missing data,Missing data,11
+EA011,1,"Wife to husband's group (patrilocal, virilocal) or wife to husband's mother's brother's household (avunculocal)",Wife to husband,11
+EA011,2,Couple to either group or neolocal,Ambi/neo-local,11
+EA011,3,Husband to wife's group,Husband to wife,11
+EA011,9,"Nonestablishment of a common household, i.e., where both spouses remain in their natal households, sometimes called ""duolocal"" or ""natolocal"" residence",Separate,11
+EA012,NA,Missing data,Missing data,12
+EA012,1,"Avunculocal, i.e., normal residence with or near the maternal uncle or other male matrilineal kinsmen of the husband",Avunculocal,12
+EA012,2,"Ambilocal, i.e., residence established optionally with or near the parents of either the husband or the wife, depending upon circumstances or personal choice, where neither alternative exceeds the other in actual frequency by a ratio greater than two to one.",Ambilocal,12
+EA012,3,"Optionally uxorilocal or avunculocal. This may be the case in a uxorilocal society where many men marry a MoBrDa and thus, in fact, live avunculocally",Avuncu-uxorilocal,12
+EA012,4,Optionally patrilocal (or virilocal) or avunculocal,Avuncu-virilocal,12
+EA012,5,"Matrilocal, i.e., normal residence with or near the female matrilineal kinsmen of the wife. Cf. U Uxorilocal",Matrilocal,12
+EA012,6,"Neolocal, i.e., normal residence apart from the relatives of both spouses or at a place not determined by the kin ties of either",Neolocal,12
+EA012,7,"Nonestablishment of a common household, i.e., where both spouses remain in their natal households, sometimes called ""duolocal"" or ""natolocal"" residence",Separate,12
+EA012,8,"Patrilocal, i.e., normal residence with or near the male patrilineal kinsmen of the husband. Cf. V Virilocal",Patrilocal,12
+EA012,9,"Uxorilocal. Equivalent to ""matrilocal"" but confined to instances where the wife's matrikin are not aggregated in matrilocal and matrilineal kin groups",Uxorilocal,12
+EA012,10,"Virilocal. Equivalent to ""patrilocal"" but confined to instances where the husband's patrikin are not aggregated in patrilocal and patrilineal kin groups",Virilocal,12
+EA012,11,"Ambilocal, with a marked preponderance of uxorilocal practice (i.e., uxorilocal option exceeds virilocal option in actual frequency by a ratio greater than two to one).",Ambi-uxo,12
+EA012,12,"Ambilocal, with a marked preponderance of virilocal practice (i.e., virilocal option exceeds uxorilocal option in actual frequency by a ratio greater than two to one).",Ambi-viri,12
+EA013,NA,Missing data,Missing data,13
+EA013,1,"Wife to husband's group (patrilocal, virilocal) or wife to husband's mother's brother's household (avunculocal)",Wife to husband,13
+EA013,2,Couple to either group or neolocal,Ambi/neo-local,13
+EA013,3,Husband to wife's group,Husband to wife,13
+EA013,4,No common residence,Separate,13
+EA013,9,No alternate form,No alternate,13
+EA014,NA,Missing data,Missing data,14
+EA014,1,"Avunculocal, i.e., normal residence with or near the maternal uncle or other male matrilineal kinsmen of the husband",Avunculocal,14
+EA014,2,"Ambilocal, i.e., residence established optionally with or near the parents of either the husband or the wife, depending upon circumstances or personal choice, where neither alternative exceeds the other in actual frequency by a ratio greater than two to one.",Ambilocal,14
+EA014,3,"Optionally uxorilocal or avunculocal. This may be the case in a uxorilocal society where many men marry a MoBrDa and thus, in fact, live avunculocally",Avuncu-uxorilocal,14
+EA014,4,Optionally patrilocal (or virilocal) or avunculocal,Avuncu-virilocal,14
+EA014,5,"Matrilocal, i.e., normal residence with or near the female matrilineal kinsmen of the wife. Cf. U Uxorilocal",Matrilocal,14
+EA014,6,"Neolocal, i.e., normal residence apart from the relatives of both spouses or at a place not determined by the kin ties of either",Neolocal,14
+EA014,7,"Nonestablishment of a common household, i.e., where both spouses remain in their natal households, sometimes called ""duolocal"" or ""natolocal"" residence",Separate,14
+EA014,8,"Patrilocal, i.e., normal residence with or near the male patrilineal kinsmen of the husband. Cf. V Virilocal",Patrilocal,14
+EA014,9,"Uxorilocal. Equivalent to ""matrilocal"" but confined to instances where the wife's matrikin are not aggregated in matrilocal and matrilineal kin groups",Uxorilocal,14
+EA014,10,"Virilocal. Equivalent to ""patrilocal"" but confined to instances where the husband's patrikin are not aggregated in patrilocal and patrilineal kin groups",Virilocal,14
+EA014,11,No alternate form,No alternate,14
+EA015,NA,Missing data,Missing data,15
+EA015,1,"Demes, i.e., communities revealing a marked tendency toward local endogamy but not segmented into clan-barrios",Demes,15
+EA015,2,"Segmented communities, i.e., those divided into barrios, wards, or hamlets, each of which is essentially a localized kin group, a clan or ramage, in the absence of any indication of local exogamy. Large extended families (see ""Domestic organization""), are treated as clan-barrios if they are integrated by a rule of ambilineal, matrilineal, or patrilineal descent.","Segmented, no exogamy",15
+EA015,3,Agamous communities without localized clans or any marked tendency toward either local exogamy or local endogamy,Agamous,15
+EA015,4,"Exogamous communities, i.e., those revealing a marked tendency toward local exogamy without having the specific structure of clans",Exogamous,15
+EA015,5,Segmented communities where a marked tendency toward local exogamy is also specifically reported,"Segmented, exogamy",15
+EA015,6,"Clan-communities, each consisting essentially of a single localized exogamous kin group or clan (see ""Organization of clan communities"" for more detail)",Clans,15
+EA016,NA,Missing data,Missing data,16
+EA016,1,Clan communities not segmented into clan barrios,Clans,16
+EA016,2,Clan communities segmented into clan barrios,Clans with barrios,16
+EA016,9,Communities not organized as exogamous clan communities,No exogamous clans,16
+EA017,NA,Missing data,Missing data,17
+EA017,1,None,None,17
+EA017,2,"Absence of true patrilineal kin groups, but presence of patrilineal exogamy",Exogamy only,17
+EA017,3,"Lineages of modest size, i.e., patrilineal kin groups whose core membership is normally confined to a single community or a part thereof",Lineages,17
+EA017,4,"Sibs (""clans"" in British usage), i.e., lineages whose core membership normally comprises residents of more than one community",Sibs,17
+EA017,5,"Phratries, i.e., maximal lineages when there are more than two in the society and when sibs are also present. Segmentary lineage systems in which segments of a lower order of magnitude are equivalent to sibs are also included in this category.",Phratries,17
+EA017,6,"Moieties, i.e., maximal lineages when there are only two such in the society",Moieties,17
+EA018,NA,Missing data,Missing data,18
+EA018,1,No patrilineal exogamy,No exogamy,18
+EA018,2,"Extension of incest taboos to known patrilineal kinsmen, provided such extension does not apply generally to bilateral kinsmen of equal remoteness",Extended taboo,18
+EA018,3,"Lineages of modest size, i.e., patrilineal kin groups whose core membership is normally confined to a single community or a part thereof",Lineages,18
+EA018,4,"Sibs (""clans"" in British usage), i.e., lineages whose core membership normally comprises residents of more than one community",Sibs,18
+EA018,5,"Phratries, i.e., maximal lineages when there are more than two in the society and when sibs are also present. Segmentary lineage systems in which segments of a lower order of magnitude are equivalent to sibs are also included in this category.",Phratries,18
+EA018,6,"Moieties, i.e., maximal lineages when there are only two such in the society",Moieties,18
+EA019,NA,Missing data,Missing data,19
+EA019,1,None,None,19
+EA019,2,"Absence of true matrilineal kin groups, but presence of matrilineal exogamy",Exogamy only,19
+EA019,3,"Lineages of modest size, i.e., matrilineal kin groups whose core membership is normally confined to a single community or a part thereof",Lineages,19
+EA019,4,"Sibs (""clans"" in British usage), i.e., lineages whose core membership normally comprises residents of more than one community",Sibs,19
+EA019,5,"Phratries, i.e., maximal lineages when there are more than two in the society and when sibs are also present. Segmentary lineage systems in which segments of a lower order of magnitude are equivalent to sibs are also included in this category.",Phratries,19
+EA019,6,"Moieties, i.e., maximal lineages when there are only two such in the society",Moieties,19
+EA020,NA,Missing data,Missing data,20
+EA020,1,No matrilineal exogamy,No exogamy,20
+EA020,2,"Extension of incest taboos to known matrilineal kinsmen, provided extension does not apply generally to bilateral kinsmen of equal remoteness.",Extended taboo,20
+EA020,3,"Lineages of modest size, i.e., matrilineal kin groups whose core membership is normally confined to a single community or a part thereof",Lineages,20
+EA020,4,"Sibs (""clans"" in British usage), i.e., lineages whose core membership normally comprises residents of more than one community",Sibs,20
+EA020,5,"Phratries, i.e., maximal lineages when there are more than two in the society and when sibs are also present. Segmentary lineage systems in which segments of a lower order of magnitude are equivalent to sibs are also included in this category.",Phratries,20
+EA020,6,"Moieties, i.e., maximal lineages when there are only two such in the society",Moieties,20
+EA021,NA,Missing data,Missing data,21
+EA021,1,"Bilateral descent as inferred from the absence of reported ambilineal, matrilineal, or patrilineal kin groups, kindreds being absent or unreported",Bilateral inferred,21
+EA021,2,"Kindreds: bilateral descent with specifically reported kindreds, i.e., Ego-oriented bilateral kin groups or categories",Bilateral kindreds,21
+EA021,3,"Ambilineal descent inferred from the presence of ambilocal extended families, true ramages being absent or unreported",Ambilineal,21
+EA021,4,"Ramages, i.e., ancestor-oriented ambilineal kin groups, if they are agamous, endogamous, or not specifically stated to be exogamous",Ramages,21
+EA021,5,Exogamous ramages specifically reported,Exogamous ramages,21
+EA021,6,"Bilateral descent with reported or probable quasi-lineages, i.e., cognatic groups approximating the structure of lineages but based on filiation rather than on unilineal or ambilineal descent",Quasi-lineages,21
+EA021,9,Absence of cognatic kin groups as inferred from the presence of unilineal descent,No cognatic kin,21
+EA022,NA,Missing data,Missing data,22
+EA022,2,"Kindreds: bilateral descent with specifically reported kindreds, i.e., Ego-oriented bilateral kin groups or categories",Kindreds,22
+EA022,4,"Ramages, i.e., ancestor-oriented ambilineal kin groups, if they are agamous, endogamous, or not specifically stated to be exogamous",Ramages,22
+EA022,9,No secondary cognatic groups,No secondary groups,22
+EA023,NA,Missing data,Missing data,23
+EA023,1,"Duolateral cross-cousin marriage permitted, i.e., marriage allowed with either MoBrDa or FaSiDa but forbidden with a parallel cousin",Cross-cousin,23
+EA023,2,Duolateral marriage permitted with paternal cousins only (FaBrDa or FaSiDa),Paternal only,23
+EA023,3,Duolateral marriage permitted with maternal cousins only (MoBrDa or MoSiDa),Maternal only,23
+EA023,4,Duolateral marriage permitted with an uncle's daughter only (FaBrDa or MoBrDa),FaBrDa/MoBrDa only,23
+EA023,5,Duolateral marriage permitted with an aunt's daughter only (FaSiDa or MoSiDa),FaSiDa/MoSiDa only,23
+EA023,6,"Unilateral: only matrilateral cross-cousin marriage permitted, i.e., with a MoBrDa",Matrilateral cross only,23
+EA023,7,"Nonlateral marriage, i.e., unions forbidden with any first or second cousin",No first/second cousins,23
+EA023,8,"Nonlateral marriage, evidence available only for first cousins",No first cousins,23
+EA023,9,"Unilateral: only patrilateral cross-cousin marriage permitted i.e., with a FaSiDa",Patrilateral cross only,23
+EA023,10,"Quadrilateral marriage, i.e., marriage allowed with any first cousin",Any first cousins,23
+EA023,11,Nonlateral marriage in which all first cousins and some but not all second cousins are forbidden as spouses,Some second only,23
+EA023,12,Nonlateral marriage in which unions are forbidden with any first cousin but are permitted with any second cousin (or at least any who is not a lineage mate),Only second cousins,23
+EA023,13,"Trilateral marriage, i.e., marriage allowed with any first cousin except an orthocousin or lineage mate",Trilateral,23
+EA024,NA,Missing data,Missing data,24
+EA024,1,"Quadrilateral marriage, i.e., marriage allowed with any first cousin",Quadrilateral,24
+EA024,2,"Trilateral marriage, i.e., marriage allowed with any first cousin except an orthocousin or lineage mate",Trilateral,24
+EA024,3,Two of four first cousins marriageable,Duolateral,24
+EA024,4,One of four first cousins marriageable,Unilateral,24
+EA024,5,Nonlateral marriage in which unions are forbidden with any first cousin but are permitted with any second cousin (or at least any who is not a lineage mate),Only second cousins,24
+EA024,6,Nonlateral marriage in which all first cousins and some but not all second cousins are forbidden as spouses,Some second only,24
+EA024,7,Nonlateral marriage when evidence is available only for first cousins,No first cousins,24
+EA024,8,"Nonlateral marriage, i.e., unions forbidden with any first or second cousin",No first/second cousins,24
+EA025,NA,Missing data,Missing data,25
+EA025,1,"Duolateral, symmetrical preference for MoBrDa or FaSiDa",Cross-cousin: either,25
+EA025,2,"Duolateral, matrilateral preference (MoBrDa)",Cross-cousin: matri,25
+EA025,3,"Duolateral, patrilateral preference (FaSiDa)",Cross-cousin: patri,25
+EA025,4,"Duolateral, with maternal cousins only and MoBrDa preferred",Maternal: MoBrDa,25
+EA025,5,Unilateral: matrilateral cross-cousin marriage to MoBrDa preferred rather than merely permitted,Uni: MoBrDa,25
+EA025,6,Unilateral: patrilateral cross-cousin marriage to FaSiDa preferred rather than merely permitted,Uni: FaSiDa,25
+EA025,7,"Quadrilateral, where FaBrDa is the preferred mate",All: FaBrDa,25
+EA025,8,"Quadrilateral, symmetrical preference (FaSiDa or MoBrDa)",All: cross,25
+EA025,9,"Quadrilateral, matrilateral preference (MoSi__ or MoBr__)",All: matri,25
+EA025,10,"Nonlateral, with preference for particular second cross-cousins only, notably MoMoBrDaDa or FaMoBrSoDa, often reported of societies with subsection systems",Some second only,25
+EA025,11,"Nonlateral, with second-cousin marriage preferred rather than merely permitted",Second cousins preferred,25
+EA025,12,"Trilateral marriage, with preference for a bilateral cross-cousin (MoBrDa = FaSiDa).",Tri: bilateral,25
+EA025,13,"Trilateral marriage, with preference for a matrilateral cross-cousin (MoBrDa)",Tri: matrilateral,25
+EA025,14,"Trilateral marriage, with preference for a patrilateral cross-cousin (FaSiDa)",Tri: patrilateral,25
+EA025,15,No preferred cousin marriages,None preferred,25
+EA026,NA,Missing data,Missing data,26
+EA026,1,A symmetrical cross-cousin is preferred spouse,Cross-cousin,26
+EA026,2,MoBrDa is preferred spouse,MoBrDa,26
+EA026,3,FaSiDa is preferred spouse,FaSiDa,26
+EA026,4,FaBrDa is preferred spouse,FaBrDa,26
+EA026,5,A second-cousin is preferred spouse,Second cousin,26
+EA026,9,No preferred cousin marriage,None preferred,26
+EA027,NA,Missing data,Missing data,27
+EA027,1,"Crow, i.e., FaSiCh equated with Fa or FaSi and/or MoBrCh with Ch or BrCh(ws)",Crow,27
+EA027,2,"Descriptive or derivative, rather than elementary, terms employed for all cousins",Descriptive,27
+EA027,3,"Eskimo, i.e., FaBrCh, FaSiCh, MoBrCh, and MoSiCh equated with each other but differentiated from siblings",Eskimo,27
+EA027,4,"Hawaiian, i.e., all cousins equated with siblings or called by terms clearly derivative from those for siblings",Hawaiian,27
+EA027,5,"Iroquois, i.e., FaSiCh equated with MoBrCh but differentiated from both siblings and parallel cousins",Iroquois,27
+EA027,6,"Omaha, i.e., MoBrCh equated with MoBr or Mo and/or FaSiCh with SiCh(ms) or Ch",Omaha,27
+EA027,7,"Sudanese, i.e., FaSiCh and MoBrCh distinguished alike from siblings, parallel cousins, and each other but without conforming to either the Crow, the descriptive, or the Omaha patterns",Sudanese,27
+EA027,8,"Mixed or variant patterns not adequately represented by any of the foregoing symbols. The details are given under ""Classification by Clusters.""",Mixed,27
+EA028,NA,Missing data,Missing data,28
+EA028,1,Complete absence of agriculture,No agriculture,28
+EA028,2,"Casual agriculture, i.e., the slight or sporadic cultivation of food or other plants incidental to a primary dependence upon other subsistence practices",Casual,28
+EA028,3,"Extensive or shifting cultivation, as where new fields are cleared annually, cultivated for a year or two, and then allowed to revert to forest or brush for a long fallow period",Extensive/shifting,28
+EA028,4,"Horticulture, i.e., semi-intensive agriculture limited mainly to vegetable gardens or groves of fruit trees rather than the cultivation of field crops",Horticulture,28
+EA028,5,"Intensive agriculture on permanent fields, utilizing fertilization by compost or animal manure, crop rotation, or other techniques so that fallowing is either unnecessary or is confined to relatively short periods",Intensive,28
+EA028,6,Intensive cultivation where it is largely dependent upon irrigation,Intensive irrigated,28
+EA029,NA,Missing data,Missing data,29
+EA029,1,No agriculture,No agriculture,29
+EA029,2,"Non-food crops only, e.g., cotton or tobacco",Non-food,29
+EA029,3,"Vegetables, e.g., cucurbits, greens, or legumes, when more important than other crops",Vegetables,29
+EA029,4,"Tree fruits, e.g., bananas, breadfruit, coconuts, or dates, when more important than cereal grains and root crops. Sago, unless specifically reported to be cultivated, is treated as a gathered product rather than a cultivated one",Tree-fruits,29
+EA029,5,"Roots or tubers, e.g., manioc, potatoes, taro, or yams, when more important than cereal grains and at least as important as tree crops or vegetables",Roots/tubers,29
+EA029,6,"Cereal grains, e.g., maize, millet, rice, or wheat, when at least as important as any other type of crop",Cereals,29
+EA030,NA,Missing data,Missing data,30
+EA030,1,Fully migratory or nomadic bands,Nomadic,30
+EA030,2,"Seminomadic communities whose members wander in bands for at least half of the year but occupy a fixed settlement at some season or seasons, e.g., recurrently occupied winter quarters",Seminomadic,30
+EA030,3,"Semisedentary communities whose members shift from one to another fixed settlement at different seasons or who occupy more or less permanently a single settlement from which a substantial proportion of the population departs seasonally to occupy shifting camps, e.g., during transhumance",Semisedentary,30
+EA030,4,"Compact but impermanent settlements, i.e., villages whose location is shifted every few years",Impermanent,30
+EA030,5,Neighborhoods of dispersed family homesteads,Dispersed homesteads,30
+EA030,6,Separated hamlets where several such form a more or less permanent single community,Hamlets,30
+EA030,7,"Compact and relatively permanent settlements, i.e., nucleated villages or towns",Villages/towns,30
+EA030,8,Complex settlements consisting of a nucleated village or town with outlying homesteads or satellite hamlets. Urban aggregations of population are not separately indicated since EA031 deals with community size,Complex permanent,30
+EA031,NA,Missing data,Missing data,31
+EA031,1,Fewer than 50 persons,<50,31
+EA031,2,From 50 to 99 persons,50-99,31
+EA031,3,From 100 to 199 persons,100-199,31
+EA031,4,From 200 to 399 persons,200-399,31
+EA031,5,"From 400 to 1,000 persons",400-1000,31
+EA031,6,"More than 1,000 persons in the absence of indigenous urban aggregations",1000+ no towns,31
+EA031,7,"One or more indigenous towns of more than 5,000 inhabitants but none of more than 50,000",5000-50000,31
+EA031,8,"One or more indigenous cities with more than 50,000 inhabitants",50000+,31
+EA032,NA,Missing data,Missing data,32
+EA032,2,Independent families (may be nuclear or polygynous),Independent families,32
+EA032,3,Extended families,Extended families,32
+EA032,4,Clan-barrios,Clan-barrios,32
+EA033,NA,Missing data,Missing data,33
+EA033,1,"No political authority beyond community (e.g., autonomous bands and villages)",Acephalous,33
+EA033,2,"One level (e.g., petty chiefdoms)",One level,33
+EA033,3,"Two levels (e.g., larger chiefdoms)",Two levels,33
+EA033,4,"Three levels (e.g., states)",Three levels,33
+EA033,5,"Four levels (e.g., large states)",Four levels,33
+EA034,NA,Missing data,Missing data,34
+EA034,1,A high god absent or not reported in substantial descriptions of religious beliefs,Absent,34
+EA034,2,A high god present but otiose or not concerned with human affairs,Otiose,34
+EA034,3,A high god present and active in human affairs but not offering positive support to human morality,"Active, but not supporting morality",34
+EA034,4,"A high god present, active, and specifically supportive of human morality","Active, supporting morality",34
+EA035,NA,Missing data,Missing data,35
+EA035,1,No games of any of the three types,No games,35
+EA035,2,"Games of physical skill only, whether or not they may also involve incidental elements of chance or strategy, e.g., foot racing, wrestling, the hoop-and-pole game",Physical skill only,35
+EA035,3,"Games of chance only, with no significant element of either physical skill or strategy involved, e.g., dice games",Chance only,35
+EA035,4,Games of physical skill and of chance both present,Physical skill and chance,35
+EA035,5,"Games of strategy only, involving no significant element of physical skill, e.g., chess, go, poker. Whether or not an element of chance is also involved is considered irrelevant",Strategy only,35
+EA035,6,"Games of physical skill and of strategy present, but not games of chance",Strategy and physical skill,35
+EA035,7,"Games of chance and of strategy present, but not games of physical skill",Strategy and chance,35
+EA035,8,Games of all three types present,All types,35
+EA036,NA,Missing data,Missing data,36
+EA036,1,"No taboo, especially where the husband is expected to have intercourse with his wife as soon as possible after childbirth for the alleged benefit of the child",No taboo,36
+EA036,2,"Short post-partum taboo, lasting not more than one month",Up to one month,36
+EA036,3,Duration of from more than a month to six months,One to six months,36
+EA036,4,Duration of from more than six months to one year,Six months to a year,36
+EA036,5,Duration of from more than one year to two years,A year to two years,36
+EA036,6,Duration of more than two years,More than two years,36
+EA037,NA,Missing data,Missing data,37
+EA037,1,Absent or not generally practiced,Absent,37
+EA037,2,"Performed shortly after birth, i.e., within the first two months",Shortly after birth,37
+EA037,3,"Performed during infancy, i.e., from two months to two years of age",Infancy,37
+EA037,4,"Performed during early childhood, i.e., from two to five years of age",Early childhood,37
+EA037,5,"Performed during late childhood, i.e., from six to ten years of age",Late childhood,37
+EA037,6,"Performed during adolescence, i.e., from eleven to fifteen years of age",Adolescence,37
+EA037,7,"Performed during early adulthood, i.e., from sixteen to 25 years of age",Early adulthood,37
+EA037,8,"Performed during maturity, i.e., from 25 to 50 years of age",Maturity,37
+EA037,9,"Performed in old age, i.e., after 50 years of age",Old age,37
+EA037,10,"Circumcision customary, but the normal age is unspecified or unclear","Customary, age unclear",37
+EA038,NA,Missing data,Missing data,38
+EA038,1,"Absence of segregation, adolescent boys residing and sleeping in the same dwelling as their mothers and sisters",No segregation,38
+EA038,2,"Partial segregation, adolescent boys residing or eating with their natal families but sleeping apart from them, e.g., in a special hut or in a cattle shed",Partial,38
+EA038,3,"Complete segregation, in which adolescent boys go to live as individuals with relatives outside the nuclear family, e.g., with grandparents or with a maternal or paternal uncle",Complete: outside nuclear family,38
+EA038,4,"Complete segregation, in which adolescent boys go to live as individuals with non-relatives, e.g., as retainers to a chief or as apprentices to specialists",Complete: outside kin,38
+EA038,5,"Complete segregation, in which boys reside with a group of their own peers, e.g., in bachelor dormitories, military regiments, or age-villages",Complete: own peers,38
+EA039,NA,Missing data,Missing data,39
+EA039,1,Absent (no plow animals),Absent,39
+EA039,2,Plow cultivation not aboriginal but well established at the period of observation,Not aboriginal but present,39
+EA039,3,Animals employed in plow cultivation prior to the contact period,Present,39
+EA040,NA,Missing data,Missing data,40
+EA040,1,"Absence or near absence of domestic animals other than bees, eats, dogs, fowl, guinea pigs, or the like",Absence or near absence,40
+EA040,2,Pigs the only domestic animals of consequence,Pigs,40
+EA040,3,Sheep and/or goats when larger domestic animals are absent or much less important,Sheep/goats,40
+EA040,4,"Equine animals, e.g., horses, donkeys",Equine,40
+EA040,5,"Deer, e.g., reindeer",Deer,40
+EA040,6,"Camels or other animals of related genera, e.g., alpacas, llamas",Camelids,40
+EA040,7,"Bovine animals, e.g., cattle, mithun, water buffaloes, yaks",Bovine,40
+EA041,NA,Missing data,Missing data,41
+EA041,1,Absence or near absence of milking,Absence or near absence,41
+EA041,2,Domestic animals milked more often than sporadically,More than sporadically,41
+EA042,NA,Missing data for at least one subsistence activity,Missing for at least 1 activity,42
+EA042,1,Gathering contributes most,Gathering,42
+EA042,2,Fishing contributes most,Fishing,42
+EA042,3,Hunting contributes most,Hunting,42
+EA042,4,Pastoralism contributes most,Pastoralism,42
+EA042,5,Casual agriculture contributes most,Casual agriculture,42
+EA042,6,Extensive agriculture contributes most,Extensive agriculture,42
+EA042,7,Intensive agriculture contributes most,Intensive agriculture,42
+EA042,8,Two or more sources contribute equally,Two or more sources,42
+EA042,9,"Agriculture contributes most, type unknown","Agriculture, type unknown",42
+EA043,NA,Missing data,Missing data,43
+EA043,1,"Patrilineal (EA017 > 1, EA019 = 1, EA021 = 9)",Patrilineal,43
+EA043,2,"Duolateral (EA017 > 1, EA019 > 1, EA021 = 9 or EA021 = 0)",Duolateral,43
+EA043,3,"Matrilineal (EA017 = 1, EA019 > 1, EA021 = 9)",Matrilineal,43
+EA043,4,"Quasi-lineages (EA017 = 1, EA019 = 1, EA021 = 6)",Quasi-lineages,43
+EA043,5,"Ambilineal (EA017 = 1, EA019 = 1, EA021 = 3 or EA021 = 4 or EA021 = 5)",Ambilineal,43
+EA043,6,"Bilateral (EA017 = 1, EA019 = 1, EA021 = 1 or EA021 = 2)",Bilateral,43
+EA043,7,"Mixed (EA017  and/or EA019 > 1,and EA021 not equal to 9)",Mixed,43
+EA044,NA,Missing data,Missing data,44
+EA044,1,"Males alone perform the activity, female participation being negligible",Males alone,44
+EA044,2,"Both sexes participate, but males do appreciably more than females","Both, males more",44
+EA044,3,Differentiation of specific tasks by sex but approximately equal participation by both sexes in the total activity,Differentiated but equal,44
+EA044,4,Equal participation by both sexes without marked or reported differentiation in specific tasks,Equal participation,44
+EA044,5,"Both sexes participate, but females do appreciably more than males","Both, females more",44
+EA044,6,"Females alone perform the activity, male participation being negligible",Females alone,44
+EA044,7,"Sex participation irrelevant, especially where production is industrialized",Sex irrelevant,44
+EA044,8,"The activity is present, but sex participation is unspecified in the sources consulted","Activity present, sex diff. unspecified",44
+EA044,9,The activity is absent or unimportant in the particular society,Activity is absent,44
+EA045,NA,Missing data,Missing data,45
+EA045,1,"Males alone perform the activity, female participation being negligible",Males alone,45
+EA045,2,"Both sexes participate, but males do appreciably more than females","Both, males more",45
+EA045,3,Differentiation of specific tasks by sex but approximately equal participation by both sexes in the total activity,Differentiated but equal,45
+EA045,4,Equal participation by both sexes without marked or reported differentiation in specific tasks,Equal participation,45
+EA045,5,"Both sexes participate, but females do appreciably more than males","Both, females more",45
+EA045,6,"Females alone perform the activity, male participation being negligible",Females alone,45
+EA045,7,"Sex participation irrelevant, especially where production is industrialized",Sex irrelevant,45
+EA045,8,"The activity is present, but sex participation is unspecified in the sources consulted","Activity present, sex diff. unspecified",45
+EA045,9,The activity is absent or unimportant in the particular society,Activity is absent,45
+EA046,NA,Missing data,Missing data,46
+EA046,1,"Males alone perform the activity, female participation being negligible",Males alone,46
+EA046,2,"Both sexes participate, but males do appreciably more than females","Both, males more",46
+EA046,3,Differentiation of specific tasks by sex but approximately equal participation by both sexes in the total activity,Differentiated but equal,46
+EA046,4,Equal participation by both sexes without marked or reported differentiation in specific tasks,Equal participation,46
+EA046,5,"Both sexes participate, but females do appreciably more than males","Both, females more",46
+EA046,6,"Females alone perform the activity, male participation being negligible",Females alone,46
+EA046,7,"Sex participation irrelevant, especially where production is industrialized",Sex irrelevant,46
+EA046,8,"The activity is present, but sex participation is unspecified in the sources consulted","Activity present, sex diff. unspecified",46
+EA046,9,The activity is absent or unimportant in the particular society,Activity is absent,46
+EA047,NA,Missing data,Missing data,47
+EA047,1,"Males alone perform the activity, female participation being negligible",Males alone,47
+EA047,2,"Both sexes participate, but males do appreciably more than females","Both, males more",47
+EA047,3,Differentiation of specific tasks by sex but approximately equal participation by both sexes in the total activity,Differentiated but equal,47
+EA047,4,Equal participation by both sexes without marked or reported differentiation in specific tasks,Equal participation,47
+EA047,5,"Both sexes participate, but females do appreciably more than males","Both, females more",47
+EA047,6,"Females alone perform the activity, male participation being negligible",Females alone,47
+EA047,7,"Sex participation irrelevant, especially where production is industrialized",Sex irrelevant,47
+EA047,8,"The activity is present, but sex participation is unspecified in the sources consulted","Activity present, sex diff. unspecified",47
+EA047,9,The activity is absent or unimportant in the particular society,Activity is absent,47
+EA048,NA,Missing data,Missing data,48
+EA048,1,"Males alone perform the activity, female participation being negligible",Males alone,48
+EA048,2,"Both sexes participate, but males do appreciably more than females","Both, males more",48
+EA048,3,Differentiation of specific tasks by sex but approximately equal participation by both sexes in the total activity,Differentiated but equal,48
+EA048,4,Equal participation by both sexes without marked or reported differentiation in specific tasks,Equal participation,48
+EA048,5,"Both sexes participate, but females do appreciably more than males","Both, females more",48
+EA048,6,"Females alone perform the activity, male participation being negligible",Females alone,48
+EA048,7,"Sex participation irrelevant, especially where production is industrialized",Sex irrelevant,48
+EA048,8,"The activity is present, but sex participation is unspecified in the sources consulted","Activity present, sex diff. unspecified",48
+EA048,9,The activity is absent or unimportant in the particular society,Activity is absent,48
+EA049,NA,Missing data,Missing data,49
+EA049,1,"Males alone perform the activity, female participation being negligible",Males alone,49
+EA049,2,"Both sexes participate, but males do appreciably more than females","Both, males more",49
+EA049,3,Differentiation of specific tasks by sex but approximately equal participation by both sexes in the total activity,Differentiated but equal,49
+EA049,4,Equal participation by both sexes without marked or reported differentiation in specific tasks,Equal participation,49
+EA049,5,"Both sexes participate, but females do appreciably more than males","Both, females more",49
+EA049,6,"Females alone perform the activity, male participation being negligible",Females alone,49
+EA049,7,"Sex participation irrelevant, especially where production is industrialized",Sex irrelevant,49
+EA049,8,"The activity is present, but sex participation is unspecified in the sources consulted","Activity present, sex diff. unspecified",49
+EA049,9,The activity is absent or unimportant in the particular society,Activity is absent,49
+EA050,NA,Missing data,Missing data,50
+EA050,1,"Males alone perform the activity, female participation being negligible",Males alone,50
+EA050,2,"Both sexes participate, but males do appreciably more than females","Both, males more",50
+EA050,3,Differentiation of specific tasks by sex but approximately equal participation by both sexes in the total activity,Differentiated but equal,50
+EA050,4,Equal participation by both sexes without marked or reported differentiation in specific tasks,Equal participation,50
+EA050,5,"Both sexes participate, but females do appreciably more than males","Both, females more",50
+EA050,6,"Females alone perform the activity, male participation being negligible",Females alone,50
+EA050,7,"Sex participation irrelevant, especially where production is industrialized",Sex irrelevant,50
+EA050,8,"The activity is present, but sex participation is unspecified in the sources consulted","Activity present, sex diff. unspecified",50
+EA050,9,The activity is absent or unimportant in the particular society,Activity is absent,50
+EA051,NA,Missing data,Missing data,51
+EA051,1,"Males alone perform the activity, female participation being negligible",Males alone,51
+EA051,2,"Both sexes participate, but males do appreciably more than females","Both, males more",51
+EA051,3,Differentiation of specific tasks by sex but approximately equal participation by both sexes in the total activity,Differentiated but equal,51
+EA051,4,Equal participation by both sexes without marked or reported differentiation in specific tasks,Equal participation,51
+EA051,5,"Both sexes participate, but females do appreciably more than males","Both, females more",51
+EA051,6,"Females alone perform the activity, male participation being negligible",Females alone,51
+EA051,7,"Sex participation irrelevant, especially where production is industrialized",Sex irrelevant,51
+EA051,8,"The activity is present, but sex participation is unspecified in the sources consulted","Activity present, sex diff. unspecified",51
+EA051,9,The activity is absent or unimportant in the particular society,Activity is absent,51
+EA052,NA,Missing data,Missing data,52
+EA052,1,"Males alone perform the activity, female participation being negligible",Males alone,52
+EA052,2,"Both sexes participate, but males do appreciably more than females","Both, males more",52
+EA052,3,Differentiation of specific tasks by sex but approximately equal participation by both sexes in the total activity,Differentiated but equal,52
+EA052,4,Equal participation by both sexes without marked or reported differentiation in specific tasks,Equal participation,52
+EA052,5,"Both sexes participate, but females do appreciably more than males","Both, females more",52
+EA052,6,"Females alone perform the activity, male participation being negligible",Females alone,52
+EA052,7,"Sex participation irrelevant, especially where production is industrialized",Sex irrelevant,52
+EA052,8,"The activity is present, but sex participation is unspecified in the sources consulted","Activity present, sex diff. unspecified",52
+EA052,9,The activity is absent or unimportant in the particular society,Activity is absent,52
+EA053,NA,Missing data,Missing data,53
+EA053,1,"Males alone perform the activity, female participation being negligible",Males alone,53
+EA053,2,"Both sexes participate, but males do appreciably more than females","Both, males more",53
+EA053,3,Differentiation of specific tasks by sex but approximately equal participation by both sexes in the total activity,Differentiated but equal,53
+EA053,4,Equal participation by both sexes without marked or reported differentiation in specific tasks,Equal participation,53
+EA053,5,"Both sexes participate, but females do appreciably more than males","Both, females more",53
+EA053,6,"Females alone perform the activity, male participation being negligible",Females alone,53
+EA053,7,"Sex participation irrelevant, especially where production is industrialized",Sex irrelevant,53
+EA053,8,"The activity is present, but sex participation is unspecified in the sources consulted","Activity present, sex diff. unspecified",53
+EA053,9,The activity is absent or unimportant in the particular society,Activity is absent,53
+EA054,NA,Missing data,Missing data,54
+EA054,1,"Males alone perform the activity, female participation being negligible",Males alone,54
+EA054,2,"Both sexes participate, but males do appreciably more than females","Both, males more",54
+EA054,3,Differentiation of specific tasks by sex but approximately equal participation by both sexes in the total activity,Differentiated but equal,54
+EA054,4,Equal participation by both sexes without marked or reported differentiation in specific tasks,Equal participation,54
+EA054,5,"Both sexes participate, but females do appreciably more than males","Both, females more",54
+EA054,6,"Females alone perform the activity, male participation being negligible",Females alone,54
+EA054,7,"Sex participation irrelevant, especially where production is industrialized",Sex irrelevant,54
+EA054,8,"The activity is present, but sex participation is unspecified in the sources consulted","Activity present, sex diff. unspecified",54
+EA054,9,The activity is absent or unimportant in the particular society,Activity is absent,54
+EA055,NA,Missing data,Missing data,55
+EA055,1,"Junior age specialization, i.e., the activity is largely performed by boys and/or girls before the age of puberty",Junior age,55
+EA055,2,"Senior age specialization, i.e., the activity is largely performed by men and/or women beyond the prime of life",Senior age,55
+EA055,3,"Craft specialization, i.e., the activity is largely performed by a small minority of adult males or females who possess specialized skills. Occupational castes are treated as instances of craft specialization",Craft,55
+EA055,4,"Industrial specialization, i.e., the activity is largely removed from the domain of a division of labor by sex, age, or craft specialization and is performed industrialized mainly by techniques of production",Industrial,55
+EA055,9,"Normally performed by many or most adult men, women, or both",Most adults,55
+EA055,10,The activity is absent or unimportant in the particular society,Activity is absent,55
+EA056,NA,Missing data,Missing data,56
+EA056,1,"Junior age specialization, i.e., the activity is largely performed by boys and/or girls before the age of puberty",Junior age,56
+EA056,2,"Senior age specialization, i.e., the activity is largely performed by men and/or women beyond the prime of life",Senior age,56
+EA056,3,"Craft specialization, i.e., the activity is largely performed by a small minority of adult males or females who possess specialized skills. Occupational castes are treated as instances of craft specialization",Craft,56
+EA056,4,"Industrial specialization, i.e., the activity is largely removed from the domain of a division of labor by sex, age, or craft specialization and is performed industrialized mainly by techniques of production",Industrial,56
+EA056,9,"Normally performed by many or most adult men, women, or both",Most adults,56
+EA056,10,The activity is absent or unimportant in the particular society,Activity is absent,56
+EA057,NA,Missing data,Missing data,57
+EA057,1,"Junior age specialization, i.e., the activity is largely performed by boys and/or girls before the age of puberty",Junior age,57
+EA057,2,"Senior age specialization, i.e., the activity is largely performed by men and/or women beyond the prime of life",Senior age,57
+EA057,3,"Craft specialization, i.e., the activity is largely performed by a small minority of adult males or females who possess specialized skills. Occupational castes are treated as instances of craft specialization",Craft,57
+EA057,4,"Industrial specialization, i.e., the activity is largely removed from the domain of a division of labor by sex, age, or craft specialization and is performed industrialized mainly by techniques of production",Industrial,57
+EA057,9,"Normally performed by many or most adult men, women, or both",Most adults,57
+EA057,10,The activity is absent or unimportant in the particular society,Activity is absent,57
+EA058,NA,Missing data,Missing data,58
+EA058,1,"Junior age specialization, i.e., the activity is largely performed by boys and/or girls before the age of puberty",Junior age,58
+EA058,2,"Senior age specialization, i.e., the activity is largely performed by men and/or women beyond the prime of life",Senior age,58
+EA058,3,"Craft specialization, i.e., the activity is largely performed by a small minority of adult males or females who possess specialized skills. Occupational castes are treated as instances of craft specialization",Craft,58
+EA058,4,"Industrial specialization, i.e., the activity is largely removed from the domain of a division of labor by sex, age, or craft specialization and is performed industrialized mainly by techniques of production",Industrial,58
+EA058,9,"Normally performed by many or most adult men, women, or both",Most adults,58
+EA058,10,The activity is absent or unimportant in the particular society,Activity is absent,58
+EA059,NA,Missing data,Missing data,59
+EA059,1,"Junior age specialization, i.e., the activity is largely performed by boys and/or girls before the age of puberty",Junior age,59
+EA059,2,"Senior age specialization, i.e., the activity is largely performed by men and/or women beyond the prime of life",Senior age,59
+EA059,3,"Craft specialization, i.e., the activity is largely performed by a small minority of adult males or females who possess specialized skills. Occupational castes are treated as instances of craft specialization",Craft,59
+EA059,4,"Industrial specialization, i.e., the activity is largely removed from the domain of a division of labor by sex, age, or craft specialization and is performed industrialized mainly by techniques of production",Industrial,59
+EA059,9,"Normally performed by many or most adult men, women, or both",Most adults,59
+EA059,10,The activity is absent or unimportant in the particular society,Activity is absent,59
+EA060,NA,Missing data,Missing data,60
+EA060,1,"Junior age specialization, i.e., the activity is largely performed by boys and/or girls before the age of puberty",Junior age,60
+EA060,2,"Senior age specialization, i.e., the activity is largely performed by men and/or women beyond the prime of life",Senior age,60
+EA060,3,"Craft specialization, i.e., the activity is largely performed by a small minority of adult males or females who possess specialized skills. Occupational castes are treated as instances of craft specialization",Craft,60
+EA060,4,"Industrial specialization, i.e., the activity is largely removed from the domain of a division of labor by sex, age, or craft specialization and is performed industrialized mainly by techniques of production",Industrial,60
+EA060,9,"Normally performed by many or most adult men, women, or both",Most adults,60
+EA060,10,The activity is absent or unimportant in the particular society,Activity is absent,60
+EA061,NA,Missing data,Missing data,61
+EA061,1,"Junior age specialization, i.e., the activity is largely performed by boys and/or girls before the age of puberty",Junior age,61
+EA061,2,"Senior age specialization, i.e., the activity is largely performed by men and/or women beyond the prime of life",Senior age,61
+EA061,3,"Craft specialization, i.e., the activity is largely performed by a small minority of adult males or females who possess specialized skills. Occupational castes are treated as instances of craft specialization",Craft,61
+EA061,4,"Industrial specialization, i.e., the activity is largely removed from the domain of a division of labor by sex, age, or craft specialization and is performed industrialized mainly by techniques of production",Industrial,61
+EA061,9,"Normally performed by many or most adult men, women, or both",Most adults,61
+EA061,10,The activity is absent or unimportant in the particular society,Activity is absent,61
+EA062,NA,Missing data,Missing data,62
+EA062,1,"Junior age specialization, i.e., the activity is largely performed by boys and/or girls before the age of puberty",Junior age,62
+EA062,2,"Senior age specialization, i.e., the activity is largely performed by men and/or women beyond the prime of life",Senior age,62
+EA062,3,"Craft specialization, i.e., the activity is largely performed by a small minority of adult males or females who possess specialized skills. Occupational castes are treated as instances of craft specialization",Craft,62
+EA062,4,"Industrial specialization, i.e., the activity is largely removed from the domain of a division of labor by sex, age, or craft specialization and is performed industrialized mainly by techniques of production",Industrial,62
+EA062,9,"Normally performed by many or most adult men, women, or both",Most adults,62
+EA062,10,The activity is absent or unimportant in the particular society,Activity is absent,62
+EA063,NA,Missing data,Missing data,63
+EA063,1,"Junior age specialization, i.e., the activity is largely performed by boys and/or girls before the age of puberty",Junior age,63
+EA063,2,"Senior age specialization, i.e., the activity is largely performed by men and/or women beyond the prime of life",Senior age,63
+EA063,3,"Craft specialization, i.e., the activity is largely performed by a small minority of adult males or females who possess specialized skills. Occupational castes are treated as instances of craft specialization",Craft,63
+EA063,4,"Industrial specialization, i.e., the activity is largely removed from the domain of a division of labor by sex, age, or craft specialization and is performed industrialized mainly by techniques of production",Industrial,63
+EA063,9,"Normally performed by many or most adult men, women, or both",Most adults,63
+EA063,10,The activity is absent or unimportant in the particular society,Activity is absent,63
+EA064,NA,Missing data,Missing data,64
+EA064,1,"Junior age specialization, i.e., the activity is largely performed by boys and/or girls before the age of puberty",Junior age,64
+EA064,2,"Senior age specialization, i.e., the activity is largely performed by men and/or women beyond the prime of life",Senior age,64
+EA064,3,"Craft specialization, i.e., the activity is largely performed by a small minority of adult males or females who possess specialized skills. Occupational castes are treated as instances of craft specialization",Craft,64
+EA064,4,"Industrial specialization, i.e., the activity is largely removed from the domain of a division of labor by sex, age, or craft specialization and is performed industrialized mainly by techniques of production",Industrial,64
+EA064,9,"Normally performed by many or most adult men, women, or both",Most adults,64
+EA064,10,The activity is absent or unimportant in the particular society,Activity is absent,64
+EA065,NA,Missing data,Missing data,65
+EA065,1,"Junior age specialization, i.e., the activity is largely performed by boys and/or girls before the age of puberty",Junior age,65
+EA065,2,"Senior age specialization, i.e., the activity is largely performed by men and/or women beyond the prime of life",Senior age,65
+EA065,3,"Craft specialization, i.e., the activity is largely performed by a small minority of adult males or females who possess specialized skills. Occupational castes are treated as instances of craft specialization",Craft,65
+EA065,4,"Industrial specialization, i.e., the activity is largely removed from the domain of a division of labor by sex, age, or craft specialization and is performed industrialized mainly by techniques of production",Industrial,65
+EA065,9,"Normally performed by many or most adult men, women, or both",Most adults,65
+EA065,10,The activity is absent or unimportant in the particular society,Activity is absent,65
+EA066,NA,Missing data,Missing data,66
+EA066,1,"Absence of significant class distinctions among freemen (slavery is treated in EA070), ignoring variations in individual repute achieved through skill, valor, piety, or wisdom",Absence of distinctions,66
+EA066,2,"Wealth distinctions, based on the possession or distribution of property, present and socially important but not crystallized into distinct and hereditary social classes",Wealth distinctions,66
+EA066,3,"Elite stratification, in which an elite class derives its superior status from, and perpetuates it through, control over scarce resources, particularly land, and is thereby differentiated from a property-less proletariat or serf class",Elite stratification,66
+EA066,4,"Dual stratification into a hereditary aristocracy and a lower class of ordinary commoners or freemen, where traditionally ascribed noble status is at least as decisive as control over scarce resources",Dual stratification,66
+EA066,5,Complex stratification into social classes correlated in large measure with extensive differentiation of occupational statuses,Complex stratification,66
+EA067,NA,Missing data,Missing data,67
+EA067,1,"Absence of significant class distinctions among freemen (slavery is treated in EA070), ignoring variations in individual repute achieved through skill, valor, piety, or wisdom",Absence of distinctions,67
+EA067,2,"Wealth distinctions, based on the possession or distribution of property, present and socially important but not crystallized into distinct and hereditary social classes",Wealth distinctions,67
+EA067,3,"Elite stratification, in which an elite class derives its superior status from, and perpetuates it through, control over scarce resources, particularly land, and is thereby differentiated from a property-less proletariat or serf class",Elite stratification,67
+EA067,4,"Dual stratification into a hereditary aristocracy and a lower class of ordinary commoners or freemen, where traditionally ascribed noble status is at least as decisive as control over scarce resources",Dual stratification,67
+EA067,5,Complex stratification into social classes correlated in large measure with extensive differentiation of occupational statuses,Complex stratification,67
+EA067,9,No secondary type,No secondary type,67
+EA068,NA,Missing data,Missing data,68
+EA068,1,Caste distinctions absent or insignificant,Absence of distinctions,68
+EA068,2,"One or more despised occupational groups, e.g., smiths or leather workers, distinguished from the general population, regarded as outcastes by the latter, and characterized by strict endogamy",Despised occupation groups,68
+EA068,3,"Ethnic stratification, in which a superordinate caste withholds privileges from and refuses to intermarry with a subordinate caste (or castes) which it stigmatizes as ethnically alien, e.g., as descended from a conquered and culturally inferior indigenous population, from former slaves, or from foreign immigrants of different race and/or culture",Ethnic stratification,68
+EA068,4,Complex caste stratification in which occupational differentiation emphasizes hereditary ascription and endogamy to the near exclusion of achievable class statuses,Complex caste stratification,68
+EA069,NA,Missing data,Missing data,69
+EA069,1,Caste distinctions absent or insignificant,Absence of distinctions,69
+EA069,2,"One or more despised occupational groups, e.g., smiths or leather workers, distinguished from the general population, regarded as outcastes by the latter, and characterized by strict endogamy",Despised occupation groups,69
+EA069,3,"Ethnic stratification, in which a superordinate caste withholds privileges from and refuses to intermarry with a subordinate caste (or castes) which it stigmatizes as ethnically alien, e.g., as descended from a conquered and culturally inferior indigenous population, from former slaves, or from foreign immigrants of different race and/or culture",Ethnic stratification,69
+EA069,4,Complex caste stratification in which occupational differentiation emphasizes hereditary ascription and endogamy to the near exclusion of achievable class statuses,Complex caste stratification,69
+EA069,9,No secondary type,No secondary type,69
+EA070,NA,Missing data,Missing data,70
+EA070,1,Absence or near absence of slavery,Absence of slavery,70
+EA070,2,"Incipient or nonhereditary slavery, i.e., where slave status is temporary and not transmitted to the children of slaves","Slavery, nonhereditary",70
+EA070,3,Slavery reported but not identified as hereditary or nonhereditary,"Slavery, no info on heritability",70
+EA070,4,Hereditary slavery present and of at least modest social significance,"Slavery, hereditary",70
+EA071,NA,Missing data,Missing data,71
+EA071,1,Slavery never practiced,Slavery never practiced,71
+EA071,2,"Slavery present in past, but not currently in existence",Past slavery,71
+EA071,3,Slavery present currently and in past,Past and present slavery,71
+EA072,NA,Missing data,Missing data,72
+EA072,1,Patrilineal heir,Patrilineal heir,72
+EA072,2,Matrilineal heir,Matrilineal heir,72
+EA072,3,Nonhereditary succession through appointment by some higher authority,Nonhered: appointed by auth.,72
+EA072,4,Nonhereditary succession on the basis primarily of seniority or age,Nonhered: seniority,72
+EA072,5,"Nonhereditary succession through influence, e.g., of wealth or social status",Nonhered: influence,72
+EA072,6,Nonhereditary succession through election or some other mode of formal consensus,Nonhered: election,72
+EA072,7,Nonhereditary succession through informal consensus,Nonhered: inf. consensus,72
+EA072,9,Absence of any office resembling that of a local headman,Absence of office,72
+EA073,NA,Missing data,Missing data,73
+EA073,1,Hereditary succession by a son,Son,73
+EA073,2,Hereditary succession by a patrilineal heir who takes precedence over a son,Patrilineal heir,73
+EA073,3,Hereditary succession by a sister's son,Sister's son,73
+EA073,4,"Hereditary succession by a matrilineal heir who takes precedence over a sister's son, e.g., a younger brother",Matrilineal heir,73
+EA073,5,Nonhereditary,Nonhereditary,73
+EA073,9,Absence of any office resembling that of a local headman,Absence of office,73
+EA074,NA,Missing data,Missing data,74
+EA074,1,Absence of individual property rights in land or of any rule of inheritance governing the transmission of such rights,No inher. of real property,74
+EA074,2,Matrilineal inheritance by a sister's son or sons,Matrilineal by sister's sons,74
+EA074,3,Inheritance by matrilineal heirs who take precedence over sisters' sons,Matrilineal by heirs,74
+EA074,4,"Inheritance by children, but with daughters receiving less than sons","Children, less for daughters",74
+EA074,5,Inheritance by children of either sex or both,Children,74
+EA074,6,Inheritance by patrilineal heirs who take precedence over sons,Patrilineal by heirs,74
+EA074,7,Patrilineal inheritance by a son or sons,Patrilineal by sons,74
+EA075,NA,Missing data,Missing data,75
+EA075,1,Equal or relatively equal distribution among all members of the category,Equally distributed,75
+EA075,2,"Exclusive or predominant inheritance by the member of the category adjudged best qualified, either by the deceased or by his surviving relatives",Best qualified,75
+EA075,3,"Ultimogeniture, i.e., predominant inheritance by the junior member of the category",Ultimogeniture,75
+EA075,4,"Primogeniture, i.e., predominant inheritance by the senior member of the category",Primogeniture,75
+EA075,9,Absence of inheritance of real property,No inher. of real property,75
+EA076,NA,Missing data,Missing data,76
+EA076,1,"Absence of individual rights to movable property or of any rule of inheritance governing the transmission of such rights. This includes the destruction, burial, or giving away of movable property",No inher. of mov. property,76
+EA076,2,Matrilineal inheritance by a sister's son or sons,Matrilineal by sister's sons,76
+EA076,3,Inheritance by matrilineal heirs who take precedence over sisters' sons,Matrilineal by heirs,76
+EA076,4,"Inheritance by children, but with daughters receiving less than sons","Children, less for daughters",76
+EA076,5,Inheritance by children of either sex or both,Children,76
+EA076,6,Inheritance by patrilineal heirs who take precedence over sons,Patrilineal by heirs,76
+EA076,7,Patrilineal inheritance by a son or sons,Patrilineal by sons,76
+EA077,NA,Missing data,Missing data,77
+EA077,1,Equal or relatively equal distribution among all members of the category,Equally distributed,77
+EA077,2,"Exclusive or predominant inheritance by the member of the category adjudged best qualified, either by the deceased or by his surviving relatives",Best qualified,77
+EA077,3,"Ultimogeniture, i.e., predominant inheritance by the junior member of the category",Ultimogeniture,77
+EA077,4,"Primogeniture, i.e., predominant inheritance by the senior member of the category",Primogeniture,77
+EA077,9,"Absence of inheritance of movable property; includes the destruction, burial, or giving away of movable property",No inher. of mov. property,77
+EA078,NA,Missing data,Missing data,78
+EA078,1,Premarital sex relations precluded by a very early age of marriage for females,Precluded by early marriage,78
+EA078,2,"Insistence on virginity; premarital sex relations prohibited, strongly sanctioned, and in fact rare","Prohibited, strongly sanctioned",78
+EA078,3,Premarital sex relations prohibited but weakly sanctioned and not infrequent in fact,Prohibited but weakly sanctioned,78
+EA078,4,Premarital sex relations allowed and not sanctioned unless pregnancy results,"Permitted, sanction if pregnancy",78
+EA078,5,"Trial marriage; monogamous premarital sex relations permitted with the expectation of marriage if pregnancy results, promiscuous relations being prohibited and sanctioned",Trial marriage,78
+EA078,6,Premarital sex relations freely permitted and subject to no sanctions,"Permitted, no sanctions",78
+EA079,NA,Missing data,Missing data,79
+EA079,1,Semicircular,Semicircular,79
+EA079,2,Circular,Circular,79
+EA079,3,Elliptical or elongated with rounded ends,Elliptical,79
+EA079,4,Polygonal,Polygonal,79
+EA079,5,Rectangular or square,Rectangular,79
+EA079,6,Quadrangular around (or partially around) an interior court,Quadrangular around interior,79
+EA080,NA,Missing data,Missing data,80
+EA080,1,"Subterranean or semi-subterranean, ignoring cellars beneath the living quarters",Subterranean,80
+EA080,2,Floor formed by or level with the ground itself,Floor level with ground,80
+EA080,3,"Elevated slightly above the ground on a raised platform of earth, stone, or wood",Elevated slightly,80
+EA080,4,"Raised substantially above the ground on piles, posts, or piers",Raised substantially,80
+EA081,NA,Missing data,Missing data,81
+EA081,1,"Stone, stucco, concrete, or fired brick","Stone, stucco or brick",81
+EA081,2,"Plaster, mud and dung, or wattle and daub","Plaster, clay or similar",81
+EA081,3,"Wood, including logs, planks, poles, bamboo, or shingles","Wood, incl. bamboo",81
+EA081,4,Bark,Bark,81
+EA081,5,Hides or skins,Hides or skins,81
+EA081,6,"Felt, cloth, or other fabric",Fabric,81
+EA081,7,"Mats, latticework, or wattle",Mats,81
+EA081,8,"Grass, leaves, or other thatch","Grass, leaves or thatch",81
+EA081,9,"Adobe, clay, or dried brick","Adobe, clay or brick",81
+EA081,10,"Open walls, including cases where they can be temporarily closed by screens",Open walls,81
+EA081,11,"Walls indistinguishable from roof or merging into the latter (see ""Roofing materials"" for details)",Walls not diff. from roof,81
+EA082,NA,Missing data,Missing data,82
+EA082,1,Rounded or semi-cylindrical,Rounded or semi-cylindrical,82
+EA082,2,Dome shaped or hemispherical,Hemispherical,82
+EA082,3,Beehive shaped with pointed peak,Beehive shaped,82
+EA082,4,Conical,Conical,82
+EA082,5,Semi-hemispherical,Semi-hemispherical,82
+EA082,6,"Shed, i.e., with one slope",One slope,82
+EA082,7,Flat or horizontal,Flat,82
+EA082,8,"Gabled, i.e., with two slopes",Two slopes,82
+EA082,9,"Hipped or pyramidal, i.e., with four slopes",Four slopes,82
+EA083,NA,Missing data,Missing data,83
+EA083,1,Stone or slate,Stone or slate,83
+EA083,2,"Plaster, clay, mud and dung, or wattle and daub","Plaster, clay or similar",83
+EA083,3,"Wood, including logs, planks, poles, bamboo, or shingles","Wood, incl. bamboo",83
+EA083,4,Bark,Bark,83
+EA083,5,Hides or skins,Hides or skins,83
+EA083,6,"Felt, cloth, or other fabric",Fabric,83
+EA083,7,Mats,Mats,83
+EA083,8,"Grass, leaves, brush, or other thatch","Grass, leaves or thatch",83
+EA083,9,Earth or turf,Earth or turf,83
+EA083,10,Ice or snow,Ice or snow,83
+EA083,11,Tile or fired brick,Tile or fired brick,83
+EA084,NA,Missing data,Missing data,84
+EA084,1,Semicircular,Semicircular,84
+EA084,2,Circular,Circular,84
+EA084,3,Elliptical or elongated with rounded ends,Elliptical,84
+EA084,4,Polygonal,Polygonal,84
+EA084,5,Rectangular or square,Rectangular,84
+EA084,6,Quadrangular around (or partially around) an interior court,Quadrangular around interior,84
+EA085,NA,Missing data,Missing data,85
+EA085,1,"Subterranean or semi-subterranean, ignoring cellars beneath the living quarters",Subterranean,85
+EA085,2,Floor formed by or level with the ground itself,Floor level with ground,85
+EA085,3,"Elevated slightly above the ground on a raised platform of earth, stone, or wood",Elevated slightly,85
+EA085,4,"Raised substantially above the ground on piles, posts, or piers",Raised substantially,85
+EA086,NA,Missing data,Missing data,86
+EA086,1,"Stone, stucco, concrete, or fired brick","Stone, stucco or brick",86
+EA086,2,"Plaster, mud and dung, or wattle and daub","Plaster, clay or similar",86
+EA086,3,"Wood, including logs, planks, poles, bamboo, or shingles","Wood, incl. bamboo",86
+EA086,4,Bark,Bark,86
+EA086,5,Hides or skins,Hides or skins,86
+EA086,6,"Felt, cloth, or other fabric",Fabric,86
+EA086,7,"Mats, latticework, or wattle",Mats,86
+EA086,8,"Grass, leaves, or other thatch","Grass, leaves or thatch",86
+EA086,9,"Adobe, clay, or dried brick","Adobe, clay or brick",86
+EA086,10,"Open walls, including cases where they can be temporarily closed by screens",Open walls,86
+EA086,11,"Walls indistinguishable from roof or merging into the latter (see ""Roofing materials"" for details)",Walls not diff. from roof,86
+EA087,NA,Missing data,Missing data,87
+EA087,1,Rounded or semi-cylindrical,Rounded or semi-cylindrical,87
+EA087,2,Dome shaped or hemispherical,Hemispherical,87
+EA087,3,Beehive shaped with pointed peak,Beehive shaped,87
+EA087,4,Conical,Conical,87
+EA087,5,Semi-hemispherical,Semi-hemispherical,87
+EA087,6,"Shed, i.e., with one slope",One slope,87
+EA087,7,Flat or horizontal,Flat,87
+EA087,8,"Gabled, i.e., with two slopes",Two slopes,87
+EA087,9,"Hipped or pyramidal, i.e., with four slopes",Four slopes,87
+EA088,NA,Missing data,Missing data,88
+EA088,1,Stone or slate,Stone or slate,88
+EA088,2,"Plaster, clay, mud and dung, or wattle and daub","Plaster, clay or similar",88
+EA088,3,"Wood, including logs, planks, poles, bamboo, or shingles","Wood, incl. bamboo",88
+EA088,4,Bark,Bark,88
+EA088,5,Hides or skins,Hides or skins,88
+EA088,6,"Felt, cloth, or other fabric",Fabric,88
+EA088,7,Mats,Mats,88
+EA088,8,"Grass, leaves, brush, or other thatch","Grass, leaves or thatch",88
+EA088,9,Earth or turf,Earth or turf,88
+EA088,10,Ice or snow,Ice or snow,88
+EA088,11,Tile or fired brick,Tile or fired brick,88
+EA090,NA,Insufficient information or not coded,Missing data,90
+EA090,1,"Absence of any politicdal organization even at local level, e.g., where family heads acknowledge no higher political authority","Absence, even locally",90
+EA090,2,"Autonomous local communities, i.e., politically independent groups which do not exceed 1500 in average population",Autonomous communities,90
+EA090,3,"Peace groups transcending the local community where the basis of unity is other than political, e.g., derived from reciprocal trade relations, defensive military agreements, or a common cult or age-grade organization",Peace groups among communities,90
+EA090,4,"Minimal states, i.e., political integration even at the local level, e.g., where family heads acknowledge no higher political authority (1500 ﾖ 10,000)",Minimal states,90
+EA090,5,"Little states, i.e., political integration in independent units averaging between 10,000 and 100,000 in population",Little states,90
+EA090,6,"States, i.e., political integration in large independent units averaging at least 100,000 in population",States,90
+EA090,8,"Dependent societies lacking any political organization of their own, e.g., those forming an integral part of some larger political system and those governed exclusively and directly by agents of another and politically dominant society. Colonial governments operating through indirect rule are ignored.",Dependent societies,90
+EA094,NA,Insufficient information or not coded,Missing data,94
+EA094,11,Patrilineal succession where a son is preferred to a younger brother,"Patrilineal, son",94
+EA094,12,Patrilineal succession where a younger brother is preferred to a son,"Patrilineal, younger brother",94
+EA094,13,"Patrilineal succession other than younger brother or son, or where preference is unspecified","Patrilineal, other/unspecified",94
+EA094,24,Matrilineal succession where a sister's son is preferred to a younger brother,"Matrilineal, sister's son",94
+EA094,25,Matrilineal succession where a younger brother is preferred to a sister's son,"Matrilineal, yonger brother",94
+EA094,26,"Matrilineal succession other than sister's son or younger brother, or where preference is unspecified","Matrilineal, other/unspecified",94
+EA094,39,Nonhereditary succession through appointment of headmen by some higher political authority,"Nonhered, appointed by auth.",94
+EA094,49,Nonhereditary succession through election or some other method of formal consensus,"Nonhered, election",94
+EA094,59,Nonhereditary succession through informal consensus or personal influence,"Nonhered, informal",94
+EA094,69,"Councils, i.e., absence of true headmen, political authroity at the local level being exercised exclusively by a council or other collective body","Nonhered, council",94
+EA094,99,"Absence of any indigenous political authority, as in societies lacking political integration even at the local level and in some dependent societies",Absence of political auth.,94
+EA112,NA,Missing data,Missing data,112
+EA112,1,"Trance behavior is known to occur, but there is no belief in possession.","Trance, no possession",112
+EA112,2,A belief in possession exists.,Possession,112
+EA112,3,Trance behavior is known to occur and is explained as due to possession. There is no possession belief referring to other experiences and there are no trance states with other explanations.,T due to P only; P causes T only,112
+EA112,4,"Two types of trance states are known to occur. One which is explained as due to possession and one which is given another type of explanation. In addition to explaining trance, possession belief also refers to one or more other phenomena.","Two T states, one due to P; P expl. T and others",112
+EA112,5,"There is both a trance state and a belief in possession, but this belief refers to phenomena other than trance, which is explained through other categories.","T and P,  but T not due to P",112
+EA112,6,"Trance explained as due to possession is known to occur, and there are no other trance states, but cases of possession outside of trance are also believed to occur.",T due to P only; P explains T and others,112
+EA112,7,"Trance states of two kinds are known to occur, some of which are explained by possession. No other phenomena are explained by possession.","Two T states, one due to P; P explains T only",112
+EA112,8,"No trance states of any kind are known to occur, and there is no belief in possession.",No trance or possession,112
+EA113,NA,Missing data,Missing data,113
+EA113,1,"Rigid, characterized as: non-egalitarian, ascriptive status distinctions, autocratic, hierarchical political system, fixed residence and group membership, central authority, fixed religious rites.",Rigid,113
+EA113,2,"Flexible, characterized as: egalitarian, achieved status distinctions, autocratic, democratic, federated or stateless political system, ease in residence and group changes, individualized or flexible religious rites.",Flexible,113
+EA202,NA,Missing data,Missing data,202

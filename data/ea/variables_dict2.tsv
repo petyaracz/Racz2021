@@ -1,0 +1,30 @@
+var_title2	var_title	recoded_value	var_description
+Jurisdictional_hierarchy_beyond_local_community	Jurisdictional hierarchy beyond local community	NA	Missing data
+Jurisdictional_hierarchy_beyond_local_community	Jurisdictional hierarchy beyond local community	1	No political authority beyond community (e.g., autonomous bands and villages)
+Jurisdictional_hierarchy_beyond_local_community	Jurisdictional hierarchy beyond local community	2	One level (e.g., petty chiefdoms)
+Jurisdictional_hierarchy_beyond_local_community	Jurisdictional hierarchy beyond local community	3	Two levels (e.g., larger chiefdoms)
+Jurisdictional_hierarchy_beyond_local_community	Jurisdictional hierarchy beyond local community	4	Three levels (e.g., states)
+Jurisdictional_hierarchy_beyond_local_community	Jurisdictional hierarchy beyond local community	5	Four levels (e.g., large states)
+Religion_high_gods	Religion: high gods	NA	Missing data
+Religion_high_gods	Religion: high gods	1	A high god absent or not reported in substantial descriptions of religious beliefs
+Religion_high_gods	Religion: high gods	2	A high god present but otiose or not concerned with human affairs
+Religion_high_gods	Religion: high gods	3	A high god present and active in human affairs but not offering positive support to human morality
+Religion_high_gods	Religion: high gods	4	A high god present, active, and specifically supportive of human morality
+Descent_major_type	Descent: major type	NA	Missing data
+Descent_major_type	Descent: major type	patrilineal	Patrilineal (EA017 > 1, EA019 = 1, EA021 = 9)
+Descent_major_type	Descent: major type	other	Duolateral (EA017 > 1, EA019 > 1, EA021 = 9 or EA021 = 0)
+Descent_major_type	Descent: major type	other	Matrilineal (EA017 = 1, EA019 > 1, EA021 = 9)
+Descent_major_type	Descent: major type	other	Quasi-lineages (EA017 = 1, EA019 = 1, EA021 = 6)
+Descent_major_type	Descent: major type	other	Ambilineal (EA017 = 1, EA019 = 1, EA021 = 3 or EA021 = 4 or EA021 = 5)
+Descent_major_type	Descent: major type	other	Bilateral (EA017 = 1, EA019 = 1, EA021 = 1 or EA021 = 2)
+Descent_major_type	Descent: major type	other	Mixed (EA017  and/or EA019 > 1,and EA021 not equal to 9)
+Caste_differentiation_primary	Caste differentiation: primary	NA	Missing data
+Caste_differentiation_primary	Caste differentiation: primary	1	Caste distinctions absent or insignificant
+Caste_differentiation_primary	Caste differentiation: primary	2	One or more despised occupational groups, e.g., smiths or leather workers, distinguished from the general population, regarded as outcastes by the latter, and characterized by strict endogamy
+Caste_differentiation_primary	Caste differentiation: primary	3	Ethnic stratification, in which a superordinate caste withholds privileges from and refuses to intermarry with a subordinate caste (or castes) which it stigmatizes as ethnically alien, e.g., as descended from a conquered and culturally inferior indigenous population, from former slaves, or from foreign immigrants of different race and/or culture
+Caste_differentiation_primary	Caste differentiation: primary	4	Complex caste stratification in which occupational differentiation emphasizes hereditary ascription and endogamy to the near exclusion of achievable class statuses
+Slavery_type	Slavery: type	NA	Missing data
+Slavery_type	Slavery: type	1	Absence or near absence of slavery
+Slavery_type	Slavery: type	2	Incipient or nonhereditary slavery, i.e., where slave status is temporary and not transmitted to the children of slaves
+Slavery_type	Slavery: type	3	Slavery reported but not identified as hereditary or nonhereditary
+Slavery_type	Slavery: type	4	Hereditary slavery present and of at least modest social significance

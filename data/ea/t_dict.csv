@@ -1,0 +1,157 @@
+var_id,code,var_description,var_name,num_id,recoded_value
+EA008,NA,Missing data,Missing data,8,NA
+EA008,1,Independent nuclear families with monogamy,"Nuclear, monogamous",8,1
+EA008,2,Independent nuclear families with occasional or limited polygyny,"Nuclear, limited polygyny",8,1
+EA008,3,Independent polyandrous families,Polyandrous,8,0
+EA008,4,"Independent polygynous families, unusual co-wives pattern (either polygyny is preferentially sororal, with cowives in separate quarters or it is typically non-sororal, with cowives in same quarters","Polygyny, atypical cowives pattern",8,0
+EA008,5,"Independent polygynous families, usual co-wives pattern (either polygyny is preferentially sororal, with cowives in same quarters, OR typically non-sororal, with cowives in separate quarters)","Polygyny, typical cowives pattern",8,0
+EA008,6,"Minimal extended or ""stem"" families, i.e., those consisting of only two related families of procreation (disregarding polygamous unions), particularly of adjacent generations",Minimal extended,8,0
+EA008,7,"Small extended families, i.e., those normally embracing the families of procreation of only one individual in the senior generation but of at least two in the next generation. Such families usually dissolve on the death of the head",Small extended,8,0
+EA008,8,"Large extended families, i.e., corporate aggregations of smaller family units occupying a single dwelling or a number of adjacent dwellings and normally embracing the families of procreation of at least two siblings or cousins in each of at least two adjacent generations",Large extended,8,0
+EA012,NA,Missing data,Missing data,12,NA
+EA012,1,"Avunculocal, i.e., normal residence with or near the maternal uncle or other male matrilineal kinsmen of the husband",Avunculocal,12,wife
+EA012,2,"Ambilocal, i.e., residence established optionally with or near the parents of either the husband or the wife, depending upon circumstances or personal choice, where neither alternative exceeds the other in actual frequency by a ratio greater than two to one.",Ambilocal,12,other
+EA012,3,"Optionally uxorilocal or avunculocal. This may be the case in a uxorilocal society where many men marry a MoBrDa and thus, in fact, live avunculocally",Avuncu-uxorilocal,12,wife
+EA012,4,Optionally patrilocal (or virilocal) or avunculocal,Avuncu-virilocal,12,husband
+EA012,5,"Matrilocal, i.e., normal residence with or near the female matrilineal kinsmen of the wife. Cf. U Uxorilocal",Matrilocal,12,wife
+EA012,6,"Neolocal, i.e., normal residence apart from the relatives of both spouses or at a place not determined by the kin ties of either",Neolocal,12,other
+EA012,7,"Nonestablishment of a common household, i.e., where both spouses remain in their natal households, sometimes called ""duolocal"" or ""natolocal"" residence",Separate,12,other
+EA012,8,"Patrilocal, i.e., normal residence with or near the male patrilineal kinsmen of the husband. Cf. V Virilocal",Patrilocal,12,husband
+EA012,9,"Uxorilocal. Equivalent to ""matrilocal"" but confined to instances where the wife's matrikin are not aggregated in matrilocal and matrilineal kin groups",Uxorilocal,12,wife
+EA012,10,"Virilocal. Equivalent to ""patrilocal"" but confined to instances where the husband's patrikin are not aggregated in patrilocal and patrilineal kin groups",Virilocal,12,husband
+EA012,11,"Ambilocal, with a marked preponderance of uxorilocal practice (i.e., uxorilocal option exceeds virilocal option in actual frequency by a ratio greater than two to one).",Ambi-uxo,12,wife
+EA012,12,"Ambilocal, with a marked preponderance of virilocal practice (i.e., virilocal option exceeds uxorilocal option in actual frequency by a ratio greater than two to one).",Ambi-viri,12,husband
+EA015,NA,Missing data,Missing data,15,NA
+EA015,1,"Demes, i.e., communities revealing a marked tendency toward local endogamy but not segmented into clan-barrios",Demes,15,endogamous
+EA015,2,"Segmented communities, i.e., those divided into barrios, wards, or hamlets, each of which is essentially a localized kin group, a clan or ramage, in the absence of any indication of local exogamy. Large extended families (see ""Domestic organization""), are treated as clan-barrios if they are integrated by a rule of ambilineal, matrilineal, or patrilineal descent.","Segmented, no exogamy",15,endogamous
+EA015,3,Agamous communities without localized clans or any marked tendency toward either local exogamy or local endogamy,Agamous,15,agamous
+EA015,4,"Exogamous communities, i.e., those revealing a marked tendency toward local exogamy without having the specific structure of clans",Exogamous,15,exogamous
+EA015,5,Segmented communities where a marked tendency toward local exogamy is also specifically reported,"Segmented, exogamy",15,exogamous
+EA015,6,"Clan-communities, each consisting essentially of a single localized exogamous kin group or clan (see ""Organization of clan communities"" for more detail)",Clans,15,exogamous
+EA023,NA,Missing data,Missing data,23,NA
+EA023,1,"Duolateral cross-cousin marriage permitted, i.e., marriage allowed with either MoBrDa or FaSiDa but forbidden with a parallel cousin",Cross-cousin,23,3
+EA023,2,Duolateral marriage permitted with paternal cousins only (FaBrDa or FaSiDa),Paternal only,23,3
+EA023,3,Duolateral marriage permitted with maternal cousins only (MoBrDa or MoSiDa),Maternal only,23,3
+EA023,4,Duolateral marriage permitted with an uncle's daughter only (FaBrDa or MoBrDa),FaBrDa/MoBrDa only,23,3
+EA023,5,Duolateral marriage permitted with an aunt's daughter only (FaSiDa or MoSiDa),FaSiDa/MoSiDa only,23,3
+EA023,6,"Unilateral: only matrilateral cross-cousin marriage permitted, i.e., with a MoBrDa",Matrilateral cross only,23,3
+EA023,7,"Nonlateral marriage, i.e., unions forbidden with any first or second cousin",No first/second cousins,23,1
+EA023,8,"Nonlateral marriage, evidence available only for first cousins",No first cousins,23,1
+EA023,9,"Unilateral: only patrilateral cross-cousin marriage permitted i.e., with a FaSiDa",Patrilateral cross only,23,3
+EA023,10,"Quadrilateral marriage, i.e., marriage allowed with any first cousin",Any first cousins,23,4
+EA023,11,Nonlateral marriage in which all first cousins and some but not all second cousins are forbidden as spouses,Some second only,23,2
+EA023,12,Nonlateral marriage in which unions are forbidden with any first cousin but are permitted with any second cousin (or at least any who is not a lineage mate),Only second cousins,23,2
+EA023,13,"Trilateral marriage, i.e., marriage allowed with any first cousin except an orthocousin or lineage mate",Trilateral,23,3
+EA027,NA,Missing data,Missing data,27,NA
+EA027,1,"Crow, i.e., FaSiCh equated with Fa or FaSi and/or MoBrCh with Ch or BrCh(ws)",Crow,27,4
+EA027,2,"Descriptive or derivative, rather than elementary, terms employed for all cousins",Descriptive,27,5
+EA027,3,"Eskimo, i.e., FaBrCh, FaSiCh, MoBrCh, and MoSiCh equated with each other but differentiated from siblings",Eskimo,27,2
+EA027,4,"Hawaiian, i.e., all cousins equated with siblings or called by terms clearly derivative from those for siblings",Hawaiian,27,1
+EA027,5,"Iroquois, i.e., FaSiCh equated with MoBrCh but differentiated from both siblings and parallel cousins",Iroquois,27,3
+EA027,6,"Omaha, i.e., MoBrCh equated with MoBr or Mo and/or FaSiCh with SiCh(ms) or Ch",Omaha,27,4
+EA027,7,"Sudanese, i.e., FaSiCh and MoBrCh distinguished alike from siblings, parallel cousins, and each other but without conforming to either the Crow, the descriptive, or the Omaha patterns",Sudanese,27,5
+EA027,8,"Mixed or variant patterns not adequately represented by any of the foregoing symbols. The details are given under ""Classification by Clusters.""",Mixed,27,3
+EA030,NA,Missing data,Missing data,30,NA
+EA030,1,Fully migratory or nomadic bands,Nomadic,30,1
+EA030,2,"Seminomadic communities whose members wander in bands for at least half of the year but occupy a fixed settlement at some season or seasons, e.g., recurrently occupied winter quarters",Seminomadic,30,2
+EA030,3,"Semisedentary communities whose members shift from one to another fixed settlement at different seasons or who occupy more or less permanently a single settlement from which a substantial proportion of the population departs seasonally to occupy shifting camps, e.g., during transhumance",Semisedentary,30,3
+EA030,4,"Compact but impermanent settlements, i.e., villages whose location is shifted every few years",Impermanent,30,4
+EA030,5,Neighborhoods of dispersed family homesteads,Dispersed homesteads,30,5
+EA030,6,Separated hamlets where several such form a more or less permanent single community,Hamlets,30,6
+EA030,7,"Compact and relatively permanent settlements, i.e., nucleated villages or towns",Villages/towns,30,7
+EA030,8,Complex settlements consisting of a nucleated village or town with outlying homesteads or satellite hamlets. Urban aggregations of population are not separately indicated since EA031 deals with community size,Complex permanent,30,8
+EA031,NA,Missing data,Missing data,31,NA
+EA031,1,Fewer than 50 persons,<50,31,1
+EA031,2,From 50 to 99 persons,50-99,31,2
+EA031,3,From 100 to 199 persons,100-199,31,3
+EA031,4,From 200 to 399 persons,200-399,31,4
+EA031,5,"From 400 to 1,000 persons",400-1000,31,5
+EA031,6,"More than 1,000 persons in the absence of indigenous urban aggregations",1000+ no towns,31,6
+EA031,7,"One or more indigenous towns of more than 5,000 inhabitants but none of more than 50,000",5000-50000,31,7
+EA031,8,"One or more indigenous cities with more than 50,000 inhabitants",50000+,31,8
+EA032,NA,Missing data,Missing data,32,NA
+EA032,2,Independent families (may be nuclear or polygynous),Independent families,32,2
+EA032,3,Extended families,Extended families,32,3
+EA032,4,Clan-barrios,Clan-barrios,32,4
+EA033,NA,Missing data,Missing data,33,NA
+EA033,1,"No political authority beyond community (e.g., autonomous bands and villages)",Acephalous,33,1
+EA033,2,"One level (e.g., petty chiefdoms)",One level,33,2
+EA033,3,"Two levels (e.g., larger chiefdoms)",Two levels,33,3
+EA033,4,"Three levels (e.g., states)",Three levels,33,4
+EA033,5,"Four levels (e.g., large states)",Four levels,33,5
+EA034,NA,Missing data,Missing data,34,NA
+EA034,1,A high god absent or not reported in substantial descriptions of religious beliefs,Absent,34,1
+EA034,2,A high god present but otiose or not concerned with human affairs,Otiose,34,2
+EA034,3,A high god present and active in human affairs but not offering positive support to human morality,"Active, but not supporting morality",34,3
+EA034,4,"A high god present, active, and specifically supportive of human morality","Active, supporting morality",34,4
+EA042,NA,Missing data for at least one subsistence activity,Missing for at least 1 activity,42,NA
+EA042,1,Gathering contributes most,Gathering,42,foraging
+EA042,2,Fishing contributes most,Fishing,42,foraging
+EA042,3,Hunting contributes most,Hunting,42,foraging
+EA042,4,Pastoralism contributes most,Pastoralism,42,pastoralism
+EA042,5,Casual agriculture contributes most,Casual agriculture,42,ext_agr
+EA042,6,Extensive agriculture contributes most,Extensive agriculture,42,ext_agr
+EA042,7,Intensive agriculture contributes most,Intensive agriculture,42,int_agr
+EA042,8,Two or more sources contribute equally,Two or more sources,42,8
+EA042,9,"Agriculture contributes most, type unknown","Agriculture, type unknown",42,ext_agr
+EA043,NA,Missing data,Missing data,43,NA
+EA043,1,"Patrilineal (EA017 > 1, EA019 = 1, EA021 = 9)",Patrilineal,43,patrilineal
+EA043,2,"Duolateral (EA017 > 1, EA019 > 1, EA021 = 9 or EA021 = 0)",Duolateral,43,other
+EA043,3,"Matrilineal (EA017 = 1, EA019 > 1, EA021 = 9)",Matrilineal,43,other
+EA043,4,"Quasi-lineages (EA017 = 1, EA019 = 1, EA021 = 6)",Quasi-lineages,43,other
+EA043,5,"Ambilineal (EA017 = 1, EA019 = 1, EA021 = 3 or EA021 = 4 or EA021 = 5)",Ambilineal,43,other
+EA043,6,"Bilateral (EA017 = 1, EA019 = 1, EA021 = 1 or EA021 = 2)",Bilateral,43,other
+EA043,7,"Mixed (EA017  and/or EA019 > 1,and EA021 not equal to 9)",Mixed,43,other
+EA066,NA,Missing data,Missing data,66,NA
+EA066,1,"Absence of significant class distinctions among freemen (slavery is treated in EA070), ignoring variations in individual repute achieved through skill, valor, piety, or wisdom",Absence of distinctions,66,1
+EA066,2,"Wealth distinctions, based on the possession or distribution of property, present and socially important but not crystallized into distinct and hereditary social classes",Wealth distinctions,66,2
+EA066,3,"Elite stratification, in which an elite class derives its superior status from, and perpetuates it through, control over scarce resources, particularly land, and is thereby differentiated from a property-less proletariat or serf class",Elite stratification,66,3
+EA066,4,"Dual stratification into a hereditary aristocracy and a lower class of ordinary commoners or freemen, where traditionally ascribed noble status is at least as decisive as control over scarce resources",Dual stratification,66,4
+EA066,5,Complex stratification into social classes correlated in large measure with extensive differentiation of occupational statuses,Complex stratification,66,5
+EA068,NA,Missing data,Missing data,68,NA
+EA068,1,Caste distinctions absent or insignificant,Absence of distinctions,68,1
+EA068,2,"One or more despised occupational groups, e.g., smiths or leather workers, distinguished from the general population, regarded as outcastes by the latter, and characterized by strict endogamy",Despised occupation groups,68,2
+EA068,3,"Ethnic stratification, in which a superordinate caste withholds privileges from and refuses to intermarry with a subordinate caste (or castes) which it stigmatizes as ethnically alien, e.g., as descended from a conquered and culturally inferior indigenous population, from former slaves, or from foreign immigrants of different race and/or culture",Ethnic stratification,68,3
+EA068,4,Complex caste stratification in which occupational differentiation emphasizes hereditary ascription and endogamy to the near exclusion of achievable class statuses,Complex caste stratification,68,4
+EA070,NA,Missing data,Missing data,70,NA
+EA070,1,Absence or near absence of slavery,Absence of slavery,70,1
+EA070,2,"Incipient or nonhereditary slavery, i.e., where slave status is temporary and not transmitted to the children of slaves","Slavery, nonhereditary",70,2
+EA070,3,Slavery reported but not identified as hereditary or nonhereditary,"Slavery, no info on heritability",70,3
+EA070,4,Hereditary slavery present and of at least modest social significance,"Slavery, hereditary",70,4
+EA072,NA,Missing data,Missing data,72,NA
+EA072,1,Patrilineal heir,Patrilineal heir,72,patrilineal
+EA072,2,Matrilineal heir,Matrilineal heir,72,matrilineal
+EA072,3,Nonhereditary succession through appointment by some higher authority,Nonhered: appointed by auth.,72,other
+EA072,4,Nonhereditary succession on the basis primarily of seniority or age,Nonhered: seniority,72,other
+EA072,5,"Nonhereditary succession through influence, e.g., of wealth or social status",Nonhered: influence,72,other
+EA072,6,Nonhereditary succession through election or some other mode of formal consensus,Nonhered: election,72,other
+EA072,7,Nonhereditary succession through informal consensus,Nonhered: inf. consensus,72,other
+EA072,9,Absence of any office resembling that of a local headman,Absence of office,72,absent
+EA074,NA,Missing data,Missing data,74,NA
+EA074,1,Absence of individual property rights in land or of any rule of inheritance governing the transmission of such rights,No inher. of real property,74,absent
+EA074,2,Matrilineal inheritance by a sister's son or sons,Matrilineal by sister's sons,74,matrilineal
+EA074,3,Inheritance by matrilineal heirs who take precedence over sisters' sons,Matrilineal by heirs,74,matrilineal
+EA074,4,"Inheritance by children, but with daughters receiving less than sons","Children, less for daughters",74,other
+EA074,5,Inheritance by children of either sex or both,Children,74,other
+EA074,6,Inheritance by patrilineal heirs who take precedence over sons,Patrilineal by heirs,74,patrilineal
+EA074,7,Patrilineal inheritance by a son or sons,Patrilineal by sons,74,patrilineal
+EA078,NA,Missing data,Missing data,78,NA
+EA078,1,Premarital sex relations precluded by a very early age of marriage for females,Precluded by early marriage,78,1
+EA078,2,"Insistence on virginity; premarital sex relations prohibited, strongly sanctioned, and in fact rare","Prohibited, strongly sanctioned",78,2
+EA078,3,Premarital sex relations prohibited but weakly sanctioned and not infrequent in fact,Prohibited but weakly sanctioned,78,3
+EA078,4,Premarital sex relations allowed and not sanctioned unless pregnancy results,"Permitted, sanction if pregnancy",78,4
+EA078,5,"Trial marriage; monogamous premarital sex relations permitted with the expectation of marriage if pregnancy results, promiscuous relations being prohibited and sanctioned",Trial marriage,78,5
+EA078,6,Premarital sex relations freely permitted and subject to no sanctions,"Permitted, no sanctions",78,6
+EA112,NA,Missing data,Missing data,112,NA
+EA112,1,"Trance behavior is known to occur, but there is no belief in possession.","Trance, no possession",112,2
+EA112,2,A belief in possession exists.,Possession,112,2
+EA112,3,Trance behavior is known to occur and is explained as due to possession. There is no possession belief referring to other experiences and there are no trance states with other explanations.,T due to P only; P causes T only,112,5
+EA112,4,"Two types of trance states are known to occur. One which is explained as due to possession and one which is given another type of explanation. In addition to explaining trance, possession belief also refers to one or more other phenomena.","Two T states, one due to P; P expl. T and others",112,4
+EA112,5,"There is both a trance state and a belief in possession, but this belief refers to phenomena other than trance, which is explained through other categories.","T and P,  but T not due to P",112,3
+EA112,6,"Trance explained as due to possession is known to occur, and there are no other trance states, but cases of possession outside of trance are also believed to occur.",T due to P only; P explains T and others,112,4
+EA112,7,"Trance states of two kinds are known to occur, some of which are explained by possession. No other phenomena are explained by possession.","Two T states, one due to P; P explains T only",112,4
+EA112,8,"No trance states of any kind are known to occur, and there is no belief in possession.",No trance or possession,112,1
+EA113,NA,Missing data,Missing data,113,NA
+EA113,1,"Rigid, characterized as: non-egalitarian, ascriptive status distinctions, autocratic, hierarchical political system, fixed residence and group membership, central authority, fixed religious rites.",Rigid,113,T
+EA113,2,"Flexible, characterized as: egalitarian, achieved status distinctions, autocratic, democratic, federated or stateless political system, ease in residence and group changes, individualized or flexible religious rites.",Flexible,113,F
+EA202,NA,Missing data,Missing data,202,NA
