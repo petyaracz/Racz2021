@@ -316,7 +316,7 @@ variables_dict %>%
   rename(description = var_description, recoded = recoded_value, original = code) %>% 
   select(description, original, recoded, `n obs`) %>% 
   kable("latex", booktabs = T) %>% 
-  column_spec(4, width = "20em")
+  column_spec(1, width = "28em")
 
 ```
 
@@ -666,7 +666,18 @@ samples_tsv = samples %>%
   select(id, posterior_samples_long) %>% 
   unnest(cols = c(posterior_samples_long))
 
+samples = samples %>% 
+  mutate(
+    pots = map(model, ~ as_tibble(summary(., prob = .67)$fixed, rownames = 'term'))
+  )
+samples_67 = samples %>% 
+  select(id, pots) %>% 
+  unnest(cols = pots)  %>% 
+  filter(str_detect(term, 'Intercept', negate = T))
+
 write_tsv(samples_tsv, 'data/imputed_posteriors.tsv')
+write_tsv(samples_67, 'data/imputed_67.tsv')
+
 ```
 
 First, we look at draws from the posterior distributions for our predictors from Fit 3c. The horizontal lineranges indicate the 66%, 89%, and 97% confidence intervals. 89% is the closest smaller prime number to the default 95% confidence intervals used in frequentist studies, while the other limits also have the advantage of being prime numbers [@mcelreath2020statistical]. Predictors on the y axis are ordered according to absolute medians: those that shift the prior the most are on top.
@@ -679,31 +690,29 @@ fit3c %>%
 
 As we see, most predictors have relatively little to contribute in this sparse model, except for some notable exceptions.
 
+```{r robustness_iterations3a, fig.height = 12}
+pots = read_tsv('data/imputed_67.tsv')
 
-```{r robustness_iterations3}
-# load('models/samples.rda')
-draws = read_tsv('data/imputed_posteriors.tsv')
-draws %>% 
-  filter(!str_detect(predictor, 'Intercept')) %>% 
-  group_by(predictor) %>% mutate(abs_median = abs(median(draw))) %>% 
-  ungroup() %>% mutate(
-    predictor = reorder(predictor, abs_median),
-    model_id = paste0('model ', id)
-    ) %>% 
-  ggplot( aes(x = draw, y = predictor, fill = model_id)) +
-    geom_halfeyeh(alpha = .5, .width = c(.67,.89,.97)) +
-    coord_cartesian(xlim = c(-.5,.5)) +
-  scale_fill_brewer(palette = 'Spectral')
+pots = pots %>% 
+  mutate(
+    predictor = reorder(term, Estimate)
+    )
+
+ggplot(pots, aes(x = predictor, y = Estimate, ymin = `l-67% CI`, ymax = `u-67% CI`, group = id)) + 
+  geom_point(position = position_dodge(width = .75)) +
+  geom_linerange(position = position_dodge(width = .75)) +
+  geom_hline(yintercept = 0, lty = 2) +
+  coord_flip()
 
 ```
 
-This is the same plot of posteriors ordered by absolute median, except that each row plots ten distributions instead of one. This is a dense figure, but what the reader can garner is that most variation is visible for those predictors at the top. These are the ones that generall have non-zero effects.
+This is the same plot of posteriors ordered by absolute median, except that each row plots ten distributions instead of one. The bars show 67% credible intervals. This is a dense figure, but what the reader can garner is that most variation is visible for those predictors at the top. These are the ones that generall have non-zero effects.
 
 The ten models are identical with the exception of the datasets. The missing values of the EA data were imputed by @thompson2018quantifying for each imputed dataset. We can assess the overall effects across these data by pooling the draws from the posterior distributions across models. The result can be seen below.
 
 ```{r robustness_iterations4}
 # load('models/samples.rda')
-# draws = read_tsv('data/imputed_posteriors.tsv')
+draws = read_tsv('data/imputed_posteriors.tsv')
 draws %>% 
   filter(!str_detect(predictor, 'Intercept')) %>% 
   group_by(predictor) %>% mutate(abs_median = abs(median(draw))) %>% 
