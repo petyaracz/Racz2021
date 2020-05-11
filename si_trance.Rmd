@@ -354,7 +354,7 @@ dw1$trance2 = as.character(dw1$trance)
 dw1$trance2 = ifelse(is.na(dw1$trance2), 'm', dw1$trance2)
 
 ggplot() + 
-  geom_polygon(data = mapWorld, aes(x=long, y = lat, group = group)) + 
+  geom_polygon(data = mapWorld, aes(x=long, y = lat, group = group, alpha = .3)) + 
   geom_text(data = dw1 %>% filter(!is.na(`trance and possession`)), aes(x = lon2, y = lat, colour = `trance and possession`, label = trance2)) +
   scale_colour_colorblind(
     name = 'Trance and\npossession\nphenomena',
@@ -368,6 +368,7 @@ ggplot() +
       )
     ) +
   theme_void() +
+  guides(alpha = F) +
   theme(legend.position = 'top')
 ```
 
@@ -683,9 +684,10 @@ write_tsv(samples_67, 'data/imputed_67.tsv')
 First, we look at draws from the posterior distributions for our predictors from Fit 3c. The horizontal lineranges indicate the 66%, 89%, and 97% confidence intervals. 89% is the closest smaller prime number to the default 95% confidence intervals used in frequentist studies, while the other limits also have the advantage of being prime numbers [@mcelreath2020statistical]. Predictors on the y axis are ordered according to absolute medians: those that shift the prior the most are on top.
 
 ```{r robustness_iterations2}
-fit3c %>% 
-  drawPosteriors() + 
+fit3c %>%
+  drawPosteriors() +
   coord_cartesian(xlim = c(-.5,.5))
+
 ```
 
 As we see, most predictors have relatively little to contribute in this sparse model, except for some notable exceptions.
@@ -708,7 +710,7 @@ ggplot(pots, aes(x = predictor, y = Estimate, ymin = `l-67% CI`, ymax = `u-67% C
 
 This is the same plot of posteriors ordered by absolute median, except that each row plots ten distributions instead of one. The bars show 67% credible intervals. This is a dense figure, but what the reader can garner is that most variation is visible for those predictors at the top. These are the ones that generall have non-zero effects.
 
-The ten models are identical with the exception of the datasets. The missing values of the EA data were imputed by @thompson2018quantifying for each imputed dataset. We can assess the overall effects across these data by pooling the draws from the posterior distributions across models. The result can be seen below.
+The ten models are identical with the exception of the datasets. The missing values of the EA data were imputed by @thompson2018quantifying for each imputed dataset. Another way in which we can assess the overall effects across these data is by pooling the draws from the posterior distributions across models. The result can be seen below.
 
 ```{r robustness_iterations4}
 # load('models/samples.rda')
@@ -723,6 +725,13 @@ draws %>%
     geom_halfeyeh(alpha = .5, .width = c(.67,.89,.97)) +
     coord_cartesian(xlim = c(-.5,.5))
 
+```
+
+Altogether, across the ten models fit on the ten imputed datasets, most of our starting variables explain little variation in the outcome. 
+
+We pick the top six variables. Note that this is, to some degree, arbitrary. We pick the first five because the the 67% CI of the pooled distribution excludes zero. We pick class differentiation because it sounds interesting.
+
+```{r }
 variables_dict_keep = variables_dict %>% 
   filter(var_title2 %in% c(
     'Slavery_type',
@@ -732,18 +741,23 @@ variables_dict_keep = variables_dict %>%
     'Settlement_patterns',
     'Class_differentiation_primary'
       )
-    )
+    ) %>% 
+  distinct(var_title, var_id, var_title2)
 
-```
+variables_dict_keep = pots %>% 
+  select(term, `l-67% CI`, `u-67% CI`) %>% 
+  rename(var_title2 = term) %>% 
+  filter(var_title2 %in% variables_dict_keep$var_title2) %>% 
+  group_by(var_title2) %>% summarise(
+    lower_67 = mean(`l-67% CI`),
+    upper_67 = mean(`u-67% CI`)
+  ) %>% 
+  left_join(variables_dict_keep)
+  
 
-Altogether, across the ten models fit on the ten imputed datasets, most of our starting variables explain little variation in the outcome. 
-
-We pick the top six variables. Note that this is, to some degree, arbitrary. We pick the first five because the the 67% CI of the pooled distribution excludes zero. We pick class differentiation because it sounds interesting.
-
-```{r }
 variables_dict_keep %>% 
-  distinct(var_id, var_title) %>% 
-  kable("latex", booktabs = T)
+  select(var_id, var_title, lower_67, upper_67) %>% 
+  kable("latex", booktabs = T, digits = 2)
 
 ```
 
