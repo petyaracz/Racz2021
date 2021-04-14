@@ -13,7 +13,7 @@ bibliography: trance.bib
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, error = FALSE, message = FALSE, fig.path = 'figures/', fig.width = 8, fig.height = 8)
 ```
 
-## Structure of the SI
+## Preliminaries
 
 The EA dataset is challenging in three ways. (1) Many, correlated, predictors might explain the outcome, (2) Data are structured by cultural and geographic distance, (3) Data are missing.
 
@@ -926,7 +926,7 @@ Some effects shrink in the refit models, but the differences are not very large.
 
 ## Visualising predictions
 
-We take each predictor and draw predictions from Fit 4 (our favourite fit) for societies at each of its levels. Then, we calculate the mean and the standard deviation and plot these against each other, levels of the predictor on the x axis, predictions for the five levels of the outcome on the y axis.
+We take each predictor and draw predictions from Fit 4 (our favourite fit) for societies at each of its levels. Then, we calculate the mean and the standard deviation and plot these against each other, levels of the predictor on the x axis, predictions for the five levels of the outcome on the y axis. The resulting plot needs some work in Illustrator.
 
 ```{r predictions, fig.width = 9, fig.height = 9}
 
@@ -961,23 +961,34 @@ predPlot = function(variable_name){
   geom_line(aes(x = recoded_value2, y = mean - sd), colour = 'grey') +
   theme_bw() +
   facet_wrap( ~ level, ncol = 1) +
-  theme(
-        strip.background = element_blank(),
-        strip.text.x = element_blank(),
-        axis.title.x = element_blank(),
-        # axis.ticks.y = element_blank(),
-        # axis.text.y = element_blank(),
-        axis.title.y = element_blank(),
-        axis.text.x = element_text(angle = 90)
-        ) +
-    scale_x_continuous(
+  scale_x_continuous(
       breaks = breaks,
       labels = labels, 
-      position = 'bottom'
+      position = 'top'
       ) +
     ggtitle(title) +
     ylim(0,0.6)
 }
+
+min_theme = theme(
+        # strip.background = element_blank(),
+        # strip.text.x = element_blank(),
+        axis.title.x = element_blank(),
+        axis.ticks.y = element_blank(),
+        axis.text.y = element_blank(),
+        axis.title.y = element_blank(),
+        axis.text.x = element_text(angle = 90, hjust = 0, vjust = 1)
+        )
+
+right_theme = theme(
+        # strip.background = element_blank(),
+        # strip.text.x = element_blank(),
+        axis.title.x = element_blank(),
+        # axis.ticks.y = element_blank(),
+        # axis.text.y = element_blank(),
+        # axis.title.y = element_blank(),
+        axis.text.x = element_text(angle = 90, hjust = 0, vjust = 1)
+        )
 
 pred = predict(fit4)
 pred = as_tibble(pred)
@@ -1011,7 +1022,10 @@ pred_sum = pred %>%
   summarise(
     mean = mean(p),
     sd = sd(p)
-            )
+            ) %>%
+  mutate(
+    level = factor(level, levels = c('no P, no T', 'P xor T', 'P and T', 'P -> T', 'P <-> T'))
+  )
 
 # Slavery_type                                        0.24      0.09     0.06     0.41 1.00
 # Religion_high_gods                                 -0.29      0.09    -0.46    -0.12 1.00
@@ -1019,12 +1033,13 @@ pred_sum = pred %>%
 # Descent_major_typepatrilineal                       0.23      0.20    -0.16     0.63 1.00
 # Settlement_patterns                                 0.05      0.05    -0.05     0.14 1.00
 # Class_differentiation_primary                       0.06      0.09    -0.13     0.25 1.00
-vals = c("Slavery_type","Religion_high_gods","Class_differentiation_primary","Settlement_patterns","Descent_major_type")
-
-p.list = map(vals, ~ predPlot(.))
-
-wrap_plots(p.list, nrow = 1)
-
+p1 = predPlot("Slavery_type") + min_theme
+p2 = predPlot("Religion_high_gods") + min_theme
+p3 = predPlot("Class_differentiation_primary") + min_theme
+p4 = predPlot("Settlement_patterns") + min_theme
+p5 = predPlot("Descent_major_type") + right_theme + scale_y_continuous(limits = c(0,0.6), position = 'right', name = 'mean predicted probability')
+  
+p1 + p2 + p3 + p4 + p5 + plot_layout(nrow = 1)
 
 ```
 
