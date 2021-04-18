@@ -4,6 +4,7 @@ title: Identifying covariate traits of trance and possession phenomena in the Et
 author: "Péter Rácz"
 date: "`r format(Sys.Date(),'%e de %B, %Y')`"
 output:
+  pdf_document: default
   html_document:
     df_print: paged
 bibliography: trance.bib
@@ -839,7 +840,7 @@ drawPosteriors(fit4) +
     "b_Settlement_patterns" = "Settlement patterns",
     "b_Descent_major_typepatrilineal" = "Patrilineal descent",
     "b_Class_differentiation_primary" = "Primary class differentiation"
-  )) + ylab('')
+  )) + ylab('') + theme_bw()
 
 ```
 
@@ -851,11 +852,12 @@ hb = hypothesis(fit4, 'Slavery_type>0', alpha = 0.03)$hypothesis
 hc = hypothesis(fit4, 'Jurisdictional_hierarchy_beyond_local_community>0', alpha = 0.03)$hypothesis
 hd = hypothesis(fit4, 'Descent_major_typepatrilineal>0', alpha = 0.33)$hypothesis
 he = hypothesis(fit4, 'Class_differentiation_primary>0', alpha = 0.33)$hypothesis
+hf = hypothesis(fit4, 'Settlement_patterns>0', alpha = 0.33)$hypothesis
 
-bind_rows(ha,hb,hc,hd,he) %>% 
+bind_rows(ha,hb,hc,hd,he,hf) %>% 
   select(Hypothesis, Estimate, Est.Error, CI.Lower, CI.Upper) %>% 
   mutate(Hypothesis = str_replace_all(Hypothesis, '[_]', ' ') %>% str_replace_all('[)(]', '')) %>% 
-  bind_cols(alpha = c(0.03, 0.03, 0.03, 0.33, 0.33)) %>% 
+  bind_cols(alpha = c(0.03, 0.03, 0.03, 0.33, 0.33, 0.33)) %>% 
   kable(digits = 2, "latex", booktabs = T) %>% 
   column_spec(1, width = "15em")
 
@@ -1008,9 +1010,10 @@ pred = dw4 %>%
   select(
     soc_id,
     Religion_high_gods,
-    Descent_major_type,
-    Class_differentiation_primary,
     Slavery_type,
+    Descent_major_type,
+    Jurisdictional_hierarchy_beyond_local_community,
+    Class_differentiation_primary,
     Settlement_patterns
     ) %>% 
   pivot_longer(- soc_id, names_to = 'var_title2', values_to = 'recoded_value2') %>% 
@@ -1035,11 +1038,12 @@ pred_sum = pred %>%
 # Class_differentiation_primary                       0.06      0.09    -0.13     0.25 1.00
 p1 = predPlot("Slavery_type") + min_theme
 p2 = predPlot("Religion_high_gods") + min_theme
-p3 = predPlot("Class_differentiation_primary") + min_theme
-p4 = predPlot("Settlement_patterns") + min_theme
-p5 = predPlot("Descent_major_type") + right_theme + scale_y_continuous(limits = c(0,0.6), position = 'right', name = 'mean predicted probability')
+p3 = predPlot("Jurisdictional_hierarchy_beyond_local_community") + min_theme
+p4 = predPlot("Descent_major_type") + min_theme
+p5 = predPlot("Class_differentiation_primary") + min_theme
+p6 = predPlot("Settlement_patterns") + right_theme + scale_y_continuous(limits = c(0,0.6), position = 'right', name = 'mean predicted probability')
   
-p1 + p2 + p3 + p4 + p5 + plot_layout(nrow = 1)
+p1 + p2 + p3 + p4 + p5 + p6 + plot_layout(nrow = 1)
 
 ```
 
