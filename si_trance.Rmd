@@ -4,9 +4,9 @@ title: Identifying covariate traits of trance and possession phenomena in the Et
 author: "Péter Rácz"
 date: "`r format(Sys.Date(),'%e de %B, %Y')`"
 output:
-  pdf_document: default
   html_document:
     df_print: paged
+  pdf_document: default
 bibliography: trance.bib
 ---
 
@@ -973,8 +973,8 @@ predPlot = function(variable_name){
 }
 
 min_theme = theme(
-        # strip.background = element_blank(),
-        # strip.text.x = element_blank(),
+        strip.background = element_blank(),
+        strip.text.x = element_blank(),
         axis.title.x = element_blank(),
         axis.ticks.y = element_blank(),
         axis.text.y = element_blank(),
@@ -983,8 +983,8 @@ min_theme = theme(
         )
 
 right_theme = theme(
-        # strip.background = element_blank(),
-        # strip.text.x = element_blank(),
+        strip.background = element_blank(),
+        strip.text.x = element_blank(),
         axis.title.x = element_blank(),
         # axis.ticks.y = element_blank(),
         # axis.text.y = element_blank(),
